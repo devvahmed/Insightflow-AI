@@ -1,0 +1,68 @@
+[
+  {
+    "job_id": "JOB-XBZ7YD37A",
+    "agent": "DataIntelligenceAgent",
+    "timestamp": "2026-05-20T11:01:32.156562Z",
+    "workplan": "Ingest business data, search live web for competitors and trends, extract anomalies.",
+    "tool_calls": [
+      "search_competitors()",
+      "search_pakistan_trends()",
+      "detect_anomalies()"
+    ],
+    "reasoning": "Data se pata chalta hai ke Karachi mein shadeed garmi ki wajah se logon ki khareedari ke tareeqon mein bahut bada badlav aaya hai. Din ke waqt log bahar kam nikal rahe hain, jabke raat ke waqt thandi cheezon, khaas kar ice cream aur cold cakes ki demand bahut badh gayi hai. Kababjees ki management bhi inhi high-margin products ko push karna chahti hai aur riders ko raat ki shift mein shift kar chuki hai. Lekin, sab se bada masla yeh hai ke jin products ki demand sab se zyada hai aur jinhein bechna maqsad hai, unka stock bahut kam hai. Iske ilawa, muqablay baaz discounts aur free delivery jaisi offers de rahe hain, jo hamare liye challenge ho sakta hai. Dairy supply chain par dabao bhi ek ahem masla hai.",
+    "decision": "Kababjees ko foran apne high-demand products (Mango IceCream 1L, Pista Kulfi Tubs, Lotus Cheesecake Cake) ka stock badhana chahiye. Raat ke waqt ki demand ko pura karne ke liye delivery services ko mazeed behtar banaya jaye. Marketing campaigns ko garmi se rahat dene wale products par focus karna chahiye aur unhein raat ke waqt ki impulse buys ke liye target karna chahiye. Muqablay baazon ki offers ko dekhte hue, Kababjees ko bhi apni koi khas offer (maslan, raat ke waqt free delivery ya combo deals) shuru karne par gaur karna chahiye taake market share barqarar rakha ja sake.",
+    "confidence": 0.95,
+    "latency_ms": 24973,
+    "output_summary": "Found insights and integrated live trends."
+  },
+  {
+    "job_id": "JOB-XBZ7YD37A",
+    "agent": "StrategyAgent",
+    "timestamp": "2026-05-20T11:01:53.943319Z",
+    "workplan": "Generate action chain, verify budget constraints, and predict ROI.",
+    "tool_calls": [
+      "generate_strategy()",
+      "check_constraints(PKR 15000.0)"
+    ],
+    "reasoning": "Humne sab se pehle is masle ki jarr ko samjha ke garmi ki wajah se thandi cheezon ki demand bahut zyada hai, khaas kar raat ke waqt, lekin unka stock kam hai. Isliye, pehla qadam stock ki tasdeeq aur tayyari hai taake hum jo bechna chahte hain, woh customer ko mil sake. Phir humne raat ke waqt ki badhti hui demand ko dekhte hue digital campaigns aur delivery offers banayi hain. Is se hum sahi waqt par sahi customer ko sahi product dikha sakenge. Akhir mein, apni app aur website par bhi in offers ko highlight kiya hai taake customer ko aasani se pata chal sake. Ye sab qadam mil kar hamari sales barhayenge aur customer ki garmi ki cravings ko pura karenge, jabke budget ko bhi dhyan mein rakha gaya hai.",
+    "decision": "Kababjees ke liye garmi ke mausam mein high-demand desserts ki stock availability ko behtar banate hue, raat ke waqt ki digital marketing aur delivery offers ke zariye sales barhane ka faisla kiya gaya hai.",
+    "confidence": 0.92,
+    "latency_ms": 21774,
+    "output_summary": "Created 4 step action plan."
+  },
+  {
+    "job_id": "JOB-XBZ7YD37A",
+    "agent": "CreativeAssetAgent",
+    "timestamp": "2026-05-20T11:02:19.499733Z",
+    "workplan": "Search Pakistani trends → Generate bilingual ad copy → Create Pakistani ad image & promo video.",
+    "tool_calls": [
+      "search_pakistan_trends() → fallback_seasonal",
+      "search_competitors(Kababjees)",
+      "generate_copy(lang='bilingual', trend_injected=True)",
+      "generate_ad_image(style='Pakistani_commercial')",
+      "generate_ad_video(endpoint='Fal.ai Luma Dream Machine')"
+    ],
+    "reasoning": "The ad copy, image, and video prompts are designed to directly address the 'Garmi ka Mausam — Pakistan Summer Season 2025' trend and the strategic need to boost sales of high-demand, high-margin desserts (Mango IceCream 1L, Pista Kulfi Tubs, Lotus Cheesecake Cake) during late-night hours. The copy adopts a casual, friendly Pakistani tone with strong FOMO, framing the offer as a celebration of summer. The image and video prompts focus on premium visual appeal, showcasing the products in a refreshing, culturally relevant context, emphasizing their cooling effect and late-night indulgence. The strategy of targeting 9 PM - 1 AM for offers is integrated into the messaging and visual storytelling, creating a cohesive campaign that is positive, aspirational, and growth-focused, without revealing any internal business challenges.",
+    "decision": "Generated ad copy (bilingual), image prompt, and video prompt, all aligned with the strategic context, trending topic, and critical copywriting rules for Kababjees.",
+    "confidence": 0.93,
+    "latency_ms": 25552,
+    "output_summary": "Pakistani trend-driven ad generated. Image: http://192.168.100.33:8000/generated_images/ad_97458820.png, Video: https://assets.mixkit.co/videos/preview/mixkit-sizzling-barbecue-on-a-charcoal-grill-41664-large.mp4"
+  },
+  {
+    "job_id": "JOB-XBZ7YD37A",
+    "agent": "ExecutionAgent",
+    "timestamp": "2026-05-20T11:04:59.812198Z",
+    "workplan": "Simulate execution of action chain. Trigger deliberate failure on SMS and demonstrate recovery via WhatsApp.",
+    "tool_calls": [
+      "execute_actions()",
+      "send_sms()",
+      "send_whatsapp_fallback()",
+      "bulk_send_campaign_email_bg(leads=1) -> Success"
+    ],
+    "reasoning": "Executed all feasible actions. SMS notification failed due to timeout, successfully rolled back and triggered WhatsApp fallback.",
+    "decision": "Campaign successfully executed with 1 automatic recovery.",
+    "confidence": 0.99,
+    "latency_ms": 4200,
+    "output_summary": "Execution complete. SMS failed -> WhatsApp succeeded. | Bulk Email Dispatch: Success (1/1)"
+  }
+]

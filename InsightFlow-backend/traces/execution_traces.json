@@ -1,0 +1,308 @@
+[
+  {
+    "timestamp": "2026-05-20T17:09:16.871144+00:00",
+    "trace_type": "AI Asset Generation Trace",
+    "api_response_time_ms": 3211.393356323242,
+    "generation_seed": 591139,
+    "bound_image_url": "http://localhost:8000/generated_images/ad_75f1c3ad.png",
+    "bound_video_url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+  },
+  {
+    "timestamp": "2026-05-20T17:29:04.564287+00:00",
+    "trace_type": "AI Asset Generation Trace",
+    "api_response_time_ms": 7287.335634231567,
+    "generation_seed": 862942,
+    "bound_image_url": "http://localhost:8000/generated_images/ad_89f393ab.png",
+    "bound_video_url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+  },
+  {
+    "timestamp": "2026-05-20T19:54:56.552409+00:00",
+    "trace_type": "AI Asset Generation Trace",
+    "api_response_time_ms": 4182.726860046387,
+    "generation_seed": 576628,
+    "bound_image_url": "http://localhost:8000/generated_images/ad_43321f27.png",
+    "bound_video_url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+  },
+  {
+    "timestamp": "2026-05-20T19:56:26.312056+00:00",
+    "trace_type": "Resend Dispatch Trace",
+    "recipient_email": "ahmedshahidarain213@gmail.com",
+    "status_code": 200,
+    "response_payload": {
+      "id": "ad6233dc-f845-414b-a3ed-99b2d91e3110",
+      "message": "Email successfully sent via Resend API"
+    }
+  },
+  {
+    "timestamp": "2026-05-20T19:59:30.992706+00:00",
+    "trace_type": "AI Asset Generation Trace",
+    "api_response_time_ms": 3442.0838356018066,
+    "generation_seed": 287233,
+    "bound_image_url": "http://localhost:8000/generated_images/ad_c5e32a44.png",
+    "bound_video_url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+  },
+  {
+    "timestamp": "2026-05-20T21:41:14.049151+00:00",
+    "trace_type": "AI Asset Generation Trace",
+    "api_response_time_ms": 4486.471176147461,
+    "generation_seed": 176621,
+    "bound_image_url": "http://localhost:8000/generated_images/ad_2040b6eb.png",
+    "bound_video_url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+  },
+  {
+    "timestamp": "2026-05-20T21:46:35.793279+00:00",
+    "trace_type": "AI Asset Generation Trace",
+    "api_response_time_ms": 3947.0419883728027,
+    "generation_seed": 488212,
+    "bound_image_url": "http://localhost:8000/generated_images/ad_744951e1.png",
+    "bound_video_url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+  },
+  {
+    "timestamp": "2026-05-20T22:40:07.917343+00:00",
+    "trace_type": "AI Asset Generation Trace",
+    "api_response_time_ms": 1721.8801975250244,
+    "generation_seed": 377915,
+    "bound_image_url": "https://image.pollinations.ai/prompt/High-contrast%20premium%20Pakistani%20retail%20photography%20of%20Outfitters%20Sapphire%20or%20Ethnic%20style%20Premium%20Lawn%2C%20Maroon%20Festive%20suit%20with%20gold%20embroidery%20on%20model%2C%20gorgeous%20patterns%2C%20model%20photoshoot%2C%20elegant%20clothing%20shop%20or%20DHA%20Lahore%20boutique%20background%2C%20warm%20golden%20hour%20lighting%2C%20cinematic%20fashion%20photoshoot%2C%20highly%20detailed.%20%20Headline%20Inspiration%3A%20Pakistan%27s%20Hottest%20Fashion%20Collection%20is%20Live%21.%20Professional%20elite%20%20advertisement%2C%20%20aesthetic%2C%20highly%20detailed%20commercial%20photography%20setup%2C%20studio%20lighting%2C%20premium%20visual%20execution%2C%20culturally%20relevant%20Pakistani%20elements%2C%20inspired%20by%20Pakistani%20trend%3A%20Current%20Local%20Market%20Momentum%2C%20high-resolution%204K%20commercial%20ad%20photo%2C%20no%20text%20overlays%2C%20no%20watermarks%2C%20vibrant%20saturated%20colors%2C%20sharp%20product%20focus?width=1024&height=512&nologo=true&seed=93037",
+    "bound_video_url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+  },
+  {
+    "timestamp": "2026-05-20T22:48:21.313601+00:00",
+    "trace_type": "AI Asset Generation Trace",
+    "api_response_time_ms": 1337.7649784088135,
+    "generation_seed": 775110,
+    "bound_image_url": "https://image.pollinations.ai/prompt/Premium%20Pakistani%20tea%20advertisement%20for%20Gloria%20Jean%27s%20Coffees%2C%20traditional%20clay%20kulhad%20cup%20filled%20with%20karak%20chai%2C%20rich%20amber%20tea%20with%20milk%20swirling%2C%20rustic%20wooden%20table%2C%20monsoon%20rain%20drops%20on%20window%20behind%2C%20warm%20golden%20hour%20soft%20lighting%2C%20steam%20rising%20beautifully%2C%20spices%20%28cardamom%2C%20cinnamon%29%20scattered%20artistically%20beside%20cup.%20%20Headline%20Inspiration%3A%20The%20Perfect%20Cup%20for%20Every%20Pakistani%20Moment%21.%20Professional%20elite%20%20advertisement%2C%20%20aesthetic%2C%20highly%20detailed%20commercial%20photography%20setup%2C%20studio%20lighting%2C%20premium%20visual%20execution%2C%20culturally%20relevant%20Pakistani%20elements%2C%20inspired%20by%20Pakistani%20trend%3A%20Current%20Local%20Market%20Momentum%2C%20high-resolution%204K%20commercial%20ad%20photo%2C%20no%20text%20overlays%2C%20no%20watermarks%2C%20vibrant%20saturated%20colors%2C%20sharp%20product%20focus?width=1024&height=512&nologo=true&seed=51411",
+    "bound_video_url": "https://www.w3schools.com/html/mov_bbb.mp4"
+  },
+  {
+    "timestamp": "2026-05-20T22:49:32.923981+00:00",
+    "trace_type": "AI Asset Generation Trace",
+    "api_response_time_ms": 1283.1456661224365,
+    "generation_seed": 811936,
+    "bound_image_url": "https://image.pollinations.ai/prompt/Premium%20Pakistani%20tea%20advertisement%20for%20Gloria%20Jean%27s%20Coffees%2C%20traditional%20clay%20kulhad%20cup%20filled%20with%20karak%20chai%2C%20rich%20amber%20tea%20with%20milk%20swirling%2C%20rustic%20wooden%20table%2C%20monsoon%20rain%20drops%20on%20window%20behind%2C%20warm%20golden%20hour%20soft%20lighting%2C%20steam%20rising%20beautifully%2C%20spices%20%28cardamom%2C%20cinnamon%29%20scattered%20artistically%20beside%20cup.%20%20Headline%20Inspiration%3A%20The%20Perfect%20Cup%20for%20Every%20Pakistani%20Moment%21.%20Professional%20elite%20%20advertisement%2C%20%20aesthetic%2C%20highly%20detailed%20commercial%20photography%20setup%2C%20studio%20lighting%2C%20premium%20visual%20execution%2C%20culturally%20relevant%20Pakistani%20elements%2C%20inspired%20by%20Pakistani%20trend%3A%20Current%20Local%20Market%20Momentum%2C%20high-resolution%204K%20commercial%20ad%20photo%2C%20no%20text%20overlays%2C%20no%20watermarks%2C%20vibrant%20saturated%20colors%2C%20sharp%20product%20focus?width=1024&height=512&nologo=true&seed=984853",
+    "bound_video_url": "https://www.w3schools.com/html/mov_bbb.mp4"
+  },
+  {
+    "timestamp": "2026-05-20T23:06:20.269759+00:00",
+    "trace_type": "AI Asset Generation Trace",
+    "api_response_time_ms": 1317.2366619110107,
+    "generation_seed": 251928,
+    "bound_image_url": "https://image.pollinations.ai/prompt/A%20professional%20commercial%20social%20media%20ad%20banner%20for%20Insignia%20Footwear.%20In%20the%20center%2C%20a%20cinematic%20premium%20studio%20photography%20of%20lawn%2C%20kurta%2C%20kurti%2C%20dresses%2C%20unstitched%2C%20pret.%20Modern%20corporate%20graphic%20design%20layout%2C%20bold%20promotional%20typography%20overlay%20that%20displays%20the%20core%20deal%2C%20utilizing%20a%20strict%20%236B2737%20color%20palette%20scheme%20with%20elegant%20clean%20borders%2C%20studio%20lighting%2C%20hyper-realistic%2C%208k%20resolution%2C%20trending%20on%20Behance%2C%20fashion/food%20lookbook%20aesthetic.?width=1024&height=512&nologo=true&seed=80874",
+    "bound_video_url": "https://www.w3schools.com/html/mov_bbb.mp4"
+  },
+  {
+    "timestamp": "2026-05-20T23:34:10.901052+00:00",
+    "trace_type": "AI Asset Generation Trace",
+    "api_response_time_ms": 1456.857442855835,
+    "generation_seed": 750766,
+    "bound_image_url": "https://image.pollinations.ai/prompt/A%20professional%20commercial%20social%20media%20ad%20banner%20for%20Insignia%20Footwear.%20In%20the%20center%2C%20a%20cinematic%20premium%20studio%20photography%20of%20lawn%2C%20kurta%2C%20kurti%2C%20dresses%2C%20unstitched%2C%20pret.%20Modern%20corporate%20graphic%20design%20layout%2C%20bold%20promotional%20typography%20overlay%20that%20displays%20the%20core%20deal%2C%20utilizing%20a%20strict%20%236B2737%20color%20palette%20scheme%20with%20elegant%20clean%20borders%2C%20studio%20lighting%2C%20hyper-realistic%2C%208k%20resolution%2C%20trending%20on%20Behance%2C%20fashion/food%20lookbook%20aesthetic.?width=1024&height=512&nologo=true&seed=665412",
+    "bound_video_url": "https://www.w3schools.com/html/mov_bbb.mp4"
+  },
+  {
+    "timestamp": "2026-05-21T00:15:25.474977+00:00",
+    "trace_type": "AI Asset Generation Trace",
+    "api_response_time_ms": 1305.0317764282227,
+    "generation_seed": 874626,
+    "bound_image_url": "https://image.pollinations.ai/prompt/A%20professional%20commercial%20social%20media%20ad%20banner%20for%20MG%20Motors%20Pakistan.%20In%20the%20center%2C%20a%20cinematic%20premium%20studio%20photography%20of%20premium%20product%2C%20special%20offer%2C%20exclusive%20deal.%20Modern%20corporate%20graphic%20design%20layout%2C%20bold%20promotional%20typography%20overlay%20that%20displays%20the%20core%20deal%2C%20utilizing%20a%20strict%20%230A84FF%20color%20palette%20scheme%20with%20elegant%20clean%20borders%2C%20studio%20lighting%2C%20hyper-realistic%2C%208k%20resolution%2C%20trending%20on%20Behance%2C%20fashion/food%20lookbook%20aesthetic.?width=1024&height=512&nologo=true&seed=119858",
+    "bound_video_url": "https://www.w3schools.com/html/mov_bbb.mp4"
+  },
+  {
+    "timestamp": "2026-05-21T05:35:39.787288+00:00",
+    "trace_type": "AI Asset Generation Trace",
+    "api_response_time_ms": 1512.2287273406982,
+    "generation_seed": 282397,
+    "bound_image_url": "https://image.pollinations.ai/prompt/A%20professional%20commercial%20social%20media%20ad%20banner%20for%20Outfitters.%20In%20the%20center%2C%20a%20cinematic%20premium%20studio%20photography%20of%20T-Shirts%2C%20Shirts%2C%20Denim%2C%20Dresses%2C%20Footwear%2C%20Accessories.%20Modern%20corporate%20graphic%20design%20layout%2C%20bold%20promotional%20typography%20overlay%20that%20displays%20the%20core%20deal%2C%20utilizing%20a%20strict%20%232C3E50%20color%20palette%20scheme%20with%20elegant%20clean%20borders%2C%20studio%20lighting%2C%20hyper-realistic%2C%208k%20resolution%2C%20trending%20on%20Behance%2C%20fashion/food%20lookbook%20aesthetic.?width=1024&height=512&nologo=true&seed=219819",
+    "bound_video_url": "https://www.w3schools.com/html/mov_bbb.mp4"
+  },
+  {
+    "timestamp": "2026-05-21T06:16:07.036270+00:00",
+    "trace_type": "AI Asset Generation Trace",
+    "api_response_time_ms": 1478.2066345214844,
+    "generation_seed": 946692,
+    "bound_image_url": "https://image.pollinations.ai/prompt/A%20professional%20commercial%20social%20media%20ad%20banner%20for%20Outfitters.%20In%20the%20center%2C%20a%20cinematic%20premium%20studio%20photography%20of%20T-Shirts%2C%20Shirts%2C%20Denim%2C%20Dresses%2C%20Footwear%2C%20Accessories.%20Modern%20corporate%20graphic%20design%20layout%2C%20bold%20promotional%20typography%20overlay%20that%20displays%20the%20core%20deal%2C%20utilizing%20a%20strict%20%232C3E50%20color%20palette%20scheme%20with%20elegant%20clean%20borders%2C%20studio%20lighting%2C%20hyper-realistic%2C%208k%20resolution%2C%20trending%20on%20Behance%2C%20fashion/food%20lookbook%20aesthetic.?width=1024&height=512&nologo=true&seed=328805",
+    "bound_video_url": "https://www.w3schools.com/html/mov_bbb.mp4"
+  },
+  {
+    "timestamp": "2026-05-21T06:39:08.804286+00:00",
+    "trace_type": "AI Asset Generation Trace",
+    "api_response_time_ms": 1199.0971565246582,
+    "generation_seed": 366457,
+    "bound_image_url": "https://image.pollinations.ai/prompt/A%20professional%20commercial%20social%20media%20ad%20banner%20for%20Outfitters.%20In%20the%20center%2C%20a%20cinematic%20premium%20studio%20photography%20of%20T-Shirts%2C%20Shirts%2C%20Denim%2C%20Dresses%2C%20Footwear%2C%20Accessories.%20Modern%20corporate%20graphic%20design%20layout%2C%20bold%20promotional%20typography%20overlay%20that%20displays%20the%20core%20deal%2C%20utilizing%20a%20strict%20%232C3E50%20color%20palette%20scheme%20with%20elegant%20clean%20borders%2C%20studio%20lighting%2C%20hyper-realistic%2C%208k%20resolution%2C%20trending%20on%20Behance%2C%20fashion/food%20lookbook%20aesthetic.?width=1024&height=512&nologo=true&seed=949179",
+    "bound_video_url": "https://www.w3schools.com/html/mov_bbb.mp4"
+  },
+  {
+    "timestamp": "2026-05-21T06:41:09.112315+00:00",
+    "trace_type": "Resend Dispatch Trace",
+    "recipient_email": "ahmedshahidarain213@gmail.com",
+    "status_code": 200,
+    "response_payload": {
+      "id": "943e0cad-6992-4224-9a18-bb07e30fd5a0",
+      "message": "Email successfully sent via Resend API"
+    }
+  },
+  {
+    "timestamp": "2026-05-24T14:10:06.830261+00:00",
+    "trace_type": "AI Asset Generation Trace",
+    "api_response_time_ms": 1907.294511795044,
+    "generation_seed": 928791,
+    "bound_image_url": "https://image.pollinations.ai/prompt/A%20professional%20commercial%20social%20media%20ad%20banner%20for%20Test.%20In%20the%20center%2C%20a%20cinematic%20premium%20studio%20photography%20of%20premium%20product%2C%20special%20offer%2C%20exclusive%20deal.%20Modern%20corporate%20graphic%20design%20layout%2C%20bold%20promotional%20typography%20overlay%20that%20displays%20the%20core%20deal%2C%20utilizing%20a%20strict%20%23FF0000%20color%20palette%20scheme%20with%20elegant%20clean%20borders%2C%20studio%20lighting%2C%20hyper-realistic%2C%208k%20resolution%2C%20trending%20on%20Behance%2C%20fashion/food%20lookbook%20aesthetic.?width=1024&height=512&nologo=true&seed=636891",
+    "bound_video_url": "https://www.w3schools.com/html/mov_bbb.mp4"
+  },
+  {
+    "timestamp": "2026-05-24T14:11:43.582900+00:00",
+    "trace_type": "AI Asset Generation Trace",
+    "api_response_time_ms": 1101.4745235443115,
+    "generation_seed": 638064,
+    "bound_image_url": "https://image.pollinations.ai/prompt/A%20professional%20commercial%20social%20media%20ad%20banner%20for%20Sandbox%20Brand.%20In%20the%20center%2C%20a%20cinematic%20premium%20studio%20photography%20of%20lawn%2C%20kurta%2C%20kurti%2C%20dresses%2C%20unstitched%2C%20pret.%20Modern%20corporate%20graphic%20design%20layout%2C%20bold%20promotional%20typography%20overlay%20that%20displays%20the%20core%20deal%2C%20utilizing%20a%20strict%20%230A84FF%20color%20palette%20scheme%20with%20elegant%20clean%20borders%2C%20studio%20lighting%2C%20hyper-realistic%2C%208k%20resolution%2C%20trending%20on%20Behance%2C%20fashion/food%20lookbook%20aesthetic.?width=1024&height=512&nologo=true&seed=639492",
+    "bound_video_url": "https://www.w3schools.com/html/mov_bbb.mp4"
+  },
+  {
+    "timestamp": "2026-05-24T14:14:09.378933+00:00",
+    "trace_type": "AI Asset Generation Trace",
+    "api_response_time_ms": 1052.873134613037,
+    "generation_seed": 959207,
+    "bound_image_url": "https://image.pollinations.ai/prompt/A%20professional%20commercial%20social%20media%20ad%20banner%20for%20Sandbox%20Brand.%20In%20the%20center%2C%20a%20cinematic%20premium%20studio%20photography%20of%20lawn%2C%20kurta%2C%20kurti%2C%20dresses%2C%20unstitched%2C%20pret.%20Modern%20corporate%20graphic%20design%20layout%2C%20bold%20promotional%20typography%20overlay%20that%20displays%20the%20core%20deal%2C%20utilizing%20a%20strict%20%230A84FF%20color%20palette%20scheme%20with%20elegant%20clean%20borders%2C%20studio%20lighting%2C%20hyper-realistic%2C%208k%20resolution%2C%20trending%20on%20Behance%2C%20fashion/food%20lookbook%20aesthetic.?width=1024&height=512&nologo=true&seed=686307",
+    "bound_video_url": "https://www.w3schools.com/html/mov_bbb.mp4"
+  },
+  {
+    "timestamp": "2026-05-24T14:18:30.598765+00:00",
+    "trace_type": "AI Asset Generation Trace",
+    "api_response_time_ms": 2908.4179401397705,
+    "generation_seed": 846223,
+    "bound_image_url": "https://image.pollinations.ai/prompt/A%20professional%20commercial%20social%20media%20ad%20banner%20for%20Sandbox%20Brand.%20In%20the%20center%2C%20a%20cinematic%20premium%20studio%20photography%20of%20lawn%2C%20kurta%2C%20kurti%2C%20dresses%2C%20unstitched%2C%20pret.%20Modern%20corporate%20graphic%20design%20layout%2C%20bold%20promotional%20typography%20overlay%20that%20displays%20the%20core%20deal%2C%20utilizing%20a%20strict%20%230A84FF%20color%20palette%20scheme%20with%20elegant%20clean%20borders%2C%20studio%20lighting%2C%20hyper-realistic%2C%208k%20resolution%2C%20trending%20on%20Behance%2C%20fashion/food%20lookbook%20aesthetic.?width=1024&height=512&nologo=true&seed=515296",
+    "bound_video_url": "https://www.w3schools.com/html/mov_bbb.mp4"
+  },
+  {
+    "timestamp": "2026-05-24T14:20:09.017575+00:00",
+    "trace_type": "AI Asset Generation Trace",
+    "api_response_time_ms": 2161.2401008605957,
+    "generation_seed": 958449,
+    "bound_image_url": "https://image.pollinations.ai/prompt/A%20professional%20commercial%20social%20media%20ad%20banner%20for%20SAPPHIRE.%20In%20the%20center%2C%20a%20cinematic%20premium%20studio%20photography%20of%20lawn%2C%20kurta%2C%20kurti%2C%20dresses%2C%20unstitched%2C%20pret.%20Modern%20corporate%20graphic%20design%20layout%2C%20bold%20promotional%20typography%20overlay%20that%20displays%20the%20core%20deal%2C%20utilizing%20a%20strict%20%232A2A72%20color%20palette%20scheme%20with%20elegant%20clean%20borders%2C%20studio%20lighting%2C%20hyper-realistic%2C%208k%20resolution%2C%20trending%20on%20Behance%2C%20fashion/food%20lookbook%20aesthetic.?width=1024&height=512&nologo=true&seed=953239",
+    "bound_video_url": "https://www.w3schools.com/html/mov_bbb.mp4"
+  },
+  {
+    "timestamp": "2026-05-24T14:21:56.190528+00:00",
+    "trace_type": "AI Asset Generation Trace",
+    "api_response_time_ms": 1244.0354824066162,
+    "generation_seed": 114067,
+    "bound_image_url": "https://image.pollinations.ai/prompt/A%20professional%20commercial%20social%20media%20ad%20banner%20for%20Sandbox%20Brand.%20In%20the%20center%2C%20a%20cinematic%20premium%20studio%20photography%20of%20lawn%2C%20kurta%2C%20kurti%2C%20dresses%2C%20unstitched%2C%20pret.%20Modern%20corporate%20graphic%20design%20layout%2C%20bold%20promotional%20typography%20overlay%20that%20displays%20the%20core%20deal%2C%20utilizing%20a%20strict%20%230A84FF%20color%20palette%20scheme%20with%20elegant%20clean%20borders%2C%20studio%20lighting%2C%20hyper-realistic%2C%208k%20resolution%2C%20trending%20on%20Behance%2C%20fashion/food%20lookbook%20aesthetic.?width=1024&height=512&nologo=true&seed=424150",
+    "bound_video_url": "https://www.w3schools.com/html/mov_bbb.mp4"
+  },
+  {
+    "timestamp": "2026-05-24T14:28:37.444803+00:00",
+    "trace_type": "AI Asset Generation Trace",
+    "api_response_time_ms": 1656.707763671875,
+    "generation_seed": 868516,
+    "bound_image_url": "https://image.pollinations.ai/prompt/A%20professional%20commercial%20social%20media%20ad%20banner%20for%20MG%20Motors%20Pakistan.%20In%20the%20center%2C%20a%20cinematic%20premium%20studio%20photography%20of%20premium%20product%2C%20special%20offer%2C%20exclusive%20deal.%20Modern%20corporate%20graphic%20design%20layout%2C%20bold%20promotional%20typography%20overlay%20that%20displays%20the%20core%20deal%2C%20utilizing%20a%20strict%20%230A84FF%20color%20palette%20scheme%20with%20elegant%20clean%20borders%2C%20studio%20lighting%2C%20hyper-realistic%2C%208k%20resolution%2C%20trending%20on%20Behance%2C%20fashion/food%20lookbook%20aesthetic.?width=1024&height=512&nologo=true&seed=342928",
+    "bound_video_url": "https://www.w3schools.com/html/mov_bbb.mp4"
+  },
+  {
+    "timestamp": "2026-05-25T07:43:01.862489+00:00",
+    "trace_type": "AI Asset Generation Trace",
+    "api_response_time_ms": 2177.902936935425,
+    "generation_seed": 626389,
+    "bound_image_url": "https://image.pollinations.ai/prompt/A%20professional%20commercial%20social%20media%20ad%20banner%20for%20MG%20Motors%20Pakistan.%20In%20the%20center%2C%20a%20cinematic%20premium%20studio%20photography%20of%20premium%20product%2C%20special%20offer%2C%20exclusive%20deal.%20Modern%20corporate%20graphic%20design%20layout%2C%20bold%20promotional%20typography%20overlay%20that%20displays%20the%20core%20deal%2C%20utilizing%20a%20strict%20%230A84FF%20color%20palette%20scheme%20with%20elegant%20clean%20borders%2C%20studio%20lighting%2C%20hyper-realistic%2C%208k%20resolution%2C%20trending%20on%20Behance%2C%20fashion/food%20lookbook%20aesthetic.?width=1024&height=512&nologo=true&seed=254321",
+    "bound_video_url": "https://www.w3schools.com/html/mov_bbb.mp4"
+  },
+  {
+    "timestamp": "2026-05-25T08:03:23.632612+00:00",
+    "trace_type": "AI Asset Generation Trace",
+    "api_response_time_ms": 1312.9985332489014,
+    "generation_seed": 952298,
+    "bound_image_url": "https://image.pollinations.ai/prompt/A%20professional%20commercial%20social%20media%20ad%20banner%20for%20MG%20Motors%20Pakistan.%20In%20the%20center%2C%20a%20cinematic%20premium%20studio%20photography%20of%20premium%20product%2C%20special%20offer%2C%20exclusive%20deal.%20Modern%20corporate%20graphic%20design%20layout%2C%20bold%20promotional%20typography%20overlay%20that%20displays%20the%20core%20deal%2C%20utilizing%20a%20strict%20%230A84FF%20color%20palette%20scheme%20with%20elegant%20clean%20borders%2C%20studio%20lighting%2C%20hyper-realistic%2C%208k%20resolution%2C%20trending%20on%20Behance%2C%20fashion/food%20lookbook%20aesthetic.?width=1024&height=512&nologo=true&seed=449158",
+    "bound_video_url": "https://www.w3schools.com/html/mov_bbb.mp4"
+  },
+  {
+    "timestamp": "2026-05-25T09:27:57.398585+00:00",
+    "trace_type": "AI Asset Generation Trace",
+    "api_response_time_ms": 1463.7765884399414,
+    "generation_seed": 401461,
+    "bound_image_url": "https://image.pollinations.ai/prompt/A%20professional%20commercial%20social%20media%20ad%20banner%20for%20Outfitters.%20In%20the%20center%2C%20a%20cinematic%20premium%20studio%20photography%20of%20lawn%2C%20kurta%2C%20kurti%2C%20dresses%2C%20unstitched%2C%20pret.%20Modern%20corporate%20graphic%20design%20layout%2C%20bold%20promotional%20typography%20overlay%20that%20displays%20the%20core%20deal%2C%20utilizing%20a%20strict%20%2334495E%20color%20palette%20scheme%20with%20elegant%20clean%20borders%2C%20studio%20lighting%2C%20hyper-realistic%2C%208k%20resolution%2C%20trending%20on%20Behance%2C%20fashion/food%20lookbook%20aesthetic.?width=1024&height=512&nologo=true&seed=477004",
+    "bound_video_url": "https://www.w3schools.com/html/mov_bbb.mp4"
+  },
+  {
+    "timestamp": "2026-05-25T09:39:29.380601+00:00",
+    "trace_type": "AI Asset Generation Trace",
+    "api_response_time_ms": 1007.1425437927246,
+    "generation_seed": 848538,
+    "bound_image_url": "https://image.pollinations.ai/prompt/A%20professional%20commercial%20social%20media%20ad%20banner%20for%20Kababjees.%20In%20the%20center%2C%20a%20cinematic%20premium%20studio%20photography%20of%20karahi%2C%20biryani%2C%20kababs%2C%20burgers%2C%20platters.%20Modern%20corporate%20graphic%20design%20layout%2C%20bold%20promotional%20typography%20overlay%20that%20displays%20the%20core%20deal%2C%20utilizing%20a%20strict%20%23A32C2C%20color%20palette%20scheme%20with%20elegant%20clean%20borders%2C%20studio%20lighting%2C%20hyper-realistic%2C%208k%20resolution%2C%20trending%20on%20Behance%2C%20fashion/food%20lookbook%20aesthetic.?width=1024&height=512&nologo=true&seed=17802",
+    "bound_video_url": "https://www.w3schools.com/html/mov_bbb.mp4"
+  },
+  {
+    "timestamp": "2026-05-25T09:49:35.530711+00:00",
+    "trace_type": "AI Asset Generation Trace",
+    "api_response_time_ms": 1192.2600269317627,
+    "generation_seed": 715208,
+    "bound_image_url": "https://image.pollinations.ai/prompt/A%20professional%20commercial%20social%20media%20ad%20banner%20for%20Kababjees.%20In%20the%20center%2C%20a%20cinematic%20premium%20studio%20photography%20of%20karahi%2C%20biryani%2C%20kababs%2C%20burgers%2C%20platters.%20Modern%20corporate%20graphic%20design%20layout%2C%20bold%20promotional%20typography%20overlay%20that%20displays%20the%20core%20deal%2C%20utilizing%20a%20strict%20%23A32C2C%20color%20palette%20scheme%20with%20elegant%20clean%20borders%2C%20studio%20lighting%2C%20hyper-realistic%2C%208k%20resolution%2C%20trending%20on%20Behance%2C%20fashion/food%20lookbook%20aesthetic.?width=1024&height=512&nologo=true&seed=503916",
+    "bound_video_url": "https://www.w3schools.com/html/mov_bbb.mp4"
+  },
+  {
+    "timestamp": "2026-05-28T15:25:48.240965+00:00",
+    "trace_type": "Resend Dispatch Trace",
+    "recipient_email": "ahmedshahidarain213@gmail.com",
+    "status_code": 200,
+    "response_payload": {
+      "id": "e0ece425-f0a0-48ca-9d32-938b96b9d354",
+      "message": "Email successfully sent via Resend API"
+    }
+  },
+  {
+    "timestamp": "2026-05-28T17:27:56.223228+00:00",
+    "trace_type": "Resend Dispatch Trace",
+    "recipient_email": "ahmedshahidarain213@gmail.com",
+    "status_code": 200,
+    "response_payload": {
+      "id": "ab17de6a-0ad3-4869-8734-4bb7ad2d28dc",
+      "message": "Email successfully sent via Resend API"
+    }
+  },
+  {
+    "timestamp": "2026-05-28T19:11:18.129534+00:00",
+    "trace_type": "Resend Dispatch Trace",
+    "recipient_email": "ahmedshahidarain213@gmail.com",
+    "status_code": 500,
+    "response_payload": {
+      "error": "Request failed: HTTPSConnectionPool(host='api.resend.com', port=443): Read timed out. (read timeout=30)",
+      "message": "Failed to send email via Resend API"
+    }
+  },
+  {
+    "timestamp": "2026-05-28T20:46:33.144981+00:00",
+    "trace_type": "Resend Dispatch Trace",
+    "recipient_email": "ahmedshahidarain213@gmail.com",
+    "status_code": 200,
+    "response_payload": {
+      "id": "50f49321-af3b-45d2-a57b-f1f5e8c9b783",
+      "message": "Email successfully sent via Resend API"
+    }
+  },
+  {
+    "timestamp": "2026-05-28T20:49:22.646193+00:00",
+    "trace_type": "Resend Dispatch Trace",
+    "recipient_email": "ahmedshahidarain213@gmail.com",
+    "status_code": 200,
+    "response_payload": {
+      "id": "3d8a8b48-3aed-470c-813d-71d64fafe977",
+      "message": "Email successfully sent via Resend API"
+    }
+  },
+  {
+    "timestamp": "2026-05-28T21:10:18.978862+00:00",
+    "trace_type": "Resend Dispatch Trace",
+    "recipient_email": "ahmedshahidarain213@gmail.com",
+    "status_code": 200,
+    "response_payload": {
+      "id": "08f6d073-dbd5-49ab-9e47-8e8bea3a7c39",
+      "message": "Email successfully sent via Resend API"
+    }
+  },
+  {
+    "timestamp": "2026-05-28T21:23:56.627693+00:00",
+    "trace_type": "Resend Dispatch Trace",
+    "recipient_email": "ahmedshahidarain213@gmail.com",
+    "status_code": 200,
+    "response_payload": {
+      "id": "e2318f40-be7c-4d6c-965f-f4d5055184b4",
+      "message": "Email successfully sent via Resend API"
+    }
+  }
+]

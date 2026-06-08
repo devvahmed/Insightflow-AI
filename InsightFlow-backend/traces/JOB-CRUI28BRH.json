@@ -1,0 +1,51 @@
+[
+  {
+    "job_id": "JOB-CRUI28BRH",
+    "agent": "DataIntelligenceAgent",
+    "timestamp": "2026-05-20T21:46:27.238278Z",
+    "workplan": "Ingest business data, search live web for competitors and trends, extract anomalies.",
+    "tool_calls": [
+      "search_competitors()",
+      "search_pakistan_trends()",
+      "detect_anomalies()"
+    ],
+    "reasoning": "Gemini API rate-limited hai. Custom brand Deepal Pakistan ke liye simple dynamic data analysis compiled kiya gaya.",
+    "decision": "Lahore market mein Deepal Pakistan ke liye strategic promotions shuru ki jayein.",
+    "confidence": 0.95,
+    "latency_ms": 3662,
+    "output_summary": "Found insights and integrated live trends."
+  },
+  {
+    "job_id": "JOB-CRUI28BRH",
+    "agent": "StrategyAgent",
+    "timestamp": "2026-05-20T21:46:28.204346Z",
+    "workplan": "Generate action chain, verify budget constraints, and predict ROI.",
+    "tool_calls": [
+      "generate_strategy()",
+      "check_constraints(PKR 15000.0)"
+    ],
+    "reasoning": "Deepal Pakistan ke liye summer demand and competitive pressure ko tackle karne ke liye dynamic promotional strategies aur direct local marketing key steps hain.",
+    "decision": "Proposed highly custom actionable strategy covering specific challenges for Deepal Pakistan.",
+    "confidence": 0.92,
+    "latency_ms": 964,
+    "output_summary": "Created 2 step action plan."
+  },
+  {
+    "job_id": "JOB-CRUI28BRH",
+    "agent": "CreativeAssetAgent",
+    "timestamp": "2026-05-20T21:46:35.794268Z",
+    "workplan": "Search Pakistani trends → Generate bilingual ad copy → Create Pakistani ad image & promo video.",
+    "tool_calls": [
+      "search_pakistan_trends() → fallback_market",
+      "search_competitors(Deepal Pakistan)",
+      "generate_copy(lang='bilingual', trend_injected=True)",
+      "generate_ad_image(style='Pakistani_commercial')",
+      "generate_ad_video(endpoint='Fal.ai Luma Dream Machine')"
+    ],
+    "reasoning": "Gemini unavailable. Used smart fallback with live trend 'Current Local Market Momentum' injected.",
+    "decision": "Generated culturally relevant Pakistani ad copy for fashion with trend context.",
+    "confidence": 0.93,
+    "latency_ms": 7585,
+    "output_summary": "Pakistani trend-driven ad generated. Image: http://localhost:8000/generated_images/ad_744951e1.png, Video: https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+  }
+]

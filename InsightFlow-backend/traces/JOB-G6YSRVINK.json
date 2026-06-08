@@ -1,0 +1,51 @@
+[
+  {
+    "job_id": "JOB-G6YSRVINK",
+    "agent": "DataIntelligenceAgent",
+    "timestamp": "2026-05-20T12:21:31.251039Z",
+    "workplan": "Ingest business data, search live web for competitors and trends, extract anomalies.",
+    "tool_calls": [
+      "search_competitors()",
+      "search_pakistan_trends()",
+      "detect_anomalies()"
+    ],
+    "reasoning": "Data analysis se pata chalta hai ke Khaadi ko apni sales strategy, inventory management aur customer experience par tawajjo deni chahiye. Premium collection ki sales mein kami aur sizes ki kami ki shikayat ahem masle hain. Garmi ka mausam shuru ho chuka hai aur halke kapron ki demand barh rahi hai, jabke competitors discounts aur free delivery jaisi offers de rahe hain. Customer chatbot par size charts ke liye sawalat kar rahe hain, jo ke information ki kami ya mushkil ko zahir karta hai. Quality control par bhi nazar rakhni hogi.",
+    "decision": "Khaadi ko fori tor par apni summer collection mein halke aur breathable fabrics (jaise cambric, pure cotton) ko highlight karna chahiye aur unki marketing garmi ke masle ke hal ke tor par karni chahiye. Premium collection ke sizes ki kami ko pura karna aur uski marketing ko behtar karna zaroori hai. Competitors ke discounts aur free delivery offers ka muqabla karne ke liye apni Eid ki marketing strategy ko dobara dekhna hoga. Website par size charts ko zyada wazeh aur aasani se milne wala banana chahiye. International shipping queries ko bhi behtar tareeqe se handle karna hoga.",
+    "confidence": 0.95,
+    "latency_ms": 34126,
+    "output_summary": "Found insights and integrated live trends."
+  },
+  {
+    "job_id": "JOB-G6YSRVINK",
+    "agent": "StrategyAgent",
+    "timestamp": "2026-05-20T12:23:00.739012Z",
+    "workplan": "Generate action chain, verify budget constraints, and predict ROI.",
+    "tool_calls": [
+      "generate_strategy()",
+      "check_constraints(PKR 15000.0)"
+    ],
+    "reasoning": "Diye gaye data insights aur budget ki hadd ko dekhte hue, maine chand ahem maslon ko hal karne ka faisla kiya hai. Sab se pehle, customer experience ko behtar banane ke liye website par size charts aur product details ko saaf kiya jayega, kyunki is se customer ki pareshani kam hogi aur sales mein madad milegi. Doosra, garmi ke mausam ke mutabiq halke kapron ki social media par khaas marketing ki jayegi taake market trend ka faida uthaya ja sake. Teesra, premium collection aur popular sizes ki stock availability ke bare mein customers ko maloomat di jayegi, kyunki feedback se pata chala hai ke inki demand hai lekin sales kam hain, jo shayad stock ki kami ya maloomat na hone ki wajah se hai. Akhir mein, competitors ka muqabla karne aur online sales ko barhane ke liye aik limited time free delivery offer di jayegi. Ye sab iqdaamat kam budget mein zyada asar daalne ki salahiyat rakhte hain aur Khaadi ki sales mein izafa kar sakte hain.",
+    "decision": "Khaadi ki sales ko barhane aur customer experience ko behtar banane ke liye website ki maloomat ko theek karna, garmi ke kapron ki marketing karna, stock ki maloomat dena aur free delivery ki offer shamil hai.",
+    "confidence": 0.92,
+    "latency_ms": 89484,
+    "output_summary": "Created 4 step action plan."
+  },
+  {
+    "job_id": "JOB-G6YSRVINK",
+    "agent": "CreativeAssetAgent",
+    "timestamp": "2026-05-20T12:23:30.036894Z",
+    "workplan": "Search Pakistani trends → Generate bilingual ad copy → Create Pakistani ad image & promo video.",
+    "tool_calls": [
+      "search_pakistan_trends() → fallback_seasonal",
+      "search_competitors(Khaadi)",
+      "generate_copy(lang='bilingual', trend_injected=True)",
+      "generate_ad_image(style='Pakistani_commercial')",
+      "generate_ad_video(endpoint='Fal.ai Luma Dream Machine')"
+    ],
+    "reasoning": "The ad copy, image prompt, and video prompt were crafted to align with all specified requirements. The core strategy of promoting light summer wear, highlighting premium collection availability, improved product details, and free delivery was integrated positively, framing them as celebrations of the 'Garmi ka Mausam — Pakistan Summer Season 2025'. The tone is consistently positive, premium, and aspirational, avoiding any mention of internal business challenges. The 'Pakistani friend texting' style was adopted using phrases like 'Yaar', 'Suno', 'Jaldi karo', and 'Scene on hai'. Strong FOMO was created with 'limited time offer' and 'don't miss out'. Both Roman Urdu and English versions were provided, and the trending topic was naturally woven into all content. The image and video prompts focus on showcasing Khaadi's product beauty within authentic Pakistani summer aesthetics, ensuring no text is present in the visual assets.",
+    "decision": "Generated bilingual ad copy, a detailed image generation prompt, and a detailed 10-15s AI video generation prompt, all adhering to the specified rules and strategy context for Khaadi, leveraging the 'Garmi ka Mausam — Pakistan Summer Season 2025' trend.",
+    "confidence": 0.93,
+    "latency_ms": 29285,
+    "output_summary": "Pakistani trend-driven ad generated. Image: http://192.168.100.33:8000/generated_images/ad_ec17cca5.png, Video: https://assets.mixkit.co/videos/preview/mixkit-rack-with-colorful-clothes-in-a-store-41661-large.mp4"
+  }
+]

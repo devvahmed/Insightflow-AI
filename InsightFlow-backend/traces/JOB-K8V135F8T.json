@@ -1,0 +1,68 @@
+[
+  {
+    "job_id": "JOB-K8V135F8T",
+    "agent": "DataIntelligenceAgent",
+    "timestamp": "2026-05-20T12:24:58.122842Z",
+    "workplan": "Ingest business data, search live web for competitors and trends, extract anomalies.",
+    "tool_calls": [
+      "search_competitors()",
+      "search_pakistan_trends()",
+      "detect_anomalies()"
+    ],
+    "reasoning": "Diye gaye data sources aur live web search ki maloomat ka gehrai se jaiza liya gaya hai. Sales data se aamdani mein utar chadhaw, customer feedback se quality aur stock ke masail, aur social media se gahakon ki pasand ke baray mein aham maloomat mili hain. Muqablay baazon ki harkatein aur garmi ke mausam ke rujhanat bhi samnay aaye hain. In sab baton ko madd-e-nazar rakhte hue, Khaadi ko apni product quality, stock management, aur marketing strategies ko behtar banana hoga, khaas kar garmi ke mausam aur Eid ke mauqay par.",
+    "decision": "Khaadi ko apni unstitched collection ki quality control ko mazboot karna chahiye, khaas kar bunai ke masail ko hal karne ke liye. Extra-small aur large sizes ke premium separates ka stock barhana chahiye. Garmi ke mausam ke liye halkay phulkay aur sustainable fabrics par zyada tawajjo deni chahiye. Muqablay baazon ki discounts aur free delivery offers ka muqabla karne ke liye apni pricing aur delivery strategies par gaur karna chahiye. Chatbot queries ko kam karne ke liye website par size charts ki maloomat ko mazeed wazeh karna chahiye. 'Mix-and-Match Summer Kurtis' jaisay trends ko apni marketing campaigns mein shamil karna chahiye.",
+    "confidence": 0.95,
+    "latency_ms": 44343,
+    "output_summary": "Found insights and integrated live trends."
+  },
+  {
+    "job_id": "JOB-K8V135F8T",
+    "agent": "StrategyAgent",
+    "timestamp": "2026-05-20T12:25:21.151085Z",
+    "workplan": "Generate action chain, verify budget constraints, and predict ROI.",
+    "tool_calls": [
+      "generate_strategy()",
+      "check_constraints(PKR 15000.0)"
+    ],
+    "reasoning": "Data insights ka gehra mutala karne ke baad, ye faisla kiya gaya hai ke Khaadi ko May ki aamdani mein kami aur gahakon ki shikayaat ko hal karne ke liye fori iqdamaat karne honge. Bunyadi wajah market mein sakht muqabla, garmi ke mausam mein badalti pasand, aur andaruni masail jaise ke stock ki kami aur maloomat ki wazahat na hona hain. Pehla qadam website par size charts ko wazeh karna hai taake gahakon ki pareshani kam ho. Doosra qadam, TikTok par 'Mix-and-Match Summer Kurtis' ki campaign chalana hai kyunki ye trend mein hai aur kam budget mein zyada engagement de sakta hai. Teesra qadam, andaruni tor par khaas sizes ke stock ka jaiza lena hai taake farokht ka nuqsan na ho. Chautha qadam, garmi ke kapron par ek choti promotion shuru karna hai taake muqablay baazon ka muqabla kiya ja sakay aur May ki aamdani mein behtari layee ja sakay. Ye sab iqdamaat kam budget (PKR 15000) mein mukammal ho sakte hain aur inka maqsad fori tor par farokht ko barhana aur gahakon ki tasalli ko behtar banana hai. Quality control ka masla bhi aham hai lekin is budget mein fori tor par usay hal karna mushkil hai, isliye usay agle marhalay ke liye rakha gaya hai.",
+    "decision": "Khaadi ko fori tor par digital marketing, website ki maloomat, aur andaruni stock management par tawajjo deni chahiye taake garmi ke mausam mein farokht barhay aur gahakon ki shikayaat kam hon.",
+    "confidence": 0.92,
+    "latency_ms": 23025,
+    "output_summary": "Created 4 step action plan."
+  },
+  {
+    "job_id": "JOB-K8V135F8T",
+    "agent": "CreativeAssetAgent",
+    "timestamp": "2026-05-20T12:25:52.554484Z",
+    "workplan": "Search Pakistani trends → Generate bilingual ad copy → Create Pakistani ad image & promo video.",
+    "tool_calls": [
+      "search_pakistan_trends() → fallback_seasonal",
+      "search_competitors(Khaadi)",
+      "generate_copy(lang='bilingual', trend_injected=True)",
+      "generate_ad_image(style='Pakistani_commercial')",
+      "generate_ad_video(endpoint='Fal.ai Luma Dream Machine')"
+    ],
+    "reasoning": "The ad copy and visual prompts are crafted to align with the 'Creative Asset Agent' persona and AutoCampaign AI's requirements. The core strategy of promoting light summer wear and mix-and-match kurtis, coupled with a celebratory offer, is integrated seamlessly. The trending topic 'Garmi ka Mausam — Pakistan Summer Season 2025' is naturally woven into all copy elements to ensure high relevance and cultural resonance. The tone is consistently positive, aspirational, and uses a 'Pakistani friend' conversational style to build rapport. Strong FOMO is incorporated to drive urgency, while strictly adhering to the rule of not mentioning any internal business problems or sales declines. The visual prompts are detailed to create premium, culturally rich Pakistani advertisements that showcase Khaadi's product beauty and brand aesthetic, without any text, focusing purely on visual storytelling.",
+    "decision": "To launch a dynamic digital campaign featuring Khaadi's Mix-and-Match Summer Kurtis and lightweight fabrics, leveraging the 'Garmi ka Mausam — Pakistan Summer Season 2025' trend with engaging bilingual ad copy and aspirational visual assets, positioned as a celebration of summer style and comfort.",
+    "confidence": 0.93,
+    "latency_ms": 31400,
+    "output_summary": "Pakistani trend-driven ad generated. Image: http://192.168.100.33:8000/generated_images/ad_a66205aa.png, Video: https://assets.mixkit.co/videos/preview/mixkit-rack-with-colorful-clothes-in-a-store-41661-large.mp4"
+  },
+  {
+    "job_id": "JOB-K8V135F8T",
+    "agent": "ExecutionAgent",
+    "timestamp": "2026-05-20T12:27:05.094847Z",
+    "workplan": "Simulate execution of action chain. Trigger deliberate failure on SMS and demonstrate recovery via WhatsApp.",
+    "tool_calls": [
+      "execute_actions()",
+      "send_sms()",
+      "send_whatsapp_fallback()",
+      "bulk_send_campaign_email_bg(leads=1) -> Success"
+    ],
+    "reasoning": "Executed all feasible actions. SMS notification failed due to timeout, successfully rolled back and triggered WhatsApp fallback.",
+    "decision": "Campaign successfully executed with 1 automatic recovery.",
+    "confidence": 0.99,
+    "latency_ms": 4200,
+    "output_summary": "Execution complete. SMS failed -> WhatsApp succeeded. | Bulk Email Dispatch: Success (1/1)"
+  }
+]

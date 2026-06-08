@@ -1,0 +1,51 @@
+[
+  {
+    "job_id": "JOB-WTLDSLW13",
+    "agent": "DataIntelligenceAgent",
+    "timestamp": "2026-05-19T11:42:14.033038Z",
+    "workplan": "Ingest business data, search live web for competitors and trends, extract anomalies.",
+    "tool_calls": [
+      "search_competitors()",
+      "search_pakistan_trends()",
+      "detect_anomalies()"
+    ],
+    "reasoning": "Diye gaye data ka tajziya karne ke baad, yeh wazeh hai ke hamare delivery costs mein izafa hua hai jo ke fuel ki qeematon mein izafay aur logistics pricing mein tabdeeli ki wajah se hai. Hamare internal sales data (CSV) mein yeh tabdeeli abhi tak nahi dikh rahi, jo ke ek contradiction hai. Customers bhi barhe hue delivery charges se pareshan hain. Hamare competitors discounts aur free delivery offers de rahe hain, jo hamare liye challenge hai. Garmi ka mausam shuru ho raha hai, jo ke naye marketing aur product opportunities paida karta hai.",
+    "decision": "Hamein fori tor par apne delivery charges ko review karna chahiye aur unhein naye market rates ke mutabiq adjust karna chahiye. Customers ki shikayat ko hal karne ke liye delivery charges mein izafay ki wajah wazeh karni chahiye ya phir unhein kam karne ke tareeqe talash karne chahiye. Competitors ka muqabla karne ke liye hamein bhi discounts ya free delivery offers par gaur karna chahiye, khaas tor par garmi ke mausam mein thandi cheezon aur mashroobat ki delivery par. Garmi ke mausam ko dekhte hue, thande drinks ya desserts ke sath special deals shuru ki ja sakti hain taake customers ko apni taraf mutawajja kiya ja sake aur delivery charges ke asar ko kam kiya ja sake.",
+    "confidence": 0.95,
+    "latency_ms": 37100,
+    "output_summary": "Found insights and integrated live trends."
+  },
+  {
+    "job_id": "JOB-WTLDSLW13",
+    "agent": "StrategyAgent",
+    "timestamp": "2026-05-19T11:42:19.451257Z",
+    "workplan": "Generate action chain, verify budget constraints, and predict ROI.",
+    "tool_calls": [
+      "generate_strategy()",
+      "check_constraints(PKR 15000.0)"
+    ],
+    "reasoning": "Restaurant fuel pricing impact demands moving customers to high-ticket delivery bundles to balance logistics cost while offering incentives for self-pickups.",
+    "decision": "Proposed highly custom actionable strategy covering specific product challenges and budget limits.",
+    "confidence": 0.92,
+    "latency_ms": 5413,
+    "output_summary": "Created 2 step action plan."
+  },
+  {
+    "job_id": "JOB-WTLDSLW13",
+    "agent": "CreativeAssetAgent",
+    "timestamp": "2026-05-19T11:42:24.935034Z",
+    "workplan": "Search Pakistani trends → Generate bilingual ad copy → Create Pakistani ad image & promo video.",
+    "tool_calls": [
+      "search_pakistan_trends() → fallback_seasonal",
+      "search_competitors(Fuel price barhne ki wajah se )",
+      "generate_copy(lang='bilingual', trend_injected=True)",
+      "generate_ad_image(style='Pakistani_commercial')",
+      "generate_ad_video(endpoint='Fal.ai Luma Dream Machine')"
+    ],
+    "reasoning": "Gemini unavailable. Used smart fallback with live trend 'Garmi ka Mausam — Pakistan Summer Season 2025' injected.",
+    "decision": "Generated culturally relevant Pakistani ad copy for food with trend context.",
+    "confidence": 0.93,
+    "latency_ms": 5480,
+    "output_summary": "Pakistani trend-driven ad generated. Image: http://192.168.100.33:8000/generated_images/ad_3eb8278c.png, Video: https://www.w3schools.com/html/mov_bbb.mp4"
+  }
+]

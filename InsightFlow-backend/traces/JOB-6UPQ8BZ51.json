@@ -1,0 +1,68 @@
+[
+  {
+    "job_id": "JOB-6UPQ8BZ51",
+    "agent": "DataIntelligenceAgent",
+    "timestamp": "2026-05-19T21:30:40.371946Z",
+    "workplan": "Ingest business data, search live web for competitors and trends, extract anomalies.",
+    "tool_calls": [
+      "search_competitors()",
+      "search_pakistan_trends()",
+      "detect_anomalies()"
+    ],
+    "reasoning": "Mock fallback: Gemini API failed.",
+    "decision": "Flagged critical sales anomaly.",
+    "confidence": 0.95,
+    "latency_ms": 3545,
+    "output_summary": "Found insights and integrated live trends."
+  },
+  {
+    "job_id": "JOB-6UPQ8BZ51",
+    "agent": "StrategyAgent",
+    "timestamp": "2026-05-19T21:30:41.334231Z",
+    "workplan": "Generate action chain, verify budget constraints, and predict ROI.",
+    "tool_calls": [
+      "generate_strategy()",
+      "check_constraints(PKR 15000.0)"
+    ],
+    "reasoning": "Restaurant fuel pricing impact demands moving customers to high-ticket delivery bundles to balance logistics cost while offering incentives for self-pickups.",
+    "decision": "Proposed highly custom actionable strategy covering specific product challenges and budget limits.",
+    "confidence": 0.92,
+    "latency_ms": 959,
+    "output_summary": "Created 2 step action plan."
+  },
+  {
+    "job_id": "JOB-6UPQ8BZ51",
+    "agent": "CreativeAssetAgent",
+    "timestamp": "2026-05-19T21:30:46.649152Z",
+    "workplan": "Search Pakistani trends → Generate bilingual ad copy → Create Pakistani ad image & promo video.",
+    "tool_calls": [
+      "search_pakistan_trends() → fallback_seasonal",
+      "search_competitors(Broadway)",
+      "generate_copy(lang='bilingual', trend_injected=True)",
+      "generate_ad_image(style='Pakistani_commercial')",
+      "generate_ad_video(endpoint='Fal.ai Luma Dream Machine')"
+    ],
+    "reasoning": "Gemini unavailable. Used smart fallback with live trend 'Garmi ka Mausam — Pakistan Summer Season 2025' injected.",
+    "decision": "Generated culturally relevant Pakistani ad copy for food with trend context.",
+    "confidence": 0.93,
+    "latency_ms": 5313,
+    "output_summary": "Pakistani trend-driven ad generated. Image: http://192.168.100.33:8000/generated_images/ad_7fe8c2ce.png, Video: https://www.w3schools.com/html/mov_bbb.mp4"
+  },
+  {
+    "job_id": "JOB-6UPQ8BZ51",
+    "agent": "ExecutionAgent",
+    "timestamp": "2026-05-19T21:31:34.788202Z",
+    "workplan": "Simulate execution of action chain. Trigger deliberate failure on SMS and demonstrate recovery via WhatsApp.",
+    "tool_calls": [
+      "execute_actions()",
+      "send_sms()",
+      "send_whatsapp_fallback()",
+      "bulk_send_campaign_email(leads=1)"
+    ],
+    "reasoning": "Executed all feasible actions. SMS notification failed due to timeout, successfully rolled back and triggered WhatsApp fallback.",
+    "decision": "Campaign successfully executed with 1 automatic recovery.",
+    "confidence": 0.99,
+    "latency_ms": 4200,
+    "output_summary": "Execution complete. SMS failed -> WhatsApp succeeded. | Bulk Email Dispatch: Success (1/1)"
+  }
+]

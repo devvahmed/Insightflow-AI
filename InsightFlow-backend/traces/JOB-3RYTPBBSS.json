@@ -1,0 +1,68 @@
+[
+  {
+    "job_id": "JOB-3RYTPBBSS",
+    "agent": "DataIntelligenceAgent",
+    "timestamp": "2026-05-19T13:42:05.693904Z",
+    "workplan": "Ingest business data, search live web for competitors and trends, extract anomalies.",
+    "tool_calls": [
+      "search_competitors()",
+      "search_pakistan_trends()",
+      "detect_anomalies()"
+    ],
+    "reasoning": "Data se pata chalta hai ke hamari farokht haftay ke aakhir mein tezi se barh rahi hai. Grahak Product Y ki talab kar rahe hain, khaas kar garmi barhne ki wajah se. Lekin Product Y ka stock agle hafte aayega, jo ke aik bara masla hai aur iski wajah se farokht ka nuqsan ho sakta hai. Hamare muqablay baaz discounts aur free delivery jaisi peshkashon se grahakon ko apni taraf kheench rahe hain. Pakistan mein garmi ka mausam shuru ho gaya hai aur thandi cheezon ki talab bohat zyada hai, jo Product Y ke liye aik acha mauqa hai.",
+    "decision": "Hamein fori tor par Product Y ki dastiyabi ka hal nikalna hoga, ya to supplier se baat karke stock jaldi mangwayein ya grahakon ko mutabadil (alternative) products pesh karein. Garmi ke rujhaan ko dekhte hue, hamein apni marketing mein Product Y ko garmi ke maslay ka hal bana kar pesh karna chahiye. Muqablay baazon ki peshkashon ko dekhte hue, hamein bhi apni taraf se kuch khas offers (maslan discount ya free delivery) denay par ghaur karna chahiye taake grahak hamari taraf mutawajjeh hon aur hum apni farokht barha sakein.",
+    "confidence": 0.95,
+    "latency_ms": 27481,
+    "output_summary": "Found insights and integrated live trends."
+  },
+  {
+    "job_id": "JOB-3RYTPBBSS",
+    "agent": "StrategyAgent",
+    "timestamp": "2026-05-19T13:42:49.453455Z",
+    "workplan": "Generate action chain, verify budget constraints, and predict ROI.",
+    "tool_calls": [
+      "generate_strategy()",
+      "check_constraints(PKR 15000.0)"
+    ],
+    "reasoning": "Data mein sabse bari masla Product Y ki talab ka bohat zyada hona hai garmi ki wajah se, jabke hamare paas uska stock nahi hai. Naya stock agle hafte aayega, jiski wajah se hum farokht ka nuqsan utha rahe hain aur grahak mayus ho rahe hain. Is maslay ko hal karne ke liye, sabse pehle humne Product Y ke stock ki fori dastiyabi ka hal nikalne ki koshish ki hai, yaani supplier se baat karke jaldi stock mangwana. Agar ye mumkin na ho, to grahakon ko maujooda stock mein se doosre garmi ke products pesh kiye jayenge. Doosra, grahakon ko Product Y ki dastiyabi ke baare mein sahi maloomat denge aur unhein mutabadil products dikhayenge. Teesra, humne haftay ke aakhir mein barhti hui farokht ke rujhaan ka faida uthanay ka faisla kiya hai. Budh se Jummay tak Product Y ke mutabadil products ya doosre garmi se mutaliq products ki marketing par zyada tawajjo denge. Is tarah hum Product Y ki kami ke bawajood apni overall farokht barha sakte hain aur grahakon ki zarooriyat poori kar sakte hain. Hamara kul budget 15000 PKR hai aur humne 14000 PKR istemal kiye hain, jo budget ke andar hai.",
+    "decision": "Product Y ki fori dastiyabi ka hal nikalna, grahakon ko mutala karna, aur haftay ke aakhir mein mutabadil products ki farokht par tawajjo dena.",
+    "confidence": 0.92,
+    "latency_ms": 43756,
+    "output_summary": "Created 3 step action plan."
+  },
+  {
+    "job_id": "JOB-3RYTPBBSS",
+    "agent": "CreativeAssetAgent",
+    "timestamp": "2026-05-19T13:42:56.056429Z",
+    "workplan": "Search Pakistani trends → Generate bilingual ad copy → Create Pakistani ad image & promo video.",
+    "tool_calls": [
+      "search_pakistan_trends() → fallback_seasonal",
+      "search_competitors(Garmi ke mausam ki wajah se Pr)",
+      "generate_copy(lang='bilingual', trend_injected=True)",
+      "generate_ad_image(style='Pakistani_commercial')",
+      "generate_ad_video(endpoint='Fal.ai Luma Dream Machine')"
+    ],
+    "reasoning": "Gemini unavailable. Used smart fallback with live trend 'Garmi ka Mausam — Pakistan Summer Season 2025' injected.",
+    "decision": "Generated culturally relevant Pakistani ad copy for chai with trend context.",
+    "confidence": 0.93,
+    "latency_ms": 6599,
+    "output_summary": "Pakistani trend-driven ad generated. Image: http://192.168.100.33:8000/generated_images/ad_98c36148.png, Video: https://www.w3schools.com/html/movie.mp4"
+  },
+  {
+    "job_id": "JOB-3RYTPBBSS",
+    "agent": "ExecutionAgent",
+    "timestamp": "2026-05-19T13:43:37.849779Z",
+    "workplan": "Simulate execution of action chain. Trigger deliberate failure on SMS and demonstrate recovery via WhatsApp.",
+    "tool_calls": [
+      "execute_actions()",
+      "send_sms()",
+      "send_whatsapp_fallback()",
+      "send_campaign_email(ahmedshahidarain213@gmail.com)"
+    ],
+    "reasoning": "Executed all feasible actions. SMS notification failed due to timeout, successfully rolled back and triggered WhatsApp fallback.",
+    "decision": "Campaign successfully executed with 1 automatic recovery.",
+    "confidence": 0.99,
+    "latency_ms": 4200,
+    "output_summary": "Execution complete. SMS failed -> WhatsApp succeeded. | Email Dispatch: Success"
+  }
+]

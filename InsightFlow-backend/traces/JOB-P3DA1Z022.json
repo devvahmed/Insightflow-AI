@@ -1,0 +1,68 @@
+[
+  {
+    "job_id": "JOB-P3DA1Z022",
+    "agent": "DataIntelligenceAgent",
+    "timestamp": "2026-05-19T14:25:18.313741Z",
+    "workplan": "Ingest business data, search live web for competitors and trends, extract anomalies.",
+    "tool_calls": [
+      "search_competitors()",
+      "search_pakistan_trends()",
+      "detect_anomalies()"
+    ],
+    "reasoning": "Mock fallback: Gemini API failed.",
+    "decision": "Flagged critical sales anomaly.",
+    "confidence": 0.95,
+    "latency_ms": 3634,
+    "output_summary": "Found insights and integrated live trends."
+  },
+  {
+    "job_id": "JOB-P3DA1Z022",
+    "agent": "StrategyAgent",
+    "timestamp": "2026-05-19T14:25:32.153066Z",
+    "workplan": "Generate action chain, verify budget constraints, and predict ROI.",
+    "tool_calls": [
+      "generate_strategy()",
+      "check_constraints(PKR 15000.0)"
+    ],
+    "reasoning": "Humne sales mein kami ko dekhte hue aur muqablay ki offers ko samne rakhte hue ye faisla kiya hai ke hum teen qadam uthayenge. Pehle hum muqablay mein apni offers denge taake customers wapas aayen. Phir hum garmiyon ke mausam ke liye khaas campaign chalayenge jismein thandi cheezein promote hongi. Akhir mein, hum social media par apni campaigns ko zyada logon tak pahunchayenge. Ye sab PKR 15000 ke budget mein kiya jayega taake hamari sales dobara barhein aur hum market mein apni jagah wapas bana sakein.",
+    "decision": "Sales mein kami ko rokne aur garmiyon ke mausam ka faida uthane ke liye muqablay ki offers aur social media promotion ki jayegi, PKR 15000 ke budget mein.",
+    "confidence": 0.92,
+    "latency_ms": 13835,
+    "output_summary": "Created 3 step action plan."
+  },
+  {
+    "job_id": "JOB-P3DA1Z022",
+    "agent": "CreativeAssetAgent",
+    "timestamp": "2026-05-19T14:25:38.096607Z",
+    "workplan": "Search Pakistani trends → Generate bilingual ad copy → Create Pakistani ad image & promo video.",
+    "tool_calls": [
+      "search_pakistan_trends() → fallback_seasonal",
+      "search_competitors(Hamari sales isliye kam ho rah)",
+      "generate_copy(lang='bilingual', trend_injected=True)",
+      "generate_ad_image(style='Pakistani_commercial')",
+      "generate_ad_video(endpoint='Fal.ai Luma Dream Machine')"
+    ],
+    "reasoning": "Gemini unavailable. Used smart fallback with live trend 'Garmi ka Mausam — Pakistan Summer Season 2025' injected.",
+    "decision": "Generated culturally relevant Pakistani ad copy for food with trend context.",
+    "confidence": 0.93,
+    "latency_ms": 5938,
+    "output_summary": "Pakistani trend-driven ad generated. Image: http://192.168.100.33:8000/generated_images/ad_b0ef392d.png, Video: https://www.w3schools.com/html/mov_bbb.mp4"
+  },
+  {
+    "job_id": "JOB-P3DA1Z022",
+    "agent": "ExecutionAgent",
+    "timestamp": "2026-05-19T14:28:17.414410Z",
+    "workplan": "Simulate execution of action chain. Trigger deliberate failure on SMS and demonstrate recovery via WhatsApp.",
+    "tool_calls": [
+      "execute_actions()",
+      "send_sms()",
+      "send_whatsapp_fallback()",
+      "bulk_send_campaign_email(leads=3)"
+    ],
+    "reasoning": "Executed all feasible actions. SMS notification failed due to timeout, successfully rolled back and triggered WhatsApp fallback.",
+    "decision": "Campaign successfully executed with 1 automatic recovery.",
+    "confidence": 0.99,
+    "latency_ms": 4200,
+    "output_summary": "Execution complete. SMS failed -> WhatsApp succeeded. | Bulk Email Dispatch: Partial Success (1/3)"
+  }
+]

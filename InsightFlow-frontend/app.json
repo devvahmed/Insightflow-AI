@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "AutoCampaign AI",
+    "slug": "insightflow-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.autocampaign.frontend"
+    },
+    "plugins": [
+      "expo-sharing",
+      "expo-video"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "7f2faa5a-7d12-42e4-9036-ea135c38b253"
+      }
+    },
+    "owner": "mahmeddevs-organization"
+  }
+}

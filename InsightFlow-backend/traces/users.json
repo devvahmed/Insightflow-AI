@@ -1,0 +1,361 @@
+{
+  "ahmedshahidarain213@gmail.com": {
+    "email": "ahmedshahidarain213@gmail.com",
+    "password_hash": "b5ae781e5ea70c540f54698fcb8f12f560413a8f6fd46d1b26febd4459f57d42",
+    "business_name": "Kababjees",
+    "website_url": "https://kababjees.com",
+    "brand_color": "#A32C2C",
+    "brand_persona": "Warm & Authentic Culinary Excellence",
+    "apply_brand_theme": true
+  },
+  "ahmed.dev817@gmail.com": {
+    "email": "ahmed.dev817@gmail.com",
+    "password_hash": "4b3dc6668ba74d232c04e0487ca7874ee5b2d9811337a1106ac7f3d53eb6682d",
+    "business_name": "Broadway Pizza",
+    "website_url": "https://www.broadwaypizza.com.pk/",
+    "brand_color": "#C0392B",
+    "brand_persona": "Classic, Hearty & Welcoming",
+    "apply_brand_theme": true
+  },
+  "huzaifa.arain3344@gmail.com": {
+    "email": "huzaifa.arain3344@gmail.com",
+    "password_hash": "ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f",
+    "business_name": "Broadway",
+    "website_url": "https://broadway.com.pk",
+    "brand_color": "#0F4C5C",
+    "brand_persona": "Refined & Aspirational Lifestyle Developer",
+    "apply_brand_theme": true
+  },
+  "noorhadia871@gmail.com": {
+    "email": "noorhadia871@gmail.com",
+    "password_hash": "24e4440cfeab4ad95108b7a36b855628d8f0e824774f821cb3e8dffabfeb0938",
+    "business_name": "Ethnc",
+    "website_url": "https://ETHNC.com",
+    "brand_color": "#6B2737",
+    "brand_persona": "Culturally Rich & Curated Elegance",
+    "apply_brand_theme": true
+  },
+  "test_agent_123@gmail.com": {
+    "email": "test_agent_123@gmail.com",
+    "password_hash": "6e659deaa85842cdabb5c6305fcc40033ba43772ec00d45c2a3c921741a5e377",
+    "business_name": "Test Pizza",
+    "website_url": "https://pizza.com",
+    "brand_color": "#0088FF",
+    "brand_persona": "Friendly & Modern Business",
+    "apply_brand_theme": true
+  },
+  "rehman123@gmaul.com": {
+    "email": "rehman123@gmaul.com",
+    "password_hash": "2ca6e4e7f7af6aaee997203d26d9a29fe1684ff82dcae2f6f6051ed8a786089b",
+    "business_name": "Ethnc",
+    "website_url": "https://ETHNC.com",
+    "brand_color": "#0088FF",
+    "brand_persona": "Friendly & Modern Business",
+    "apply_brand_theme": true
+  },
+  "abdulrehmanmemon2007@gmail.com": {
+    "email": "abdulrehmanmemon2007@gmail.com",
+    "password_hash": "23301da70f485ef5d6befaf13785127bc6f3e466e46e0c41a29565e7b8e4cd55",
+    "business_name": "SAPPHIRE",
+    "website_url": "https://sapphireonline.pk",
+    "brand_color": "#2A2A72",
+    "brand_persona": "Diverse & Elegant Fashion House",
+    "business_type": "fashion",
+    "products": [
+      "unstitched",
+      "pret",
+      "western wear",
+      "dresses",
+      "accessories",
+      "men's clothing"
+    ],
+    "logo_url": null,
+    "apply_brand_theme": true
+  },
+  "ahmed123@gmail.com": {
+    "email": "ahmed123@gmail.com",
+    "password_hash": "e0c596841740572a18c9f461ddd5a430930f70c555bcb069b032f00d739d106f",
+    "business_name": "SAPPHIRE",
+    "website_url": "https://pk.sapphireonline.pk",
+    "brand_color": "#6B2737",
+    "brand_persona": "Culturally Rich & Curated Fashion",
+    "business_type": "fashion",
+    "products": [
+      "lawn",
+      "kurta",
+      "kurti",
+      "dresses",
+      "unstitched",
+      "pret"
+    ],
+    "logo_url": "",
+    "apply_brand_theme": true
+  },
+  "softswirl.clifton@insightflow.ai": {
+    "email": "softswirl.clifton@insightflow.ai",
+    "password_hash": "67db0e58dd3ac303b91330712792040adc9ea5164d924f36f12615ca5cdace84",
+    "business_name": "Soft Swirl",
+    "website_url": "www.softswirl.pk",
+    "brand_color": "#0A84FF",
+    "brand_persona": "Friendly & Modern Quality Brand",
+    "business_type": "generic",
+    "products": [
+      "premium product",
+      "special offer",
+      "exclusive deal"
+    ],
+    "logo_url": "",
+    "apply_brand_theme": true
+  },
+  "info@alpinegelato.pk": {
+    "email": "info@alpinegelato.pk",
+    "password_hash": "cc4b6cc957a7f2ac95299f4e9e594c2d23cab12ba8ab8acadcc127fbd751129e",
+    "business_name": "Alpine Gelato",
+    "website_url": "www.alpinegelato.com",
+    "brand_color": "#5D8AA8",
+    "brand_persona": "Artisanal & Pure Indulgence",
+    "business_type": "sweets",
+    "products": [
+      "gelato",
+      "sorbetto",
+      "flavors",
+      "cones",
+      "cups",
+      "treats"
+    ],
+    "logo_url": "https://logo.clearbit.com/alpinegelato.com",
+    "apply_brand_theme": true
+  },
+  "marketing@outfitters.com.pk": {
+    "email": "marketing@outfitters.com.pk",
+    "password_hash": "cab76533518ca6bb5e57b9c5d5e38bb5f8daea1d81c49df686d727d4c5514730",
+    "business_name": "Outfitters ",
+    "website_url": "https://www.outfitters.com.pk",
+    "brand_color": "#2C3E50",
+    "brand_persona": "Fashion-forward & Versatile Lifestyle Brand",
+    "business_type": "fashion",
+    "products": [
+      "T-Shirts",
+      "Shirts",
+      "Jeans",
+      "Dresses",
+      "Footwear",
+      "Accessories"
+    ],
+    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=outfitters.com.pk",
+    "apply_brand_theme": true
+  },
+  "marketing@khaadi.com.pk": {
+    "email": "marketing@khaadi.com.pk",
+    "password_hash": "05bd648496eac45588b764c143bc68759f1032d13ae25f6ee816942fa3b60639",
+    "business_name": "Khaadi",
+    "website_url": "https://www.khaadi.com",
+    "brand_color": "#6B2737",
+    "brand_persona": "Vibrant & Culturally Inspired Fashion",
+    "business_type": "fashion",
+    "products": [
+      "fabrics",
+      "ready-to-wear",
+      "dresses",
+      "suits",
+      "tunics",
+      "accessories"
+    ],
+    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=khaadi.com",
+    "apply_brand_theme": true
+  },
+  "growth@outfitters.com.pk": {
+    "email": "growth@outfitters.com.pk",
+    "password_hash": "df611b152de6175a1f911262d212442cbb01f8fe7d8570526fc992da722214cb",
+    "business_name": "Outfitters",
+    "website_url": "https://www.outfitters.com.pk",
+    "brand_color": "#34495E",
+    "brand_persona": "Contemporary & Trend-Driven Lifestyle Apparel",
+    "business_type": "fashion",
+    "products": [
+      "T-Shirts",
+      "Shirts",
+      "Denim",
+      "Dresses",
+      "Footwear",
+      "Accessories"
+    ],
+    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=outfitters.com.pk",
+    "apply_brand_theme": true
+  },
+  "digital@alkaramstudio.com": {
+    "email": "digital@alkaramstudio.com",
+    "password_hash": "64a40691d55ab6abdabf87f08175cbde1f791600dbfd8afda631816dc10e90b1",
+    "business_name": "Alkaram Studio",
+    "website_url": "https://www.alkaramstudio.com",
+    "brand_color": "#6B2737",
+    "brand_persona": "Culturally Rich & Curated Fashion",
+    "business_type": "fashion",
+    "products": [
+      "lawn",
+      "kurta",
+      "kurti",
+      "dresses",
+      "unstitched",
+      "pret"
+    ],
+    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=alkaramstudio.com",
+    "apply_brand_theme": true
+  },
+  "ecom@khaadi.com": {
+    "email": "ecom@khaadi.com",
+    "password_hash": "88fd5e165a415b9eff81e0a16dfb5b15e825e243de025ea264099e0e6e0fc440",
+    "business_name": "Khaadi",
+    "website_url": "https://www.khaadi.com",
+    "brand_color": "#6B2737",
+    "brand_persona": "Culturally Rich & Curated Fashion",
+    "business_type": "fashion",
+    "products": [
+      "lawn",
+      "kurta",
+      "kurti",
+      "dresses",
+      "unstitched",
+      "pret"
+    ],
+    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=khaadi.com",
+    "apply_brand_theme": true
+  },
+  "insigniya12@gmail.com": {
+    "email": "insigniya12@gmail.com",
+    "password_hash": "88fd5e165a415b9eff81e0a16dfb5b15e825e243de025ea264099e0e6e0fc440",
+    "business_name": "Insignia Footwear",
+    "website_url": "https://www.insignia.com.pk",
+    "brand_color": "#6B2737",
+    "brand_persona": "Culturally Rich & Curated Fashion",
+    "business_type": "fashion",
+    "products": [
+      "lawn",
+      "kurta",
+      "kurti",
+      "dresses",
+      "unstitched",
+      "pret"
+    ],
+    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=insignia.com.pk",
+    "apply_brand_theme": true
+  },
+  "gloriajeasninfo@gmail.com": {
+    "email": "gloriajeasninfo@gmail.com",
+    "password_hash": "73c215a75f904538c40e7c6909940baea32422423d3ae2663bce76a7c8bf73ea",
+    "business_name": "Gloria Jean's Coffees",
+    "website_url": "https://www.gloriajeanscoffees.com.pk",
+    "brand_color": "#0A84FF",
+    "brand_persona": "Friendly & Modern Quality Brand",
+    "business_type": "generic",
+    "products": [
+      "premium product",
+      "special offer",
+      "exclusive deal"
+    ],
+    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=gloriajeanscoffees.com.pk",
+    "apply_brand_theme": true
+  },
+  "kfcpakistan@gmail.com": {
+    "email": "kfcpakistan@gmail.com",
+    "password_hash": "b5ae781e5ea70c540f54698fcb8f12f560413a8f6fd46d1b26febd4459f57d42",
+    "business_name": "KFC Pakistan",
+    "website_url": "https://www.kfcpakistan.com",
+    "brand_color": "#0A84FF",
+    "brand_persona": "Friendly & Modern Quality Brand",
+    "business_type": "generic",
+    "products": [
+      "premium product",
+      "special offer",
+      "exclusive deal"
+    ],
+    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=kfcpakistan.com",
+    "apply_brand_theme": true
+  },
+  "deeplasninfo@gmail.com": {
+    "email": "deeplasninfo@gmail.com",
+    "password_hash": "a35b4f2c0c6ebe2bf842c0a78ec067cb8089aca17b22b09feeb51d08b04f2ed8",
+    "business_name": "Deepal Pakistan",
+    "website_url": "https://www.deepal.com.pk",
+    "brand_color": "#6B2737",
+    "brand_persona": "Culturally Rich & Curated Fashion",
+    "business_type": "fashion",
+    "products": [
+      "lawn",
+      "kurta",
+      "kurti",
+      "dresses",
+      "unstitched",
+      "pret"
+    ],
+    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=deepal.com.pk",
+    "apply_brand_theme": true
+  },
+  "mgmotorsinfo@gmail.com": {
+    "email": "mgmotorsinfo@gmail.com",
+    "password_hash": "df8e7c6127e87fb73d95121c1d2928b743cab6296ba2fb77ff3a368c8f895c06",
+    "business_name": "MG Motors Pakistan",
+    "website_url": "https://www.mgmotors.com.pk",
+    "brand_color": "#0A84FF",
+    "brand_persona": "Friendly & Modern Quality Brand",
+    "business_type": "Automotive",
+    "products": [
+      "Cars (Sedans",
+      "SUVs)",
+      "Electric Vehicles (EVs)"
+    ],
+    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=mgmotors.com.pk",
+    "apply_brand_theme": true
+  },
+  "admin@outfitters.pk": {
+    "email": "admin@outfitters.pk",
+    "password_hash": "d0b5e7306b3bb2751c2e71248087ce32a9c208022e9cd86e323884e7620b663e",
+    "business_name": "Outfitters",
+    "website_url": "https://www.outfitters.com.pk",
+    "brand_color": "#2C3E50",
+    "brand_persona": "Contemporary & Curated Lifestyle Apparel",
+    "business_type": "Fashion & Apparel",
+    "products": [
+      "Western Wear",
+      "Dresses",
+      "Men's Casual",
+      "Men's Formal"
+    ],
+    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=outfitters.com.pk",
+    "apply_brand_theme": true
+  },
+  "infooutfitters@gmail.com": {
+    "email": "infooutfitters@gmail.com",
+    "password_hash": "1023153aaeec9797f2f0ab797f7030b0b142ba8bf531492b31df847a91ca783c",
+    "business_name": "Outfitters",
+    "website_url": "https://hhps://outfitters.com",
+    "brand_color": "#2C3E50",
+    "brand_persona": "Modern & Accessible Fashion for Everyday Style",
+    "business_type": "Fashion & Apparel",
+    "products": [
+      "Men's Formal",
+      "Western Wear",
+      "Dresses",
+      "Men's Casual"
+    ],
+    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=hhps:",
+    "apply_brand_theme": true
+  },
+  "info.outfitter1@gmail.com": {
+    "email": "info.outfitter1@gmail.com",
+    "password_hash": "a15998c8edf40ee675d8976366d71c3f9eaa161a0606633c38b7a9e56d356408",
+    "business_name": "Outfitters",
+    "website_url": "https://www.outfitters.com.pk",
+    "brand_color": "#6B2737",
+    "brand_persona": "Culturally Rich & Curated Fashion",
+    "business_type": "Fashion & Apparel",
+    "products": [
+      "Western Wear",
+      "Dresses",
+      "Men's Casual",
+      "Men's Formal"
+    ],
+    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=outfitters.com.pk",
+    "apply_brand_theme": true
+  }
+}

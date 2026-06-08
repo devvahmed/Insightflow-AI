@@ -1,0 +1,51 @@
+[
+  {
+    "job_id": "JOB-5E835HESV",
+    "agent": "DataIntelligenceAgent",
+    "timestamp": "2026-05-20T00:09:27.836276Z",
+    "workplan": "Ingest business data, search live web for competitors and trends, extract anomalies.",
+    "tool_calls": [
+      "search_competitors()",
+      "search_pakistan_trends()",
+      "detect_anomalies()"
+    ],
+    "reasoning": "Gemini API rate-limited hai. Custom brand SAPPHIRE ke liye simple dynamic data analysis compiled kiya gaya.",
+    "decision": "Lahore market mein SAPPHIRE ke liye strategic promotions shuru ki jayein.",
+    "confidence": 0.95,
+    "latency_ms": 3284,
+    "output_summary": "Found insights and integrated live trends."
+  },
+  {
+    "job_id": "JOB-5E835HESV",
+    "agent": "StrategyAgent",
+    "timestamp": "2026-05-20T00:09:28.814214Z",
+    "workplan": "Generate action chain, verify budget constraints, and predict ROI.",
+    "tool_calls": [
+      "generate_strategy()",
+      "check_constraints(PKR 15000.0)"
+    ],
+    "reasoning": "SAPPHIRE ke liye summer demand and competitive pressure ko tackle karne ke liye dynamic promotional strategies aur direct local marketing key steps hain.",
+    "decision": "Proposed highly custom actionable strategy covering specific challenges for SAPPHIRE.",
+    "confidence": 0.92,
+    "latency_ms": 966,
+    "output_summary": "Created 2 step action plan."
+  },
+  {
+    "job_id": "JOB-5E835HESV",
+    "agent": "CreativeAssetAgent",
+    "timestamp": "2026-05-20T00:09:34.234986Z",
+    "workplan": "Search Pakistani trends → Generate bilingual ad copy → Create Pakistani ad image & promo video.",
+    "tool_calls": [
+      "search_pakistan_trends() → fallback_seasonal",
+      "search_competitors(SAPPHIRE)",
+      "generate_copy(lang='bilingual', trend_injected=True)",
+      "generate_ad_image(style='Pakistani_commercial')",
+      "generate_ad_video(endpoint='Fal.ai Luma Dream Machine')"
+    ],
+    "reasoning": "Gemini unavailable. Used smart fallback with live trend 'Garmi ka Mausam — Pakistan Summer Season 2025' injected.",
+    "decision": "Generated culturally relevant Pakistani ad copy for fashion with trend context.",
+    "confidence": 0.93,
+    "latency_ms": 5410,
+    "output_summary": "Pakistani trend-driven ad generated. Image: http://192.168.100.33:8000/generated_images/ad_6a41a507.png, Video: https://assets.mixkit.co/videos/preview/mixkit-rack-with-colorful-clothes-in-a-store-41661-large.mp4"
+  }
+]

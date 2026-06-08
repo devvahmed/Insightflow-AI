@@ -1,0 +1,84 @@
+[
+  {
+    "job_id": "JOB-JH9LZL3UR",
+    "agent": "DataIntelligenceAgent",
+    "timestamp": "2026-05-20T14:42:07.648303Z",
+    "workplan": "Ingest business data, search live web for competitors and trends, extract anomalies.",
+    "tool_calls": [
+      "search_competitors()",
+      "search_pakistan_trends()",
+      "detect_anomalies()"
+    ],
+    "reasoning": "Gemini API rate-limited hai. Custom brand Outfitters ke liye simple dynamic data analysis compiled kiya gaya.",
+    "decision": "Lahore market mein Outfitters ke liye strategic promotions shuru ki jayein.",
+    "confidence": 0.95,
+    "latency_ms": 4932,
+    "output_summary": "Found insights and integrated live trends."
+  },
+  {
+    "job_id": "JOB-JH9LZL3UR",
+    "agent": "StrategyAgent",
+    "timestamp": "2026-05-20T14:42:08.680064Z",
+    "workplan": "Generate action chain, verify budget constraints, and predict ROI.",
+    "tool_calls": [
+      "generate_strategy()",
+      "check_constraints(PKR 15000.0)"
+    ],
+    "reasoning": "Outfitters ke liye summer demand and competitive pressure ko tackle karne ke liye dynamic promotional strategies aur direct local marketing key steps hain.",
+    "decision": "Proposed highly custom actionable strategy covering specific challenges for Outfitters.",
+    "confidence": 0.92,
+    "latency_ms": 1021,
+    "output_summary": "Created 2 step action plan."
+  },
+  {
+    "job_id": "JOB-JH9LZL3UR",
+    "agent": "CreativeAssetAgent",
+    "timestamp": "2026-05-20T14:42:17.759966Z",
+    "workplan": "Search Pakistani trends → Generate bilingual ad copy → Create Pakistani ad image & promo video.",
+    "tool_calls": [
+      "search_pakistan_trends() → fallback_seasonal",
+      "search_competitors(Outfitters)",
+      "generate_copy(lang='bilingual', trend_injected=True)",
+      "generate_ad_image(style='Pakistani_commercial')",
+      "generate_ad_video(endpoint='Fal.ai Luma Dream Machine')"
+    ],
+    "reasoning": "Gemini unavailable. Used smart fallback with live trend 'Garmi ka Mausam — Pakistan Summer Season 2025' injected.",
+    "decision": "Generated culturally relevant Pakistani ad copy for fashion with trend context.",
+    "confidence": 0.93,
+    "latency_ms": 9067,
+    "output_summary": "Pakistani trend-driven ad generated. Image: http://localhost:8000/generated_images/ad_5ea3f62f.png, Video: https://assets.mixkit.co/videos/preview/mixkit-rack-with-colorful-clothes-in-a-store-41661-large.mp4"
+  },
+  {
+    "job_id": "JOB-JH9LZL3UR",
+    "agent": "ExecutionAgent",
+    "timestamp": "2026-05-20T14:43:05.236650Z",
+    "workplan": "Simulate execution of action chain. Trigger deliberate failure on SMS and demonstrate recovery via WhatsApp.",
+    "tool_calls": [
+      "execute_actions()",
+      "send_sms()",
+      "send_whatsapp_fallback()"
+    ],
+    "reasoning": "Executed all feasible actions. SMS notification failed due to timeout, successfully rolled back and triggered WhatsApp fallback.",
+    "decision": "Campaign successfully executed with 1 automatic recovery.",
+    "confidence": 0.99,
+    "latency_ms": 4200,
+    "output_summary": "Execution complete. SMS failed -> WhatsApp succeeded."
+  },
+  {
+    "job_id": "JOB-JH9LZL3UR",
+    "agent": "ExecutionAgent",
+    "timestamp": "2026-05-20T14:58:42.037912Z",
+    "workplan": "Simulate execution of action chain. Trigger deliberate failure on SMS and demonstrate recovery via WhatsApp.",
+    "tool_calls": [
+      "execute_actions()",
+      "send_sms()",
+      "send_whatsapp_fallback()",
+      "bulk_send_campaign_email_bg(leads=1) -> Success"
+    ],
+    "reasoning": "Executed all feasible actions. SMS notification failed due to timeout, successfully rolled back and triggered WhatsApp fallback.",
+    "decision": "Campaign successfully executed with 1 automatic recovery.",
+    "confidence": 0.99,
+    "latency_ms": 4200,
+    "output_summary": "Execution complete. SMS failed -> WhatsApp succeeded. | Bulk Email Dispatch: Success (1/1)"
+  }
+]

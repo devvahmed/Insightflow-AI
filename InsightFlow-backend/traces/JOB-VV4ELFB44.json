@@ -1,0 +1,51 @@
+[
+  {
+    "job_id": "JOB-VV4ELFB44",
+    "agent": "DataIntelligenceAgent",
+    "timestamp": "2026-05-19T21:29:59.386391Z",
+    "workplan": "Ingest business data, search live web for competitors and trends, extract anomalies.",
+    "tool_calls": [
+      "search_competitors()",
+      "search_pakistan_trends()",
+      "detect_anomalies()"
+    ],
+    "reasoning": "Mock fallback: Gemini API failed.",
+    "decision": "Flagged critical sales anomaly.",
+    "confidence": 0.95,
+    "latency_ms": 3950,
+    "output_summary": "Found insights and integrated live trends."
+  },
+  {
+    "job_id": "JOB-VV4ELFB44",
+    "agent": "StrategyAgent",
+    "timestamp": "2026-05-19T21:30:00.386383Z",
+    "workplan": "Generate action chain, verify budget constraints, and predict ROI.",
+    "tool_calls": [
+      "generate_strategy()",
+      "check_constraints(PKR 15000.0)"
+    ],
+    "reasoning": "Lahore soap brand summer dynamic competition require discount promo for quick customer volume retrieval and retailer incentives to push visual shelf dominance.",
+    "decision": "Proposed highly custom actionable strategy covering specific product challenges and budget limits.",
+    "confidence": 0.92,
+    "latency_ms": 994,
+    "output_summary": "Created 2 step action plan."
+  },
+  {
+    "job_id": "JOB-VV4ELFB44",
+    "agent": "CreativeAssetAgent",
+    "timestamp": "2026-05-19T21:30:06.411145Z",
+    "workplan": "Search Pakistani trends → Generate bilingual ad copy → Create Pakistani ad image & promo video.",
+    "tool_calls": [
+      "search_pakistan_trends() → fallback_seasonal",
+      "search_competitors(Broadway Pizza)",
+      "generate_copy(lang='bilingual', trend_injected=True)",
+      "generate_ad_image(style='Pakistani_commercial')",
+      "generate_ad_video(endpoint='Fal.ai Luma Dream Machine')"
+    ],
+    "reasoning": "Gemini unavailable. Used smart fallback with live trend 'Garmi ka Mausam — Pakistan Summer Season 2025' injected.",
+    "decision": "Generated culturally relevant Pakistani ad copy for food with trend context.",
+    "confidence": 0.93,
+    "latency_ms": 6015,
+    "output_summary": "Pakistani trend-driven ad generated. Image: http://localhost:8000/generated_images/ad_18c77c63.png, Video: https://www.w3schools.com/html/mov_bbb.mp4"
+  }
+]

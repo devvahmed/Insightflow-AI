@@ -1,0 +1,46 @@
+{
+  "name": "autocampaign-frontend",
+  "version": "1.0.0",
+  "main": "expo/AppEntry",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^15.1.1",
+    "@react-navigation/bottom-tabs": "^7.16.1",
+    "@react-navigation/native": "^7.2.4",
+    "@react-navigation/stack": "^7.9.2",
+    "axios": "^1.16.1",
+    "expo": "~55.0.26",
+    "expo-av": "^16.0.8",
+    "expo-constants": "~55.0.16",
+    "expo-document-picker": "~55.0.13",
+    "expo-file-system": "~55.0.22",
+    "expo-image-picker": "~55.0.20",
+    "expo-linear-gradient": "~55.0.14",
+    "expo-media-library": "~55.0.17",
+    "expo-sharing": "~55.0.20",
+    "expo-status-bar": "~55.0.6",
+    "expo-video": "~55.0.17",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react-native": "0.83.6",
+    "react-native-gesture-handler": "~2.30.0",
+    "react-native-gifted-charts": "^1.4.76",
+    "react-native-paper": "^5.15.2",
+    "react-native-safe-area-context": "~5.6.2",
+    "react-native-screens": "~4.23.0",
+    "react-native-svg": "15.15.3",
+    "react-native-web": "^0.21.0",
+    "zustand": "^5.0.13"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.0",
+    "@types/react": "~19.2.10",
+    "typescript": "~5.9.2"
+  },
+  "private": true
+}
