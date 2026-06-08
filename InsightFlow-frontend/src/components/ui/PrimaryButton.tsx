@@ -64,15 +64,15 @@ export const PrimaryButton = ({
           styles.btn,
           T.shadow,
           {
-            backgroundColor: T.btnPrimary,
+            backgroundColor: T.primary,
             opacity: disabled ? 0.4 : 1,
           },
         ]}
       >
         {loading ? (
-          <ActivityIndicator color={T.btnPrimaryText} />
+          <ActivityIndicator color={T.primaryText} />
         ) : (
-          <Text style={[styles.label, { color: T.btnPrimaryText }]}>{label}</Text>
+          <Text style={[styles.label, { color: T.primaryText }]}>{label}</Text>
         )}
       </TouchableOpacity>
     </Animated.View>

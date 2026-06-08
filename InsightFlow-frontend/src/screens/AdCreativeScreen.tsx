@@ -13,6 +13,7 @@ import {
   BASE_URL
 } from '../api/api';
 import { BrandAvatar } from '../components/BrandLogo';
+import { resolveMediaUrl } from '../utils/mediaUrl';
 
 export default function AdCreativeScreen({ route, navigation }: any) {
   const { campaign_id, campaign_name, customizations } = route.params || {};
@@ -74,10 +75,10 @@ export default function AdCreativeScreen({ route, navigation }: any) {
                 <Ionicons
                   name={p === 'instagram' ? 'logo-instagram' : p === 'tiktok' ? 'logo-tiktok' : 'logo-facebook'}
                   size={16}
-                  color={activePlatform === p ? '#fff' : T.textSecondary}
+                  color={activePlatform === p ? T.primaryText : T.textSecondary}
                   style={{ marginRight: 6 }}
                 />
-                <Text style={[styles.segmentText, { color: activePlatform === p ? '#fff' : T.textSecondary }]}>
+                <Text style={[styles.segmentText, { color: activePlatform === p ? T.primaryText : T.textSecondary }]}>
                   {p.charAt(0).toUpperCase() + p.slice(1)}
                 </Text>
               </View>
@@ -93,7 +94,7 @@ export default function AdCreativeScreen({ route, navigation }: any) {
               style={[styles.langBtn, { borderColor: T.accent }, activeLang === l && { backgroundColor: T.accent }]}
               onPress={() => setActiveLang(l)}
             >
-              <Text style={{ color: activeLang === l ? '#fff' : T.accent, fontWeight: '600' }}>
+              <Text style={{ color: activeLang === l ? T.primaryText : T.accent, fontWeight: '600' }}>
                 {l === 'english' ? 'English' : 'Roman Urdu'}
               </Text>
             </TouchableOpacity>
@@ -147,9 +148,9 @@ export default function AdCreativeScreen({ route, navigation }: any) {
               disabled={loading}
             >
               {loading ? (
-                <ActivityIndicator color="#fff" />
+                <ActivityIndicator color={T.primaryText} />
               ) : (
-                <Text style={styles.generateBtnText}>✨ Generate Ad Copies</Text>
+                <Text style={[styles.generateBtnText, { color: T.primaryText }]}>✨ Generate Ad Copies</Text>
               )}
             </TouchableOpacity>
           </View>
@@ -202,15 +203,15 @@ export default function AdCreativeScreen({ route, navigation }: any) {
         {adImages['instagram'] ? (
           <View>
             <Image
-              source={{ uri: adImages['instagram'].image_url }}
+              source={{ uri: resolveMediaUrl(adImages['instagram'].image_url) }}
               style={styles.adImagePreview}
               resizeMode="cover"
             />
             <TouchableOpacity
               style={[styles.downloadBtn, { backgroundColor: T.accent }]}
-              onPress={() => Linking.openURL(adImages['instagram'].image_url)}
+              onPress={() => Linking.openURL(resolveMediaUrl(adImages['instagram'].image_url) || '')}
             >
-              <Text style={styles.downloadBtnText}>⬇️ Download</Text>
+              <Text style={[styles.downloadBtnText, { color: T.primaryText }]}>⬇️ Download</Text>
             </TouchableOpacity>
             <TouchableOpacity
               style={[styles.regenerateBtn, { borderColor: T.accent }]}
@@ -271,7 +272,7 @@ export default function AdCreativeScreen({ route, navigation }: any) {
           <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.frameRow}>
             {adVideo.frame_images?.map((url: string, i: number) => (
               <View key={i} style={styles.frameContainer}>
-                <Image source={{ uri: url }} style={styles.frameThumb} resizeMode="cover" />
+                <Image source={{ uri: resolveMediaUrl(url) }} style={styles.frameThumb} resizeMode="cover" />
                 <Text style={[styles.frameLabel, { color: T.textSecondary }]}>Scene {i + 1}</Text>
               </View>
             ))}
@@ -285,12 +286,12 @@ export default function AdCreativeScreen({ route, navigation }: any) {
             </View>
           ))}
 
-          <TouchableOpacity
-            style={[styles.downloadBtn, { backgroundColor: T.accent }]}
-            onPress={() => Linking.openURL(`${BASE_URL}${adVideo.video_url}`)}
-          >
-            <Text style={styles.downloadBtnText}>⬇️ Download MP4</Text>
-          </TouchableOpacity>
+            <TouchableOpacity
+              style={[styles.downloadBtn, { backgroundColor: T.accent }]}
+              onPress={() => Linking.openURL(`${BASE_URL}${adVideo.video_url}`)}
+            >
+              <Text style={[styles.downloadBtnText, { color: T.primaryText }]}>⬇️ Download MP4</Text>
+            </TouchableOpacity>
         </View>
       ) : (
         <View style={styles.emptyState}>
@@ -307,7 +308,7 @@ export default function AdCreativeScreen({ route, navigation }: any) {
               style={[styles.generateBtn, { backgroundColor: T.accent }]}
               onPress={handleGenerateVideo}
             >
-              <Text style={styles.generateBtnText}>🎬 Generate Video Ad</Text>
+              <Text style={[styles.generateBtnText, { color: T.primaryText }]}>🎬 Generate Video Ad</Text>
             </TouchableOpacity>
           )}
         </View>
@@ -370,7 +371,7 @@ export default function AdCreativeScreen({ route, navigation }: any) {
             video_url: adVideo?.video_url || '',
           })}
         >
-          <Text style={styles.outreachCtaText}>Review & Go Live →</Text>
+          <Text style={[styles.outreachCtaText, { color: T.primaryText }]}>Review & Go Live →</Text>
         </TouchableOpacity>
       )}
     </View>
@@ -415,7 +416,7 @@ const styles = StyleSheet.create({
   emptyState: { alignItems: 'center', paddingVertical: 40, gap: 16 },
   emptyText: { fontSize: 15, textAlign: 'center', lineHeight: 22 },
   generateBtn: { paddingHorizontal: 28, paddingVertical: 14, borderRadius: 14 },
-  generateBtnText: { color: '#fff', fontWeight: '800', fontSize: 16 },
+  generateBtnText: { fontWeight: '800', fontSize: 16 },
   regenerateBtn: { borderWidth: 1.5, borderRadius: 12, paddingVertical: 10, alignItems: 'center', marginTop: 8 },
   regenerateBtnText: { fontWeight: '700', fontSize: 14 },
   sectionTitle: { fontSize: 20, fontWeight: '800', marginBottom: 4 },

@@ -2660,6 +2660,138 @@
           "body_english": "Shell Pakistan's sales data shows inconsistent product lines, zero warehouse stock, and zero marketing spend, indicating significant contradictions and problems that need to be addressed to improve the brand's overall health and performance. The lack of marketing efforts and inventory management issues may lead to a decline in sales and revenue. The brand needs to reassess its product offerings, inventory management, and marketing strategy to improve its overall health score.",
           "tagline": ""
         }
+      },
+      {
+        "analysis_id": "f47ac10b-1123-4a5d-9b2c-3b0683e6b3e4",
+        "overall_health_score": 60,
+        "brand_safety_score": 40,
+        "contradictions": [
+          {
+            "id": "C1",
+            "severity": "HIGH",
+            "title": "Irrelevant Customer Reviews",
+            "description": "Customer reviews are not related to Shell Pakistan's products or services, indicating a potential issue with the data collection process.",
+            "data_evidence": "All customer reviews mention eBay, Daraz, AliExpress, and other unrelated platforms.",
+            "root_cause": "Incorrect or misattributed customer review data.",
+            "impact": "Potential loss of customer trust and loyalty due to irrelevant feedback."
+          },
+          {
+            "id": "C2",
+            "severity": "MEDIUM",
+            "title": "Inconsistent Sales Data",
+            "description": "Sales data shows inconsistent transactions and units sold, with a significant spike in Week 4.",
+            "data_evidence": "Week 4 sales are 34% higher than the average sales of the first three weeks.",
+            "root_cause": "Potential errors in data recording or unusual market conditions.",
+            "impact": "PKR 2,800,000 potential revenue impact due to inconsistent sales trends."
+          }
+        ],
+        "positive_signals": [],
+        "critical_metrics": {
+          "revenue_trend": "UP",
+          "stock_risk": "LOW",
+          "customer_sentiment": "MIXED",
+          "marketing_efficiency": "LOW",
+          "spend_waste_pkr": 55000
+        },
+        "summary": "Shell Pakistan's sales data shows an overall upward trend, but inconsistencies and irrelevant customer reviews raise concerns about data accuracy and marketing efficiency. The brand's overall health score is 60, indicating a need for improvement in data collection and marketing strategies.",
+        "job_id": "JOB-8AR5O95IU",
+        "created_at": "2026-06-08T08:40:52",
+        "leads_csv": "Fashion-forward youth, Gen-Z retail shoppers, and vintage tech collectors in Karachi & Lahore.",
+        "status": "complete",
+        "agents": {
+          "contradiction_agent": {
+            "status": "complete",
+            "findings": [
+              {
+                "id": "C1",
+                "severity": "HIGH",
+                "title": "Irrelevant Customer Reviews",
+                "description": "Customer reviews are not related to Shell Pakistan's products or services, indicating a potential issue with the data collection process.",
+                "data_evidence": "All customer reviews mention eBay, Daraz, AliExpress, and other unrelated platforms.",
+                "root_cause": "Incorrect or misattributed customer review data.",
+                "impact": "Potential loss of customer trust and loyalty due to irrelevant feedback."
+              },
+              {
+                "id": "C2",
+                "severity": "MEDIUM",
+                "title": "Inconsistent Sales Data",
+                "description": "Sales data shows inconsistent transactions and units sold, with a significant spike in Week 4.",
+                "data_evidence": "Week 4 sales are 34% higher than the average sales of the first three weeks.",
+                "root_cause": "Potential errors in data recording or unusual market conditions.",
+                "impact": "PKR 2,800,000 potential revenue impact due to inconsistent sales trends."
+              }
+            ]
+          },
+          "strategy_agent": {
+            "status": "complete",
+            "recommendations": [
+              {
+                "name": "Irrelevant Customer Reviews",
+                "description": "Customer reviews are not related to Shell Pakistan's products or services, indicating a potential issue with the data collection process.",
+                "channel": "Multi-channel"
+              },
+              {
+                "name": "Inconsistent Sales Data",
+                "description": "Sales data shows inconsistent transactions and units sold, with a significant spike in Week 4.",
+                "channel": "Multi-channel"
+              }
+            ]
+          }
+        },
+        "agent1_data": {
+          "insights": [],
+          "contradictions": [
+            {
+              "id": "C1",
+              "severity": "HIGH",
+              "title": "Irrelevant Customer Reviews",
+              "description": "Customer reviews are not related to Shell Pakistan's products or services, indicating a potential issue with the data collection process.",
+              "data_evidence": "All customer reviews mention eBay, Daraz, AliExpress, and other unrelated platforms.",
+              "root_cause": "Incorrect or misattributed customer review data.",
+              "impact": "Potential loss of customer trust and loyalty due to irrelevant feedback."
+            },
+            {
+              "id": "C2",
+              "severity": "MEDIUM",
+              "title": "Inconsistent Sales Data",
+              "description": "Sales data shows inconsistent transactions and units sold, with a significant spike in Week 4.",
+              "data_evidence": "Week 4 sales are 34% higher than the average sales of the first three weeks.",
+              "root_cause": "Potential errors in data recording or unusual market conditions.",
+              "impact": "PKR 2,800,000 potential revenue impact due to inconsistent sales trends."
+            }
+          ],
+          "credibility_scores": [
+            {
+              "label": "Data Integrity",
+              "score": 60
+            },
+            {
+              "label": "Brand Safety",
+              "score": 40
+            }
+          ],
+          "temporal_trends": []
+        },
+        "agent2_strategy": {
+          "action_chain": [
+            {
+              "name": "Irrelevant Customer Reviews",
+              "description": "Customer reviews are not related to Shell Pakistan's products or services, indicating a potential issue with the data collection process.",
+              "channel": "Multi-channel"
+            },
+            {
+              "name": "Inconsistent Sales Data",
+              "description": "Sales data shows inconsistent transactions and units sold, with a significant spike in Week 4.",
+              "channel": "Multi-channel"
+            }
+          ],
+          "summary": "Shell Pakistan's sales data shows an overall upward trend, but inconsistencies and irrelevant customer reviews raise concerns about data accuracy and marketing efficiency. The brand's overall health score is 60, indicating a need for improvement in data collection and marketing strategies."
+        },
+        "agent3_creative": {
+          "headline_english": "Shell Pakistan's sales data shows an overall upward trend, but inconsistencies a",
+          "body_english": "Shell Pakistan's sales data shows an overall upward trend, but inconsistencies and irrelevant customer reviews raise concerns about data accuracy and marketing efficiency. The brand's overall health score is 60, indicating a need for improvement in data collection and marketing strategies.",
+          "tagline": ""
+        }
       }
     ],
     "campaigns": [
@@ -2705,7 +2837,7 @@
       }
     ],
     "competitors_cache": {
-      "cached_at": "2026-05-28T23:06:24.525191",
+      "cached_at": "2026-06-08T08:41:22.440757",
       "data": {
         "competitors": [
           {
@@ -2718,24 +2850,24 @@
             "social_followers": {
               "instagram": 100000,
               "tiktok": 50000,
-              "facebook": 150000
+              "facebook": 250000
             },
             "recent_campaigns": [
-              "Eid ul Fitr Fuel Sale",
-              "Summer Launch Promotion"
+              "Post-Eid Clearance: Up to 10% off on lubricants",
+              "Summer Deals: Discounted fuel prices"
             ],
             "weaknesses": [
-              "Limited fuel stations in rural areas",
+              "Limited service station network",
               "Higher prices compared to some competitors"
             ],
             "strengths": [
-              "High-quality fuel products",
-              "Wide range of services including lubricants and car wash"
+              "High-quality products",
+              "Strong international brand reputation"
             ],
             "price_comparison": "same_range",
             "market_share_percent": 20,
             "trend": "UP",
-            "alert": "Total Parco Pakistan is offering a 5% discount on fuel purchases during Eid ul Fitr",
+            "alert": "Total Parco Pakistan is aggressively expanding its service station network across Pakistan",
             "logo_url": "https://logo.clearbit.com/total.com.pk",
             "logo_fallback": "https://www.google.com/s2/favicons?domain=total.com.pk&sz=128",
             "domain": "total.com.pk"
@@ -2744,73 +2876,72 @@
             "id": "2",
             "name": "PSO - Pakistan State Oil",
             "industry": "Automotive & Vehicles",
-            "threat_level": "MEDIUM",
-            "estimated_monthly_revenue_pkr": 4000000,
+            "threat_level": "HIGH",
+            "estimated_monthly_revenue_pkr": 8000000,
             "website": "https://www.psopk.com/",
             "social_followers": {
-              "instagram": 80000,
-              "tiktok": 30000,
-              "facebook": 100000
+              "instagram": 200000,
+              "tiktok": 100000,
+              "facebook": 300000
             },
             "recent_campaigns": [
               "PSO's extensive nationwide network, convenient car care services with PSO on Wheels, and high-quality lubricants. Join us for innovative solutions",
               "Our Group"
             ],
             "weaknesses": [
-              "Older fuel stations infrastructure",
-              "Limited services compared to some competitors"
+              "Older service station infrastructure",
+              "Limited availability of premium products"
             ],
             "strengths": [
-              "Wide network of fuel stations across Pakistan",
-              "Competitive pricing"
+              "Large service station network",
+              "Strong brand presence in Pakistan"
             ],
             "price_comparison": "cheaper",
             "market_share_percent": 30,
             "trend": "STABLE",
             "alert": "PSO's extensive nationwide network, convenient car care services with PSO on Wheels, and high-quality lubricants. Join us for innovative solutions",
             "live_scraped": true,
-            "last_updated": "2026-05-28T23:06:16.141808",
+            "last_updated": "2026-06-08T08:41:18.624806",
             "logo_url": "https://www.google.com/s2/favicons?domain=psopk.com&sz=128",
             "logo_fallback": "https://www.google.com/s2/favicons?domain=psopk.com&sz=128",
             "domain": "psopk.com"
           },
           {
             "id": "3",
-            "name": "Caltex Pakistan",
+            "name": "Attock Petroleum",
             "industry": "Automotive & Vehicles",
-            "threat_level": "LOW",
-            "estimated_monthly_revenue_pkr": 3000000,
-            "website": "https://www.caltex.com.pk/",
+            "threat_level": "MEDIUM",
+            "estimated_monthly_revenue_pkr": 4000000,
+            "website": "https://www.attockpetroleum.com/",
             "social_followers": {
               "instagram": 50000,
               "tiktok": 20000,
-              "facebook": 50000
+              "facebook": 150000
             },
             "recent_campaigns": [
-              "Active promotion detected on brand website (live scrape)"
+              "Summer Refuel Offer: Discounted fuel prices",
+              "Eid Clearance Sale: Up to 5% off on lubricants"
             ],
             "weaknesses": [
-              "Limited fuel stations in some regions",
-              "Higher prices compared to some competitors"
+              "Smaller service station network",
+              "Limited product offerings"
             ],
             "strengths": [
-              "High-quality fuel products",
-              "Modern fuel stations infrastructure"
+              "Competitive pricing",
+              "Growing presence in key markets"
             ],
-            "price_comparison": "more_expensive",
+            "price_comparison": "cheaper",
             "market_share_percent": 15,
-            "trend": "DOWN",
-            "alert": "Active promotion detected on brand website (live scrape)",
-            "live_scraped": true,
-            "last_updated": "2026-05-28T23:06:17.068838",
-            "logo_url": "https://www.google.com/s2/favicons?domain=caltex.com.pk&sz=128",
-            "logo_fallback": "https://www.google.com/s2/favicons?domain=caltex.com.pk&sz=128",
-            "domain": "caltex.com.pk"
+            "trend": "UP",
+            "alert": "Attock Petroleum is expanding its service station network in key cities across Pakistan",
+            "logo_url": "https://logo.clearbit.com/attockpetroleum.com",
+            "logo_fallback": "https://www.google.com/s2/favicons?domain=attockpetroleum.com&sz=128",
+            "domain": "attockpetroleum.com"
           }
         ],
-        "market_summary": "The fuel market in Pakistan is highly competitive with several players competing for market share, and the current Eid ul Fitr season has seen various promotions and discounts from major players. Shell Pakistan faces strong competition from Total Parco Pakistan, PSO, and Caltex Pakistan, with each having its strengths and weaknesses.",
-        "your_position": "Shell Pakistan is well-positioned in the market with a strong brand presence and wide range of services, but it needs to be vigilant about the competitive landscape and adjust its strategies accordingly to maintain its market share",
-        "fetched_at": "2026-05-28T23:06:08.389491"
+        "market_summary": "The Pakistani automotive and vehicles industry is highly competitive, with key players like Total Parco, PSO, and Attock Petroleum competing for market share. The current post-Eid clearance and summer deals season has led to increased promotional activities among these competitors, with a focus on discounted fuel prices and lubricant offers.",
+        "your_position": "Shell Pakistan stands as a strong competitor in the market, with a reputation for high-quality products and a significant service station network, but faces intense competition from Total Parco, PSO, and Attock Petroleum, requiring continuous innovation and strategic marketing to maintain its market share",
+        "fetched_at": "2026-06-08T08:41:10.196989"
       }
     }
   },
@@ -3324,5 +3455,1302 @@
       }
     },
     "created_at": "2026-06-08T06:05:42"
+  },
+  {
+    "id": "4da86d9d-2d5e-49be-8b26-05811e074c68",
+    "email": "vzbzbbaha@gmail.com",
+    "password_hash": "$2b$12$dIV0I1heu4dUAhaNdOicEOQJEmc70vJQZbo.bWA65ik4BkCejtaoW",
+    "full_name": "hahshah",
+    "brand_name": "Prada",
+    "industry": "Fashion & Apparel",
+    "website_url": "https://www.prada.com",
+    "primaryColor": "#6C63FF",
+    "secondaryColor": "#E8F0FC",
+    "slogan": "PRADA Official Website and Online Store | PRADA prspa_default_seo_description",
+    "brandKeywords": [
+      "official",
+      "summerdays",
+      "cotton",
+      "online",
+      "website",
+      "buckle",
+      "bagprada",
+      "store",
+      "leather",
+      "prada",
+      "summer",
+      "highlights"
+    ],
+    "socialHandles": {
+      "instagram": "@prada",
+      "tiktok": "@prada",
+      "facebook": "@prada",
+      "linkedin": ""
+    },
+    "logo_path": "/uploads/eab02292-34d2-41b0-acd5-9731293fbf25.jpg",
+    "logo_url": "http://localhost:8000/uploads/eab02292-34d2-41b0-acd5-9731293fbf25.jpg",
+    "analyses": [
+      {
+        "analysis_id": "9b2e2e3d-46a5-43c9-a7e3-9d2c2a4b5c6d",
+        "overall_health_score": 60,
+        "brand_safety_score": 80,
+        "contradictions": [
+          {
+            "id": "C1",
+            "severity": "MEDIUM",
+            "title": "Inventory Management Issue",
+            "description": "Customer complaint about low inventory of the Black Galleria Saffiano bag, indicating a potential stockout issue",
+            "data_evidence": "1 customer complaint, 8900 units in warehouse stock",
+            "root_cause": "Inadequate demand forecasting or inventory management",
+            "impact": "Potential loss of sales, estimated 5% impact on revenue"
+          },
+          {
+            "id": "C2",
+            "severity": "LOW",
+            "title": "Online Store Technical Issue",
+            "description": "Customer complaint about payment errors on the online store",
+            "data_evidence": "1 customer complaint",
+            "root_cause": "Technical issue with online store payment processing",
+            "impact": "Minor revenue impact, estimated 1% impact on revenue"
+          }
+        ],
+        "positive_signals": [
+          "Positive customer reviews on social media, high-end product sales"
+        ],
+        "critical_metrics": {
+          "revenue_trend": "UP",
+          "stock_risk": "MEDIUM",
+          "customer_sentiment": "POSITIVE",
+          "marketing_efficiency": "MEDIUM",
+          "spend_waste_pkr": 0
+        },
+        "summary": "Prada's sales data indicates a positive revenue trend, but the brand faces inventory management issues and technical problems with its online store. Customer sentiment is generally positive, with high-end product sales and positive reviews on social media.",
+        "job_id": "JOB-G7WS4TDQH",
+        "created_at": "2026-06-08T08:56:31",
+        "leads_csv": "ahmedshahidarain213@gmail.com",
+        "status": "complete",
+        "agents": {
+          "contradiction_agent": {
+            "status": "complete",
+            "findings": [
+              {
+                "id": "C1",
+                "severity": "MEDIUM",
+                "title": "Inventory Management Issue",
+                "description": "Customer complaint about low inventory of the Black Galleria Saffiano bag, indicating a potential stockout issue",
+                "data_evidence": "1 customer complaint, 8900 units in warehouse stock",
+                "root_cause": "Inadequate demand forecasting or inventory management",
+                "impact": "Potential loss of sales, estimated 5% impact on revenue"
+              },
+              {
+                "id": "C2",
+                "severity": "LOW",
+                "title": "Online Store Technical Issue",
+                "description": "Customer complaint about payment errors on the online store",
+                "data_evidence": "1 customer complaint",
+                "root_cause": "Technical issue with online store payment processing",
+                "impact": "Minor revenue impact, estimated 1% impact on revenue"
+              }
+            ]
+          },
+          "strategy_agent": {
+            "status": "complete",
+            "recommendations": [
+              {
+                "name": "Inventory Management Issue",
+                "description": "Customer complaint about low inventory of the Black Galleria Saffiano bag, indicating a potential stockout issue",
+                "channel": "Multi-channel"
+              },
+              {
+                "name": "Online Store Technical Issue",
+                "description": "Customer complaint about payment errors on the online store",
+                "channel": "Multi-channel"
+              }
+            ]
+          }
+        },
+        "agent1_data": {
+          "insights": [
+            "Positive customer reviews on social media, high-end product sales"
+          ],
+          "contradictions": [
+            {
+              "id": "C1",
+              "severity": "MEDIUM",
+              "title": "Inventory Management Issue",
+              "description": "Customer complaint about low inventory of the Black Galleria Saffiano bag, indicating a potential stockout issue",
+              "data_evidence": "1 customer complaint, 8900 units in warehouse stock",
+              "root_cause": "Inadequate demand forecasting or inventory management",
+              "impact": "Potential loss of sales, estimated 5% impact on revenue"
+            },
+            {
+              "id": "C2",
+              "severity": "LOW",
+              "title": "Online Store Technical Issue",
+              "description": "Customer complaint about payment errors on the online store",
+              "data_evidence": "1 customer complaint",
+              "root_cause": "Technical issue with online store payment processing",
+              "impact": "Minor revenue impact, estimated 1% impact on revenue"
+            }
+          ],
+          "credibility_scores": [
+            {
+              "label": "Data Integrity",
+              "score": 60
+            },
+            {
+              "label": "Brand Safety",
+              "score": 80
+            }
+          ],
+          "temporal_trends": []
+        },
+        "agent2_strategy": {
+          "action_chain": [
+            {
+              "name": "Inventory Management Issue",
+              "description": "Customer complaint about low inventory of the Black Galleria Saffiano bag, indicating a potential stockout issue",
+              "channel": "Multi-channel"
+            },
+            {
+              "name": "Online Store Technical Issue",
+              "description": "Customer complaint about payment errors on the online store",
+              "channel": "Multi-channel"
+            }
+          ],
+          "summary": "Prada's sales data indicates a positive revenue trend, but the brand faces inventory management issues and technical problems with its online store. Customer sentiment is generally positive, with high-end product sales and positive reviews on social media."
+        },
+        "agent3_creative": {
+          "headline_english": "Prada's sales data indicates a positive revenue trend, but the brand faces inven",
+          "body_english": "Prada's sales data indicates a positive revenue trend, but the brand faces inventory management issues and technical problems with its online store. Customer sentiment is generally positive, with high-end product sales and positive reviews on social media.",
+          "tagline": "Positive customer reviews on social media, high-end product sales"
+        }
+      }
+    ],
+    "campaigns": [
+      {
+        "campaign_id": "1f70104a-87e9-4dfa-8fbb-0ba5a842f590",
+        "campaign_name": "Prada Season Campaign",
+        "campaign_theme": "Prada's sales data indicates a positive revenue trend, but the brand faces inventory management issues and technical problems with its online store. Customer sentiment is generally positive, with high-end product sales and positive reviews on social media.",
+        "status": "approved",
+        "analysis_id": "9b2e2e3d-46a5-43c9-a7e3-9d2c2a4b5c6d",
+        "created_at": "2026-06-08T08:56:45",
+        "approved_platforms": [
+          "instagram",
+          "tiktok",
+          "facebook"
+        ],
+        "recommended_budget": {
+          "instagram_pkr": 25000,
+          "tiktok_pkr": 20000,
+          "facebook_pkr": 15000,
+          "total_pkr": 60000
+        },
+        "expected_outcomes": {
+          "estimated_reach": "150,000",
+          "estimated_revenue_pkr": "450,000",
+          "roi_percentage": "25%"
+        },
+        "target_problems_solved": [
+          "Inventory Management Issue",
+          "Online Store Technical Issue"
+        ],
+        "ad_copy": {
+          "ad_copy_id": "d4653261-f8ca-41ae-b108-d98ff610e00d",
+          "campaign_id": "demo-campaign-id",
+          "generated_at": "2026-06-08T08:56:51",
+          "copies": {
+            "instagram": {
+              "english": {
+                "headline": "PRADA Sale Alert! 🚨",
+                "body": "No cap, literally crying because PRADA's summer sale is here! 🌞️ Get ready to shop your faves at discounted prices! 👗️ Visit PRADA Official Website and Online Store now! #PRADA #SummerSale #Pakistan",
+                "cta": "Swipe up to shop now! 👉",
+                "hashtags": [
+                  "#PRADA",
+                  "#SummerVibes",
+                  "#FashionSale",
+                  "#Pakistan"
+                ]
+              },
+              "roman_urdu": {
+                "headline": "Scene on kar, PRADA sale hai! 🚨",
+                "body": "Ye toh seedha fire hai, PRADA ki summer sale shuru ho gai hai! 🌞️ Ab apne favourite outfits le sakte ho kam daamon mein! 👗️ PRADA ka official website aur online store visit karo! 🛍️",
+                "cta": "Abhi shop karo! 👉",
+                "hashtags": [
+                  "#PRADA",
+                  "#Pakistan",
+                  "#SummerSale"
+                ]
+              }
+            },
+            "tiktok": {
+              "english": {
+                "hook": "Who else is ready for PRADA's summer sale? 🤔",
+                "body": "Lowkey bahut acha hai, PRADA's sale is live! 🌞️ Get your hands on the latest cotton outfits and buckle bags! 🛍️ Follow us for more updates! #PRADA #SummerSale #TikTokFashion",
+                "cta": "Follow us for more fashion updates! 👉",
+                "hashtags": [
+                  "#fyp",
+                  "#pakistan",
+                  "#tiktokfashion",
+                  "#PRADA"
+                ]
+              },
+              "roman_urdu": {
+                "hook": "Kon kon ready hai PRADA ki summer sale ke liye? 🤔",
+                "body": "Literally crying, PRADA ki sale shuru ho gai hai! 🌞️ Ab apne summer outfits le sakte ho, jo ki cotton aur buckle bags hai! 🛍️ Humara account follow karo! 📱",
+                "cta": "Humara account follow karo! 👉",
+                "hashtags": [
+                  "#fyp",
+                  "#pakistan",
+                  "#tiktokfashion"
+                ]
+              }
+            },
+            "facebook": {
+              "english": {
+                "headline": "Shop the PRADA Summer Sale Now!",
+                "body": "Visit PRADA Official Website and Online Store now and discover the latest summer collection! 🌞️ With a wide range of cotton outfits and buckle bags, you'll find the perfect piece to elevate your summer style. As a valued customer, we're offering exclusive discounts on our high-end products. Don't miss out on this amazing opportunity to shop your favorite PRADA products at discounted prices. Shop now and experience the best of PRADA! #PRADA #SummerSale",
+                "cta": "Shop Now",
+                "hashtags": []
+              },
+              "roman_urdu": {
+                "headline": "PRADA ki summer sale abhi shop karo!",
+                "body": "PRADA ka official website aur online store visit karo aur summer collection dekho! 🌞️ Humne cotton outfits aur buckle bags ki range shuru ki hai, jo ki aapke summer style ko elevate karne ke liye perfect hai. Aapke liye exclusive discounts bhi hai, jo ki high-end products par apply hoti hai. Is amazing offer ko miss na karo aur apne favourite PRADA products ko kam daamon mein le jao! Abhi shop karo! 🛍️",
+                "cta": "Abhi shop karo!",
+                "hashtags": []
+              }
+            }
+          },
+          "best_posting_times": {
+            "instagram": "7PM-10PM PKT",
+            "tiktok": "8PM-11PM PKT",
+            "facebook": "12PM-2PM or 7PM-9PM PKT"
+          }
+        },
+        "ad_images": {
+          "instagram": {
+            "image_id": "604ecc70-08e3-48e9-9f0f-473371c5155f",
+            "campaign_id": "demo-campaign-id",
+            "platform": "instagram",
+            "image_url": "https://image.pollinations.ai/prompt/Professional%20advertisement%20banner%20for%20Prada%20Fashion%20%26%20Apparel%20brand%20Pakistan%20campaign%20Prada%20Season%20Campaign%20theme%20Prada%27s%20sales%20data%20indicates%20a%20positive%20revenue%20trend%2C%20but%20the%20brand%20faces%20inventory%20management%20issues%20and%20technical%20problems%20with%20its%20online%20store.%20Customer%20sentiment%20is%20generally%20positive%2C%20with%20high-end%20product%20sales%20and%20positive%20reviews%20on%20social%20media.%20brand%20color%20%236C63FF%20slogan%20PRADA%20Official%20Website%20and%20Online%20Store%20%7C%20PRADA%20prspa_default_seo_description%20Gen-Z%20aesthetic%20vibrant%20modern%20Pakistani%20brand%20clean%20minimal%20design%20bold%20typography%20high%20quality%20advertising?width=800&height=800&seed=837482&nologo=true&enhance=true&model=flux",
+            "thumbnail_url": "https://image.pollinations.ai/prompt/Professional%20advertisement%20banner%20for%20Prada%20Fashion%20%26%20Apparel%20brand%20Pakistan%20campaign%20Prada%20Season%20Campaign%20theme%20Prada%27s%20sales%20data%20indicates%20a%20positive%20revenue%20trend%2C%20but%20the%20brand%20faces%20inventory%20management%20issues%20and%20technical%20problems%20with%20its%20online%20store.%20Customer%20sentiment%20is%20generally%20positive%2C%20with%20high-end%20product%20sales%20and%20positive%20reviews%20on%20social%20media.%20brand%20color%20%236C63FF%20slogan%20PRADA%20Official%20Website%20and%20Online%20Store%20%7C%20PRADA%20prspa_default_seo_description%20Gen-Z%20aesthetic%20vibrant%20modern%20Pakistani%20brand%20clean%20minimal%20design%20bold%20typography%20high%20quality%20advertising?width=800&height=800&seed=837482&nologo=true&enhance=true&model=flux",
+            "dimensions": "800x800",
+            "generated_at": "2026-06-08T08:57:03"
+          }
+        },
+        "ad_video": {
+          "video_id": "de6717dc-77b6-4348-966d-155f547ac060",
+          "campaign_id": "demo-campaign-id",
+          "video_url": "/uploads/ad_video_demo-campaign-id.mp4",
+          "video_generated": true,
+          "frame_images": [
+            "https://image.pollinations.ai/prompt/Pakistani%20brand%20advertisement%20Prada%20Prada%20Season%20Campaign%20vibrant%20colorful%20modern%20Gen-Z%20%236C63FF%20color%20professional?width=800&height=800&seed=605430&nologo=true&enhance=true&model=flux",
+            "https://image.pollinations.ai/prompt/Prada%20product%20showcase%20Pakistan%20Prada%27s%20sales%20data%20indicates%20a%20positive%20revenue%20trend%2C%20but%20the%20brand%20faces%20inventory%20management%20issues%20and%20technical%20problems%20with%20its%20online%20store.%20Customer%20sentiment%20is%20generally%20positive%2C%20with%20high-end%20product%20sales%20and%20positive%20reviews%20on%20social%20media.%20clean%20minimal%20%236C63FF%20brand%20high%20quality?width=800&height=800&seed=257847&nologo=true&enhance=true&model=flux",
+            "https://image.pollinations.ai/prompt/Call%20to%20action%20advertisement%20Prada%20Pakistan%20modern%20bold%20%236C63FF%20sale%20offer?width=800&height=800&seed=760780&nologo=true&enhance=true&model=flux"
+          ],
+          "duration_seconds": 9,
+          "format": "MP4 1080x1080",
+          "scenes": [
+            {
+              "scene": 1,
+              "duration": "3s",
+              "content": "Brand intro: Prada"
+            },
+            {
+              "scene": 2,
+              "duration": "3s",
+              "content": "Campaign: Prada Season Campaign"
+            },
+            {
+              "scene": 3,
+              "duration": "3s",
+              "content": "CTA: Swipe up to shop now! 👉"
+            }
+          ],
+          "generated_at": "2026-06-08T09:01:28"
+        }
+      }
+    ],
+    "competitors_cache": {
+      "cached_at": "2026-06-08T09:02:20.228991",
+      "data": {
+        "competitors": [
+          {
+            "id": "1",
+            "name": "Gucci",
+            "industry": "Fashion & Apparel",
+            "threat_level": "HIGH",
+            "estimated_monthly_revenue_pkr": 100000000,
+            "website": "https://www.gucci.com",
+            "social_followers": {
+              "instagram": 500000,
+              "tiktok": 200000,
+              "facebook": 300000
+            },
+            "recent_campaigns": [
+              "Summer Sale: Up to 50% Off",
+              "Post-Eid Clearance: Exclusive Discounts"
+            ],
+            "weaknesses": [
+              "High prices",
+              "Limited accessibility"
+            ],
+            "strengths": [
+              "Luxury brand reputation",
+              "High-quality products"
+            ],
+            "price_comparison": "more_expensive",
+            "market_share_percent": 30,
+            "trend": "UP",
+            "alert": "Gucci's summer sale is attracting a large customer base in Pakistan",
+            "logo_url": "https://www.google.com/s2/favicons?domain=gucci.com&sz=128",
+            "logo_fallback": "https://www.google.com/s2/favicons?domain=gucci.com&sz=128",
+            "domain": "gucci.com"
+          },
+          {
+            "id": "2",
+            "name": "Louis Vuitton",
+            "industry": "Fashion & Apparel",
+            "threat_level": "HIGH",
+            "estimated_monthly_revenue_pkr": 80000000,
+            "website": "https://www.louisvuitton.com",
+            "social_followers": {
+              "instagram": 400000,
+              "tiktok": 150000,
+              "facebook": 250000
+            },
+            "recent_campaigns": [
+              "Eid Exclusive Collection",
+              "Summer Deals: Buy One Get One Free"
+            ],
+            "weaknesses": [
+              "Limited product range",
+              "High pricing"
+            ],
+            "strengths": [
+              "Iconic brand status",
+              "Premium quality products"
+            ],
+            "price_comparison": "more_expensive",
+            "market_share_percent": 25,
+            "trend": "STABLE",
+            "alert": "Louis Vuitton's Eid exclusive collection is gaining popularity among Pakistani customers",
+            "logo_url": "https://www.google.com/s2/favicons?domain=louisvuitton.com&sz=128",
+            "logo_fallback": "https://www.google.com/s2/favicons?domain=louisvuitton.com&sz=128",
+            "domain": "louisvuitton.com"
+          },
+          {
+            "id": "3",
+            "name": "Chanel",
+            "industry": "Fashion & Apparel",
+            "threat_level": "MEDIUM",
+            "estimated_monthly_revenue_pkr": 50000000,
+            "website": "https://www.chanel.com",
+            "social_followers": {
+              "instagram": 300000,
+              "tiktok": 100000,
+              "facebook": 200000
+            },
+            "recent_campaigns": [
+              "Summer Fashion Sale",
+              "Post-Eid Clearance: Up to 30% Off"
+            ],
+            "weaknesses": [
+              "Less presence in Pakistani market",
+              "Limited product availability"
+            ],
+            "strengths": [
+              "Classic brand reputation",
+              "Timeless fashion products"
+            ],
+            "price_comparison": "same_range",
+            "market_share_percent": 20,
+            "trend": "UP",
+            "alert": "Chanel's summer fashion sale is attracting a growing customer base in Pakistan",
+            "logo_url": "https://www.google.com/s2/favicons?domain=chanel.com&sz=128",
+            "logo_fallback": "https://www.google.com/s2/favicons?domain=chanel.com&sz=128",
+            "domain": "chanel.com"
+          }
+        ],
+        "market_summary": "The Pakistani fashion and apparel market is highly competitive, with luxury brands like Gucci, Louis Vuitton, and Chanel dominating the market. These brands are leveraging post-Eid clearance and summer deals to attract customers and increase their market share.",
+        "your_position": "Prada stands as a strong competitor in the Pakistani luxury fashion market, but it needs to enhance its marketing efforts and product offerings to compete with Gucci and Louis Vuitton, while also differentiating itself from Chanel's classic brand reputation.",
+        "fetched_at": "2026-06-08T09:02:00.683097"
+      }
+    },
+    "created_at": "2026-06-08T08:54:18"
+  },
+  {
+    "id": "a22af65d-d722-457e-a264-eca0f92dafe2",
+    "email": "testuser@example.com",
+    "password_hash": "$2b$12$FozaBo8aAxz09dFYIKqqFuDhpZu4LpDpUcIe2KlGr1Dg0hOtHS.Im",
+    "full_name": "Ahmed Ali",
+    "brand_name": "TestBrand PK",
+    "industry": "Fashion",
+    "website_url": "",
+    "primaryColor": "#6C63FF",
+    "secondaryColor": "#E8F0FC",
+    "slogan": "",
+    "brandKeywords": [],
+    "socialHandles": {
+      "instagram": "@testbrand",
+      "tiktok": "",
+      "facebook": "@testbrand",
+      "linkedin": ""
+    },
+    "logo_path": "",
+    "logo_url": "",
+    "analyses": [],
+    "campaigns": [
+      {
+        "campaign_id": "test-campaign-001",
+        "campaign_name": "TestBrand PK Season Campaign",
+        "campaign_theme": "Live multi-channel campaign",
+        "status": "approved",
+        "analysis_id": "",
+        "created_at": "2026-06-08T09:44:40",
+        "approved_platforms": [
+          "instagram",
+          "tiktok",
+          "facebook"
+        ],
+        "recommended_budget": {
+          "instagram_pkr": 25000,
+          "tiktok_pkr": 20000,
+          "facebook_pkr": 15000,
+          "total_pkr": 60000
+        },
+        "expected_outcomes": {
+          "estimated_reach": "150,000",
+          "estimated_revenue_pkr": "450,000",
+          "roi_percentage": "25%"
+        },
+        "target_problems_solved": [
+          "Inventory Risk",
+          "Sentiment Drift"
+        ],
+        "ad_images": {
+          "instagram": {
+            "image_id": "8b557b2b-d13c-499d-8ff5-7f181f367cad",
+            "campaign_id": "test-campaign-001",
+            "platform": "instagram",
+            "image_url": "http://127.0.0.1:8000/uploads/ad_image_8b557b2b-d13c-499d-8ff5-7f181f367cad.png",
+            "thumbnail_url": "http://127.0.0.1:8000/uploads/ad_thumb_8b557b2b-d13c-499d-8ff5-7f181f367cad.png",
+            "dimensions": "800x800",
+            "generated_at": "2026-06-08T10:03:58"
+          }
+        },
+        "ad_video": {
+          "video_id": "5c2d5b0c-4deb-42c5-90e3-a7ecadbd48c0",
+          "campaign_id": "test-campaign-001",
+          "video_url": "/uploads/ad_video_test-campaign-001.mp4",
+          "video_generated": true,
+          "frame_images": [
+            "http://127.0.0.1:8000/uploads/vid_frame_test-campaign-001_s1.png",
+            "http://127.0.0.1:8000/uploads/vid_frame_test-campaign-001_s2.png",
+            "http://127.0.0.1:8000/uploads/vid_frame_test-campaign-001_s3.png"
+          ],
+          "duration_seconds": 9,
+          "format": "MP4 1080x1080",
+          "scenes": [
+            {
+              "scene": 1,
+              "duration": "3s",
+              "content": "Brand intro: TestBrand PK"
+            },
+            {
+              "scene": 2,
+              "duration": "3s",
+              "content": "Campaign: TestBrand PK Season Campaign"
+            },
+            {
+              "scene": 3,
+              "duration": "3s",
+              "content": "CTA: Shop Now"
+            }
+          ],
+          "generated_at": "2026-06-08T10:04:39"
+        }
+      }
+    ],
+    "competitors_cache": null,
+    "created_at": "2026-06-08T09:33:12"
+  },
+  {
+    "id": "a18f1358-71d0-46a1-8978-17b281556264",
+    "email": "huzaifa.3344@gmail.com",
+    "password_hash": "$2b$12$XERuE1q1eV2GqdmVcM0Lt.7GzA1tk7HRVxfYV3fz8yJLQT33IoXGi",
+    "full_name": "Ahmed",
+    "brand_name": "SpaceX",
+    "industry": "Other Services",
+    "website_url": "https://www.spacex.com",
+    "primaryColor": "#000000",
+    "secondaryColor": "#606060",
+    "slogan": "SpaceX designs, manufactures and launches advanced rockets and spacecraft.",
+    "brandKeywords": [
+      "spacex"
+    ],
+    "socialHandles": {
+      "instagram": "@spacex",
+      "tiktok": "@spacex",
+      "facebook": "",
+      "linkedin": ""
+    },
+    "logo_path": "/uploads/7807be6a-10a4-41c5-aa62-22c9334cd666.jpg",
+    "logo_url": "http://localhost:8000/uploads/7807be6a-10a4-41c5-aa62-22c9334cd666.jpg",
+    "analyses": [
+      {
+        "analysis_id": "9b7e5a6f-5c1a-48c2-81c3-6e5a2b7d8c9e",
+        "overall_health_score": 60,
+        "brand_safety_score": 80,
+        "contradictions": [
+          {
+            "id": "C1",
+            "severity": "HIGH",
+            "title": "Inventory Depletion",
+            "description": "Customer is unable to secure 50 units of Starlink Enterprise Kit due to regional warehouse inventory depletion",
+            "data_evidence": "50 units",
+            "root_cause": "Slow supply chain",
+            "impact": "Potential loss of PKR 35,000,000 (50 units * PKR 700,000 per unit)"
+          },
+          {
+            "id": "C2",
+            "severity": "MEDIUM",
+            "title": "Subscription Activation Issues",
+            "description": "Local subscription activation portal is throwing country-code errors on Pakistani credit cards",
+            "data_evidence": "Pakistani credit cards",
+            "root_cause": "Technical issues with payment processing",
+            "impact": "Potential loss of PKR 140,000 (1 unit * PKR 140,000 per unit) per affected customer"
+          }
+        ],
+        "positive_signals": [
+          "10/10 connectivity with Starlink setup in remote Balochistan",
+          "Incredible payload execution on the recent Falcon 9 rideshare mission"
+        ],
+        "critical_metrics": {
+          "revenue_trend": "UP",
+          "stock_risk": "MEDIUM",
+          "customer_sentiment": "MIXED",
+          "marketing_efficiency": "LOW",
+          "spend_waste_pkr": 150000
+        },
+        "summary": "SpaceX is experiencing high demand for its products, but is facing inventory depletion and technical issues with payment processing. The brand has a strong reputation for its products, but needs to improve its supply chain and marketing efficiency to capitalize on its growth opportunities.",
+        "job_id": "JOB-63OXXILWK",
+        "created_at": "2026-06-08T09:39:02",
+        "leads_csv": "ahmedshahidarain213@gmail.com",
+        "status": "complete",
+        "agents": {
+          "contradiction_agent": {
+            "status": "complete",
+            "findings": [
+              {
+                "id": "C1",
+                "severity": "HIGH",
+                "title": "Inventory Depletion",
+                "description": "Customer is unable to secure 50 units of Starlink Enterprise Kit due to regional warehouse inventory depletion",
+                "data_evidence": "50 units",
+                "root_cause": "Slow supply chain",
+                "impact": "Potential loss of PKR 35,000,000 (50 units * PKR 700,000 per unit)"
+              },
+              {
+                "id": "C2",
+                "severity": "MEDIUM",
+                "title": "Subscription Activation Issues",
+                "description": "Local subscription activation portal is throwing country-code errors on Pakistani credit cards",
+                "data_evidence": "Pakistani credit cards",
+                "root_cause": "Technical issues with payment processing",
+                "impact": "Potential loss of PKR 140,000 (1 unit * PKR 140,000 per unit) per affected customer"
+              }
+            ]
+          },
+          "strategy_agent": {
+            "status": "complete",
+            "recommendations": [
+              {
+                "name": "Inventory Depletion",
+                "description": "Customer is unable to secure 50 units of Starlink Enterprise Kit due to regional warehouse inventory depletion",
+                "channel": "Multi-channel"
+              },
+              {
+                "name": "Subscription Activation Issues",
+                "description": "Local subscription activation portal is throwing country-code errors on Pakistani credit cards",
+                "channel": "Multi-channel"
+              }
+            ]
+          }
+        },
+        "agent1_data": {
+          "insights": [
+            "10/10 connectivity with Starlink setup in remote Balochistan",
+            "Incredible payload execution on the recent Falcon 9 rideshare mission"
+          ],
+          "contradictions": [
+            {
+              "id": "C1",
+              "severity": "HIGH",
+              "title": "Inventory Depletion",
+              "description": "Customer is unable to secure 50 units of Starlink Enterprise Kit due to regional warehouse inventory depletion",
+              "data_evidence": "50 units",
+              "root_cause": "Slow supply chain",
+              "impact": "Potential loss of PKR 35,000,000 (50 units * PKR 700,000 per unit)"
+            },
+            {
+              "id": "C2",
+              "severity": "MEDIUM",
+              "title": "Subscription Activation Issues",
+              "description": "Local subscription activation portal is throwing country-code errors on Pakistani credit cards",
+              "data_evidence": "Pakistani credit cards",
+              "root_cause": "Technical issues with payment processing",
+              "impact": "Potential loss of PKR 140,000 (1 unit * PKR 140,000 per unit) per affected customer"
+            }
+          ],
+          "credibility_scores": [
+            {
+              "label": "Data Integrity",
+              "score": 60
+            },
+            {
+              "label": "Brand Safety",
+              "score": 80
+            }
+          ],
+          "temporal_trends": []
+        },
+        "agent2_strategy": {
+          "action_chain": [
+            {
+              "name": "Inventory Depletion",
+              "description": "Customer is unable to secure 50 units of Starlink Enterprise Kit due to regional warehouse inventory depletion",
+              "channel": "Multi-channel"
+            },
+            {
+              "name": "Subscription Activation Issues",
+              "description": "Local subscription activation portal is throwing country-code errors on Pakistani credit cards",
+              "channel": "Multi-channel"
+            }
+          ],
+          "summary": "SpaceX is experiencing high demand for its products, but is facing inventory depletion and technical issues with payment processing. The brand has a strong reputation for its products, but needs to improve its supply chain and marketing efficiency to capitalize on its growth opportunities."
+        },
+        "agent3_creative": {
+          "headline_english": "SpaceX is experiencing high demand for its products, but is facing inventory dep",
+          "body_english": "SpaceX is experiencing high demand for its products, but is facing inventory depletion and technical issues with payment processing. The brand has a strong reputation for its products, but needs to improve its supply chain and marketing efficiency to capitalize on its growth opportunities.",
+          "tagline": "10/10 connectivity with Starlink setup in remote Balochistan"
+        }
+      }
+    ],
+    "campaigns": [
+      {
+        "campaign_id": "ca499118-a44d-4c6f-afc0-f2f0917c5e78",
+        "campaign_name": "SpaceX Season Campaign",
+        "campaign_theme": "SpaceX is experiencing high demand for its products, but is facing inventory depletion and technical issues with payment processing. The brand has a strong reputation for its products, but needs to improve its supply chain and marketing efficiency to capitalize on its growth opportunities.",
+        "status": "approved",
+        "analysis_id": "9b7e5a6f-5c1a-48c2-81c3-6e5a2b7d8c9e",
+        "created_at": "2026-06-08T09:39:29",
+        "approved_platforms": [
+          "instagram",
+          "tiktok",
+          "facebook"
+        ],
+        "recommended_budget": {
+          "instagram_pkr": 25000,
+          "tiktok_pkr": 20000,
+          "facebook_pkr": 15000,
+          "total_pkr": 60000
+        },
+        "expected_outcomes": {
+          "estimated_reach": "150,000",
+          "estimated_revenue_pkr": "450,000",
+          "roi_percentage": "25%"
+        },
+        "target_problems_solved": [
+          "Inventory Depletion",
+          "Subscription Activation Issues"
+        ],
+        "ad_copy": {
+          "ad_copy_id": "f461dc6f-0f78-4833-aae2-bab1b0944821",
+          "campaign_id": "demo-campaign-id",
+          "generated_at": "2026-06-08T09:39:35",
+          "copies": {
+            "instagram": {
+              "english": {
+                "headline": "Blast Off 🚀",
+                "body": "No cap, SpaceX designs, manufactures and launches advanced rockets and spacecraft 🚀💫! Lowkey bahut acha hai, but we're experiencing high demand 🚀💸! Swipe up to learn more 📈",
+                "cta": "Swipe up in bio",
+                "hashtags": [
+                  "#SpaceX",
+                  "#Pakistan",
+                  "#SummerDeals",
+                  "#PostEidClearance"
+                ]
+              },
+              "roman_urdu": {
+                "headline": "Scene on kar 🚀",
+                "body": "Ye toh seedha fire hai, SpaceX ke products ki demand boht zyada hai 🚀🔥! Humari supply chain ko improve karne ki zaroorat hai, ta ke hum apne customers ko behtar serve kar sakein 🚀💻. Link in bio pe click kar ke details jaan'e",
+                "cta": "Link in bio pe click karo",
+                "hashtags": [
+                  "#SpaceX",
+                  "#Pakistan",
+                  "#Karachi"
+                ]
+              }
+            },
+            "tiktok": {
+              "english": {
+                "hook": "Literally crying because our rockets are SOLD OUT 🚀😭",
+                "body": "Washington Sundar can't even keep up with our launch schedule 🏏🚀! West Indies vs India, who cares? We're launching rockets to space 🚀👽! Follow us for updates #fyp #pakistan #trending",
+                "cta": "Follow us for SpaceX updates",
+                "hashtags": [
+                  "#fyp",
+                  "#pakistan",
+                  "#trending",
+                  "#spacex"
+                ]
+              },
+              "roman_urdu": {
+                "hook": "Mujhe toh literally crying ho raha hai, SpaceX ke rockets out of stock hai 🚀😭",
+                "body": "Ye toh seedha fire hai, humari rockets launch ho rahi hai space me 🚀🔥! Humari team boht mehnat kar rahi hai, ta ke hum apne customers ko behtar serve kar sakein 🚀💻. Follow karo hume SpaceX ke updates ke liye",
+                "cta": "Follow karo hume SpaceX ke updates ke liye",
+                "hashtags": [
+                  "#fyp",
+                  "#pakistan",
+                  "#spacex"
+                ]
+              }
+            },
+            "facebook": {
+              "english": {
+                "headline": "SpaceX: Pioneering Space Technology",
+                "body": "As a leading player in the space industry, SpaceX designs, manufactures and launches advanced rockets and spacecraft. We're experiencing high demand for our products, but we're working hard to improve our supply chain and payment processing to better serve our customers. With our strong reputation for innovation and excellence, we're committed to capitalizing on our growth opportunities and taking space technology to new heights. Shop Now and be a part of our journey!",
+                "cta": "Shop Now",
+                "hashtags": []
+              },
+              "roman_urdu": {
+                "headline": "SpaceX: Space Technology ka Badshah",
+                "body": "Hum SpaceX, space industry ke liye naye trends set kar rahe hai 🚀💻. Humari team boht mehnat kar rahi hai, ta ke hum apne customers ko behtar serve kar sakein 🚀💻. Humari supply chain ko improve karne ki zaroorat hai, ta ke hum apne customers ko behtar products provide kar sakein 🚀📦. Humari website pe visit karo, aur apne space travel ki journey start karo!",
+                "cta": "Abhi order karo",
+                "hashtags": []
+              }
+            }
+          },
+          "best_posting_times": {
+            "instagram": "7PM-10PM PKT",
+            "tiktok": "8PM-11PM PKT",
+            "facebook": "12PM-2PM or 7PM-9PM PKT"
+          }
+        },
+        "ad_images": {
+          "instagram": {
+            "image_id": "e48933c2-0034-4818-aae7-1f0ecfcff450",
+            "campaign_id": "demo-campaign-id",
+            "platform": "instagram",
+            "image_url": "http://127.0.0.1:8000/uploads/ad_image_e48933c2-0034-4818-aae7-1f0ecfcff450.png",
+            "thumbnail_url": "http://127.0.0.1:8000/uploads/ad_thumb_e48933c2-0034-4818-aae7-1f0ecfcff450.png",
+            "dimensions": "800x800",
+            "generated_at": "2026-06-08T09:41:40"
+          }
+        },
+        "ad_video": {
+          "video_id": "8185d6d9-f1c1-4ce8-a0c6-911d6e6132e4",
+          "campaign_id": "demo-campaign-id",
+          "video_url": "/uploads/ad_video_demo-campaign-id.mp4",
+          "video_generated": true,
+          "frame_images": [
+            "http://127.0.0.1:8000/uploads/vid_frame_demo-campaign-id_s1.png",
+            "http://127.0.0.1:8000/uploads/vid_frame_demo-campaign-id_s2.png",
+            "http://127.0.0.1:8000/uploads/vid_frame_demo-campaign-id_s3.png"
+          ],
+          "duration_seconds": 9,
+          "format": "MP4 1080x1080",
+          "scenes": [
+            {
+              "scene": 1,
+              "duration": "3s",
+              "content": "Brand intro: SpaceX"
+            },
+            {
+              "scene": 2,
+              "duration": "3s",
+              "content": "Campaign: SpaceX Season Campaign"
+            },
+            {
+              "scene": 3,
+              "duration": "3s",
+              "content": "CTA: Swipe up in bio"
+            }
+          ],
+          "generated_at": "2026-06-08T09:40:55"
+        }
+      },
+      {
+        "campaign_id": "04fe9d4a-20c5-4cdb-b4df-6c463714f3ec",
+        "campaign_name": "SpaceX is experiencing high demand for its products, but is facing inventory ...",
+        "campaign_theme": "Multi-channel launch",
+        "status": "approved",
+        "analysis_id": "JOB-63OXXILWK",
+        "created_at": "2026-06-08T09:47:16",
+        "approved_platforms": [
+          "instagram",
+          "facebook"
+        ],
+        "recommended_budget": {
+          "instagram_pkr": 60000,
+          "tiktok_pkr": 52500,
+          "facebook_pkr": 37500,
+          "total_pkr": 150000
+        },
+        "expected_outcomes": {
+          "estimated_reach": "300,000",
+          "estimated_revenue_pkr": "600,000",
+          "roi_percentage": "25%"
+        }
+      }
+    ],
+    "competitors_cache": {
+      "cached_at": "2026-06-08T09:47:41.299102",
+      "data": {
+        "competitors": [
+          {
+            "id": "1",
+            "name": "Blue Origin",
+            "industry": "Other Services",
+            "threat_level": "HIGH",
+            "estimated_monthly_revenue_pkr": 100000000,
+            "website": "https://www.blueorigin.com",
+            "social_followers": {
+              "instagram": 200000,
+              "tiktok": 100000,
+              "facebook": 500000
+            },
+            "recent_campaigns": [
+              "Summer Sale: Discounts on Suborbital Flights"
+            ],
+            "weaknesses": [
+              "Limited Reusability",
+              "High Costs"
+            ],
+            "strengths": [
+              "Advanced Technology",
+              "Experienced Team"
+            ],
+            "price_comparison": "more_expensive",
+            "market_share_percent": 30,
+            "trend": "UP",
+            "alert": "Blue Origin launches new summer deals on suborbital flights",
+            "logo_url": "https://logo.clearbit.com/blueorigin.com",
+            "logo_fallback": "https://www.google.com/s2/favicons?domain=blueorigin.com&sz=128",
+            "domain": "blueorigin.com"
+          },
+          {
+            "id": "2",
+            "name": "Virgin Galactic",
+            "industry": "Other Services",
+            "threat_level": "MEDIUM",
+            "estimated_monthly_revenue_pkr": 50000000,
+            "website": "https://www.virgingalactic.com",
+            "social_followers": {
+              "instagram": 300000,
+              "tiktok": 150000,
+              "facebook": 700000
+            },
+            "recent_campaigns": [
+              "Virgin Galactic opens a path to suborbital spaceflight, enabling exploration, innovation, and new discoveries. Begin your journey beyond Earth.",
+              "Virgin Galactic opens a path to suborbital spaceflight, enabling exploration, innovation, and new discoveries. Begin your journey beyond Earth."
+            ],
+            "weaknesses": [
+              "Limited Capacity",
+              "High Demand"
+            ],
+            "strengths": [
+              "Unique Experience",
+              "Trained Pilots"
+            ],
+            "price_comparison": "same_range",
+            "market_share_percent": 20,
+            "trend": "STABLE",
+            "alert": "Virgin Galactic opens a path to suborbital spaceflight, enabling exploration, innovation, and new discoveries. Begin your journey beyond Earth.",
+            "live_scraped": true,
+            "last_updated": "2026-06-08T09:47:40.977240",
+            "logo_url": "https://icon.horse/icon/virgingalactic.com",
+            "logo_fallback": "https://www.google.com/s2/favicons?domain=virgingalactic.com&sz=128",
+            "domain": "virgingalactic.com"
+          },
+          {
+            "id": "3",
+            "name": "Rocket Lab",
+            "industry": "Other Services",
+            "threat_level": "LOW",
+            "estimated_monthly_revenue_pkr": 20000000,
+            "website": "https://www.rocketlabusa.com",
+            "social_followers": {
+              "instagram": 100000,
+              "tiktok": 50000,
+              "facebook": 200000
+            },
+            "recent_campaigns": [
+              "Summer Launch Schedule: Book Your Satellite"
+            ],
+            "weaknesses": [
+              "Limited Resources",
+              "Dependence on Launch Windows"
+            ],
+            "strengths": [
+              "Cost-Effective",
+              "Reliable Launches"
+            ],
+            "price_comparison": "cheaper",
+            "market_share_percent": 15,
+            "trend": "DOWN",
+            "alert": "Rocket Lab faces challenges in launch schedule due to resource constraints",
+            "logo_url": "https://icon.horse/icon/rocketlabusa.com",
+            "logo_fallback": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
+            "domain": "rocketlabusa.com"
+          }
+        ],
+        "market_summary": "The space services market in Pakistan is highly competitive with international players like Blue Origin, Virgin Galactic, and Rocket Lab offering a range of services from suborbital flights to satellite launches. SpaceX faces tough competition in this market, with Blue Origin being a major threat due to its advanced technology and experienced team.",
+        "your_position": "SpaceX stands as a strong player in the market, but its high prices and limited services make it less competitive compared to Blue Origin and Virgin Galactic, while Rocket Lab poses a threat with its cost-effective launch services",
+        "fetched_at": "2026-06-08T09:47:26.909679"
+      }
+    },
+    "created_at": "2026-06-08T09:37:08"
+  },
+  {
+    "id": "62ede5f0-93c1-4450-b76f-b704d7f8e2de",
+    "email": "bsbdjsj@gmail.com",
+    "password_hash": "$2b$12$PJ0fK1xJcxogoQnHoml3werK7ovsar6yxVoDaijf43XYXl5Emc8/i",
+    "full_name": "hehdhd",
+    "brand_name": "Tesla",
+    "industry": "Automotive & Vehicles",
+    "website_url": "https://www.tesla.com",
+    "primaryColor": "#000000",
+    "secondaryColor": "#a0a0a0",
+    "slogan": "",
+    "brandKeywords": [],
+    "socialHandles": {
+      "instagram": "@tesla",
+      "tiktok": "@tesla",
+      "facebook": "@tesla",
+      "linkedin": ""
+    },
+    "logo_path": "/uploads/05530a44-e10f-471a-9a34-44874d2ac936.jpg",
+    "logo_url": "http://localhost:8000/uploads/05530a44-e10f-471a-9a34-44874d2ac936.jpg",
+    "analyses": [
+      {
+        "analysis_id": "9b6554b1-3c2f-4a5a-8e64-2e6f7c5f4e5d",
+        "overall_health_score": 60,
+        "brand_safety_score": 80,
+        "contradictions": [
+          {
+            "id": "C1",
+            "severity": "MEDIUM",
+            "title": "Inventory and Supply Chain Issues",
+            "description": "Customer @tech_hamza reported a backorder issue with the Tesla Wall Connector, indicating potential supply chain problems",
+            "data_evidence": "1 customer complaint, 8700 units in warehouse stock",
+            "root_cause": "Inefficient inventory management or supply chain logistics",
+            "impact": "Potential loss of sales and revenue"
+          },
+          {
+            "id": "C2",
+            "severity": "LOW",
+            "title": "Navigation Map Issues",
+            "description": "Customer @hammee_drives reported issues with the navigation map on the center screen",
+            "data_evidence": "1 customer complaint",
+            "root_cause": "Software or mapping issues",
+            "impact": "Minor impact on customer satisfaction"
+          }
+        ],
+        "positive_signals": [
+          "High-end product sales",
+          "Positive customer reviews on Twitter and YouTube",
+          "Growing interest in Tesla's commercial B2B solutions"
+        ],
+        "critical_metrics": {
+          "revenue_trend": "UP",
+          "stock_risk": "MEDIUM",
+          "customer_sentiment": "POSITIVE",
+          "marketing_efficiency": "LOW",
+          "spend_waste_pkr": 0
+        },
+        "summary": "Tesla's sales data shows a strong revenue trend, but the brand faces challenges with inventory management and supply chain logistics. Customer sentiment is generally positive, with some minor issues reported. The marketing efficiency is low, with a monthly spend of PKR 150,000, indicating a need for optimization.",
+        "job_id": "JOB-I6C9V9ZD0",
+        "created_at": "2026-06-08T09:57:02",
+        "leads_csv": "ahmedshahidarain213@gmail.com",
+        "status": "complete",
+        "agents": {
+          "contradiction_agent": {
+            "status": "complete",
+            "findings": [
+              {
+                "id": "C1",
+                "severity": "MEDIUM",
+                "title": "Inventory and Supply Chain Issues",
+                "description": "Customer @tech_hamza reported a backorder issue with the Tesla Wall Connector, indicating potential supply chain problems",
+                "data_evidence": "1 customer complaint, 8700 units in warehouse stock",
+                "root_cause": "Inefficient inventory management or supply chain logistics",
+                "impact": "Potential loss of sales and revenue"
+              },
+              {
+                "id": "C2",
+                "severity": "LOW",
+                "title": "Navigation Map Issues",
+                "description": "Customer @hammee_drives reported issues with the navigation map on the center screen",
+                "data_evidence": "1 customer complaint",
+                "root_cause": "Software or mapping issues",
+                "impact": "Minor impact on customer satisfaction"
+              }
+            ]
+          },
+          "strategy_agent": {
+            "status": "complete",
+            "recommendations": [
+              {
+                "name": "Inventory and Supply Chain Issues",
+                "description": "Customer @tech_hamza reported a backorder issue with the Tesla Wall Connector, indicating potential supply chain problems",
+                "channel": "Multi-channel"
+              },
+              {
+                "name": "Navigation Map Issues",
+                "description": "Customer @hammee_drives reported issues with the navigation map on the center screen",
+                "channel": "Multi-channel"
+              }
+            ]
+          }
+        },
+        "agent1_data": {
+          "insights": [
+            "High-end product sales",
+            "Positive customer reviews on Twitter and YouTube",
+            "Growing interest in Tesla's commercial B2B solutions"
+          ],
+          "contradictions": [
+            {
+              "id": "C1",
+              "severity": "MEDIUM",
+              "title": "Inventory and Supply Chain Issues",
+              "description": "Customer @tech_hamza reported a backorder issue with the Tesla Wall Connector, indicating potential supply chain problems",
+              "data_evidence": "1 customer complaint, 8700 units in warehouse stock",
+              "root_cause": "Inefficient inventory management or supply chain logistics",
+              "impact": "Potential loss of sales and revenue"
+            },
+            {
+              "id": "C2",
+              "severity": "LOW",
+              "title": "Navigation Map Issues",
+              "description": "Customer @hammee_drives reported issues with the navigation map on the center screen",
+              "data_evidence": "1 customer complaint",
+              "root_cause": "Software or mapping issues",
+              "impact": "Minor impact on customer satisfaction"
+            }
+          ],
+          "credibility_scores": [
+            {
+              "label": "Data Integrity",
+              "score": 60
+            },
+            {
+              "label": "Brand Safety",
+              "score": 80
+            }
+          ],
+          "temporal_trends": []
+        },
+        "agent2_strategy": {
+          "action_chain": [
+            {
+              "name": "Inventory and Supply Chain Issues",
+              "description": "Customer @tech_hamza reported a backorder issue with the Tesla Wall Connector, indicating potential supply chain problems",
+              "channel": "Multi-channel"
+            },
+            {
+              "name": "Navigation Map Issues",
+              "description": "Customer @hammee_drives reported issues with the navigation map on the center screen",
+              "channel": "Multi-channel"
+            }
+          ],
+          "summary": "Tesla's sales data shows a strong revenue trend, but the brand faces challenges with inventory management and supply chain logistics. Customer sentiment is generally positive, with some minor issues reported. The marketing efficiency is low, with a monthly spend of PKR 150,000, indicating a need for optimization."
+        },
+        "agent3_creative": {
+          "headline_english": "Tesla's sales data shows a strong revenue trend, but the brand faces challenges ",
+          "body_english": "Tesla's sales data shows a strong revenue trend, but the brand faces challenges with inventory management and supply chain logistics. Customer sentiment is generally positive, with some minor issues reported. The marketing efficiency is low, with a monthly spend of PKR 150,000, indicating a need for optimization.",
+          "tagline": "High-end product sales"
+        }
+      }
+    ],
+    "campaigns": [
+      {
+        "campaign_id": "0b804abb-685a-478c-8844-0f97862cadae",
+        "campaign_name": "Tesla Season Campaign",
+        "campaign_theme": "Tesla's sales data shows a strong revenue trend, but the brand faces challenges with inventory management and supply chain logistics. Customer sentiment is generally positive, with some minor issues reported. The marketing efficiency is low, with a monthly spend of PKR 150,000, indicating a need for optimization.",
+        "status": "approved",
+        "analysis_id": "9b6554b1-3c2f-4a5a-8e64-2e6f7c5f4e5d",
+        "created_at": "2026-06-08T09:57:11",
+        "approved_platforms": [
+          "instagram",
+          "tiktok",
+          "facebook"
+        ],
+        "recommended_budget": {
+          "instagram_pkr": 25000,
+          "tiktok_pkr": 20000,
+          "facebook_pkr": 15000,
+          "total_pkr": 60000
+        },
+        "expected_outcomes": {
+          "estimated_reach": "150,000",
+          "estimated_revenue_pkr": "450,000",
+          "roi_percentage": "25%"
+        },
+        "target_problems_solved": [
+          "Inventory and Supply Chain Issues",
+          "Navigation Map Issues"
+        ],
+        "ad_images": {
+          "instagram": {
+            "image_id": "ad0ca934-c5e0-42f3-88fe-45ab4d1f6e56",
+            "campaign_id": "demo-campaign-id",
+            "platform": "instagram",
+            "image_url": "http://127.0.0.1:8000/uploads/ad_image_ad0ca934-c5e0-42f3-88fe-45ab4d1f6e56.png",
+            "thumbnail_url": "http://127.0.0.1:8000/uploads/ad_thumb_ad0ca934-c5e0-42f3-88fe-45ab4d1f6e56.png",
+            "dimensions": "800x800",
+            "generated_at": "2026-06-08T09:57:15"
+          }
+        },
+        "ad_video": {
+          "video_id": "a8686ed0-3bd9-418f-96f3-df90ee25cc05",
+          "campaign_id": "demo-campaign-id",
+          "video_url": "/uploads/ad_video_demo-campaign-id.mp4",
+          "video_generated": true,
+          "frame_images": [
+            "http://127.0.0.1:8000/uploads/vid_frame_demo-campaign-id_s1.png",
+            "http://127.0.0.1:8000/uploads/vid_frame_demo-campaign-id_s2.png",
+            "http://127.0.0.1:8000/uploads/vid_frame_demo-campaign-id_s3.png"
+          ],
+          "duration_seconds": 9,
+          "format": "MP4 1080x1080",
+          "scenes": [
+            {
+              "scene": 1,
+              "duration": "3s",
+              "content": "Brand intro: Tesla"
+            },
+            {
+              "scene": 2,
+              "duration": "3s",
+              "content": "Campaign: Tesla Season Campaign"
+            },
+            {
+              "scene": 3,
+              "duration": "3s",
+              "content": "CTA: Shop Now"
+            }
+          ],
+          "generated_at": "2026-06-08T09:58:27"
+        }
+      }
+    ],
+    "competitors_cache": {
+      "cached_at": "2026-06-08T09:59:10.362015",
+      "data": {
+        "competitors": [
+          {
+            "id": "1",
+            "name": "Porsche",
+            "industry": "Automotive & Vehicles",
+            "threat_level": "HIGH",
+            "estimated_monthly_revenue_pkr": 200000000,
+            "website": "https://www.porsche.com",
+            "social_followers": {
+              "instagram": 5000000,
+              "tiktok": 2000000,
+              "facebook": 10000000
+            },
+            "recent_campaigns": [
+              "Country Selector"
+            ],
+            "weaknesses": [
+              "High pricing",
+              "Limited model options"
+            ],
+            "strengths": [
+              "Luxury brand image",
+              "High-performance vehicles"
+            ],
+            "price_comparison": "more_expensive",
+            "market_share_percent": 15,
+            "trend": "UP",
+            "alert": "Country Selector",
+            "live_scraped": true,
+            "last_updated": "2026-06-08T09:59:05.293365",
+            "logo_url": "https://www.google.com/s2/favicons?domain=porsche.com&sz=128",
+            "logo_fallback": "https://www.google.com/s2/favicons?domain=porsche.com&sz=128",
+            "domain": "porsche.com"
+          },
+          {
+            "id": "2",
+            "name": "Audi",
+            "industry": "Automotive & Vehicles",
+            "threat_level": "MEDIUM",
+            "estimated_monthly_revenue_pkr": 150000000,
+            "website": "https://www.audi.com",
+            "social_followers": {
+              "instagram": 3000000,
+              "tiktok": 1000000,
+              "facebook": 5000000
+            },
+            "recent_campaigns": [
+              "Summer Deals: Get discounts on Audi e-tron models"
+            ],
+            "weaknesses": [
+              "Lesser brand recall",
+              "Lower resale value"
+            ],
+            "strengths": [
+              "Wide range of models",
+              "Advanced technology"
+            ],
+            "price_comparison": "same_range",
+            "market_share_percent": 10,
+            "trend": "STABLE",
+            "alert": "Audi introduces new electric SUV to rival Tesla's Model X",
+            "logo_url": "https://www.google.com/s2/favicons?domain=audi.com&sz=128",
+            "logo_fallback": "https://www.google.com/s2/favicons?domain=audi.com&sz=128",
+            "domain": "audi.com"
+          },
+          {
+            "id": "3",
+            "name": "BMW",
+            "industry": "Automotive & Vehicles",
+            "threat_level": "HIGH",
+            "estimated_monthly_revenue_pkr": 250000000,
+            "website": "https://www.bmw.com",
+            "social_followers": {
+              "instagram": 4000000,
+              "tiktok": 1500000,
+              "facebook": 8000000
+            },
+            "recent_campaigns": [
+              "Eid Exclusive Offers: Book a test drive and get special discounts"
+            ],
+            "weaknesses": [
+              "Complex vehicle features",
+              "Higher maintenance costs"
+            ],
+            "strengths": [
+              "Performance and handling",
+              "Luxury brand image"
+            ],
+            "price_comparison": "more_expensive",
+            "market_share_percent": 20,
+            "trend": "UP",
+            "alert": "BMW launches new iX model to compete with Tesla's Model S",
+            "logo_url": "https://www.google.com/s2/favicons?domain=bmw.com&sz=128",
+            "logo_fallback": "https://www.google.com/s2/favicons?domain=bmw.com&sz=128",
+            "domain": "bmw.com"
+          }
+        ],
+        "market_summary": "The electric vehicle market in Pakistan is becoming increasingly competitive, with luxury brands like Porsche, Audi, and BMW launching new models to rival Tesla. As the summer season approaches, these brands are offering exclusive deals and discounts to attract customers, making the market more challenging for Tesla.",
+        "your_position": "Tesla stands as a strong competitor in the electric vehicle market, but it faces intense competition from established luxury brands like Porsche, Audi, and BMW, which are aggressively marketing their new electric models and offering attractive deals to customers.",
+        "fetched_at": "2026-06-08T09:58:58.754565"
+      }
+    },
+    "created_at": "2026-06-08T09:55:08"
   }
 ]

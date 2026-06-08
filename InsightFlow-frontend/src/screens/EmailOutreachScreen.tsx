@@ -297,7 +297,7 @@ export default function EmailOutreachScreen() {
               {/* Generated Hero Ad Image */}
               {image_url ? (
                 <View style={styles.emailAdImageWrapper}>
-                  <Image source={{ uri: image_url }} style={styles.emailAdImage} resizeMode="cover" />
+                  <Image source={{ uri: resolveMediaUrl(image_url) }} style={styles.emailAdImage} resizeMode="cover" />
                 </View>
               ) : (
                 <View style={styles.emailAdImagePlaceholder}>

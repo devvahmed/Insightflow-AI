@@ -157,7 +157,7 @@ export const AssetsScreen = () => {
               </View>
             )}
             <Image
-              source={showLocalImage ? require('../../outfitters.png') : { uri: image_url }}
+              source={showLocalImage ? require('../../outfitters.png') : { uri: resolveMediaUrl(image_url) }}
               style={[styles.image, imageLoading && { opacity: 0 }]}
               resizeMode="cover"
               onLoad={() => setImageLoading(false)}
@@ -198,7 +198,7 @@ export const AssetsScreen = () => {
         {image_url && !showLocalImage ? (
           <TouchableOpacity
             style={[styles.actionBtn, T.cardStyle, T.shadow]}
-            onPress={() => Linking.openURL(image_url)}
+            onPress={() => Linking.openURL(resolveMediaUrl(image_url) || '')}
             activeOpacity={0.8}
           >
             <Ionicons name="download-outline" size={16} color={T.primary} />
@@ -222,7 +222,7 @@ export const AssetsScreen = () => {
             onPress={() => Linking.openURL(video_url)}
           >
             {isImageAvailable ? (
-               <Image source={showLocalImage ? require('../../outfitters.png') : { uri: image_url }} style={{ position: 'absolute', width: '100%', height: '100%', opacity: 0.7 }} resizeMode="cover" />
+               <Image source={showLocalImage ? require('../../outfitters.png') : { uri: resolveMediaUrl(image_url) }} style={{ position: 'absolute', width: '100%', height: '100%', opacity: 0.7 }} resizeMode="cover" />
             ) : null}
             <Ionicons name="play-circle" size={64} color={T.primary} style={{ zIndex: 10, shadowColor: '#000', shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.3, shadowRadius: 4, elevation: 5 }} />
           </TouchableOpacity>
@@ -231,7 +231,7 @@ export const AssetsScreen = () => {
           <View style={styles.actionRow}>
             <TouchableOpacity
               style={[styles.actionBtn, T.cardStyle, T.shadow]}
-              onPress={() => Linking.openURL(video_url)}
+              onPress={() => Linking.openURL(resolveMediaUrl(video_url) || '')}
               activeOpacity={0.8}
             >
               <Ionicons name="logo-chrome" size={16} color={T.primary} />
@@ -242,7 +242,7 @@ export const AssetsScreen = () => {
               style={[styles.actionBtn, T.cardStyle, T.shadow]}
               onPress={async () => {
                 try {
-                  await Share.share({ message: `Check out our Campaign Video: ${video_url}` });
+                  await Share.share({ message: `Check out our Campaign Video: ${resolveMediaUrl(video_url)}` });
                 } catch (e) {
                   console.error(e);
                 }

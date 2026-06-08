@@ -986,16 +986,33 @@ def extract_dominant_logo_colors(logo_bytes: bytes) -> list:
     try:
         img = Image.open(io.BytesIO(logo_bytes)).convert("RGBA").resize((80, 80))
         color_counts = {}
+        fallback_counts = {}
         for r, g, b, a in img.getdata():
             if a < 128:
                 continue
-            h, s, v = colorsys.rgb_to_hsv(r / 255, g / 255, b / 255)
-            if s < 0.15 or v < 0.15:
+            # Skip white/near-white background pixels
+            if r > 235 and g > 235 and b > 235:
                 continue
+            h, s, v = colorsys.rgb_to_hsv(r / 255, g / 255, b / 255)
             key = ((r // 32) * 32, (g // 32) * 32, (b // 32) * 32)
-            color_counts[key] = color_counts.get(key, 0) + 1
-        top = sorted(color_counts.items(), key=lambda x: x[1], reverse=True)[:2]
-        return [f"#{r:02x}{g:02x}{b:02x}" for (r, g, b), _ in top]
+            if s >= 0.12 and v >= 0.15:
+                color_counts[key] = color_counts.get(key, 0) + 1
+            else:
+                if v <= 0.85:
+                    fallback_counts[key] = fallback_counts.get(key, 0) + 1
+        res = []
+        if color_counts:
+            top = sorted(color_counts.items(), key=lambda x: x[1], reverse=True)[:2]
+            res = [f"#{r:02x}{g:02x}{b:02x}" for (r, g, b), _ in top]
+        if len(res) < 2 and fallback_counts:
+            top_fb = sorted(fallback_counts.items(), key=lambda x: x[1], reverse=True)
+            for (r, g, b), _ in top_fb:
+                hex_c = f"#{r:02x}{g:02x}{b:02x}"
+                if hex_c not in res:
+                    res.append(hex_c)
+                if len(res) >= 2:
+                    break
+        return res
     except Exception:
         return []
 
@@ -1104,6 +1121,7 @@ def lighten_color(hex_color: str) -> str:
         )
     except Exception:
         return "#E8F0FC"
+
 
 
 async def fetch_google_trends() -> list:
@@ -2213,34 +2231,90 @@ async def generate_ad_image(
         if len(h_str) == 3: h_str = ''.join([x*2 for x in h_str])
         return tuple(int(h_str[i:i+2], 16) for i in (0, 2, 4))
 
+    # Download or fallback for main image
+    img = None
     try:
         print(f"[DEBUG] Downloading image from Pollinations: {image_url}")
-        resp = req_lib.get(image_url, timeout=30)
+        resp = req_lib.get(image_url, timeout=12)
         if resp.status_code == 200:
             img = PILImage.open(io.BytesIO(resp.content)).convert("RGBA")
-            # Apply beautiful clean sharp typography overlay!
-            clean_headline = campaign_theme if len(campaign_theme) < 60 else campaign_theme[:57] + "..."
-            draw_banner_text(img, brand_name, clean_headline, "Shop Now", hex_to_rgb(primary_color))
-            img.convert("RGB").save(local_image_path, "PNG")
-            
-            final_image_url = f"/uploads/ad_image_{image_uuid}.png"
-            print(f"[DEBUG] Image downloaded, typography applied, and saved locally to {final_image_url}")
         else:
-            print(f"[DEBUG] Pollinations returned status code {resp.status_code}")
+            print(f"[DEBUG] Pollinations returned status code {resp.status_code}, using fallback gradient")
     except Exception as e:
         print(f"[DEBUG] Failed to download image from pollinations: {e}")
 
+    if img is None:
+        # Generate dynamic gradient fallback ad banner using brand color
+        W_canvas, H_canvas = int(w), int(h)
+        img = PILImage.new("RGBA", (W_canvas, H_canvas), (0, 0, 0, 0))
+        draw_grad = ImageDraw.Draw(img)
+        try:
+            pr_rgb = hex_to_rgb(primary_color)
+        except Exception:
+            pr_rgb = (108, 99, 255) # default purple
+        
+        r, g, b = pr_rgb
+        # Create darker shade for gradient contrast
+        darker_rgb = (max(0, r - 70), max(0, g - 70), max(0, b - 70))
+        for y_val in range(H_canvas):
+            factor = y_val / H_canvas
+            curr_color = (
+                int(r * (1 - factor) + darker_rgb[0] * factor),
+                int(g * (1 - factor) + darker_rgb[1] * factor),
+                int(b * (1 - factor) + darker_rgb[2] * factor)
+            )
+            draw_grad.line([(0, y_val), (W_canvas, y_val)], fill=curr_color)
+            
+        # Draw translucent glowing circles
+        draw_grad.ellipse([W_canvas // 10, -H_canvas // 5, W_canvas // 10 + H_canvas // 2, H_canvas // 5], fill=(255, 255, 255, 18), outline=None)
+        draw_grad.ellipse([W_canvas - H_canvas // 2, H_canvas // 2, W_canvas + H_canvas // 4, H_canvas], fill=(255, 255, 255, 12), outline=None)
+
     try:
-        resp = req_lib.get(thumbnail_url, timeout=20)
+        clean_headline = campaign_theme if len(campaign_theme) < 60 else campaign_theme[:57] + "..."
+        draw_banner_text(img, brand_name, clean_headline, "Shop Now", hex_to_rgb(primary_color))
+        img.convert("RGB").save(local_image_path, "PNG")
+        final_image_url = f"/uploads/ad_image_{image_uuid}.png"
+        print(f"[DEBUG] Image processed and saved locally to {final_image_url}")
+    except Exception as e:
+        print(f"[DEBUG] Failed to process/save main image: {e}")
+
+    # Download or fallback for thumbnail
+    img_t = None
+    try:
+        print(f"[DEBUG] Downloading thumbnail from Pollinations: {thumbnail_url}")
+        resp = req_lib.get(thumbnail_url, timeout=10)
         if resp.status_code == 200:
             img_t = PILImage.open(io.BytesIO(resp.content)).convert("RGBA")
-            draw_banner_text(img_t, brand_name, campaign_name, "Shop Now", hex_to_rgb(primary_color))
-            img_t.convert("RGB").save(local_thumb_path, "PNG")
-            final_thumbnail_url = f"/uploads/ad_thumb_{image_uuid}.png"
-        else:
-            final_thumbnail_url = final_image_url
     except Exception as e:
         print(f"[DEBUG] Failed to download thumbnail: {e}")
+
+    if img_t is None:
+        # Generate local thumbnail fallback gradient
+        W_canvas, H_canvas = 400, 400
+        img_t = PILImage.new("RGBA", (W_canvas, H_canvas), (0, 0, 0, 0))
+        draw_grad = ImageDraw.Draw(img_t)
+        try:
+            pr_rgb = hex_to_rgb(primary_color)
+        except Exception:
+            pr_rgb = (108, 99, 255)
+        r, g, b = pr_rgb
+        darker_rgb = (max(0, r - 70), max(0, g - 70), max(0, b - 70))
+        for y_val in range(H_canvas):
+            factor = y_val / H_canvas
+            curr_color = (
+                int(r * (1 - factor) + darker_rgb[0] * factor),
+                int(g * (1 - factor) + darker_rgb[1] * factor),
+                int(b * (1 - factor) + darker_rgb[2] * factor)
+            )
+            draw_grad.line([(0, y_val), (W_canvas, y_val)], fill=curr_color)
+        draw_grad.ellipse([40, -40, 240, 160], fill=(255, 255, 255, 18), outline=None)
+
+    try:
+        draw_banner_text(img_t, brand_name, campaign_name, "Shop Now", hex_to_rgb(primary_color))
+        img_t.convert("RGB").save(local_thumb_path, "PNG")
+        final_thumbnail_url = f"/uploads/ad_thumb_{image_uuid}.png"
+    except Exception as e:
+        print(f"[DEBUG] Failed to process/save thumbnail: {e}")
         final_thumbnail_url = final_image_url
 
     public_img = public_asset_url(final_image_url)
@@ -2476,18 +2550,25 @@ async def generate_ad_video(
                 draw.text(((w_size - lw) // 2, start_y), line, fill=(240, 240, 240), font=font_sub)
                 start_y += 45
 
+        local_frame_urls = []
         for i, (furl, texts) in enumerate(zip(frame_urls, texts_per_frame)):
+            img = None
             try:
                 print(f"[DEBUG] Fetching frame {i+1} for video: {furl}")
-                resp = req_lib.get(furl, timeout=25)
-                img = PILImage.open(io.BytesIO(resp.content)).convert("RGB").resize((W, H))
+                resp = req_lib.get(furl, timeout=12)
+                if resp.status_code == 200:
+                    img = PILImage.open(io.BytesIO(resp.content)).convert("RGB").resize((W, H))
+                else:
+                    print(f"[DEBUG] Frame {i+1} Pollinations returned {resp.status_code}, using gradient fallback")
             except Exception as ex:
                 print(f"[DEBUG] Frame download error fallback: {ex}")
-                # Create a premium, gorgeous linear gradient background with decorative vector elements
+
+            if img is None:
+                # Premium gradient background fallback
                 img = PILImage.new("RGB", (W, H), primary_rgb)
                 draw_grad = ImageDraw.Draw(img)
                 r, g, b = primary_rgb
-                darker_rgb = (max(0, r - 50), max(0, g - 50), max(0, b - 50))
+                darker_rgb = (max(0, r - 60), max(0, g - 60), max(0, b - 60))
                 for y_val in range(H):
                     factor = y_val / H
                     curr_color = (
@@ -2496,10 +2577,9 @@ async def generate_ad_video(
                         int(b * (1 - factor) + darker_rgb[2] * factor)
                     )
                     draw_grad.line([(0, y_val), (W, y_val)], fill=curr_color)
-                
-                # Decorative soft translucent glowing circles
-                draw_grad.ellipse([W // 8, -H // 4, W // 8 + H // 2, H // 4], fill=(255, 255, 255, 15), outline=None)
-                draw_grad.ellipse([W - H // 2, H // 2, W + H // 4, H], fill=(255, 255, 255, 10), outline=None)
+                # Decorative translucent glow circles
+                draw_grad.ellipse([W // 8, -H // 4, W // 8 + H // 2, H // 4], fill=(255, 255, 255, 18), outline=None)
+                draw_grad.ellipse([W - H // 2, H // 2, W + H // 4, H], fill=(255, 255, 255, 12), outline=None)
 
             # Create in-memory Ken Burns zoom-in animation sequence (72 frames = 3 seconds at 24fps)
             scene_frames = []
@@ -2508,27 +2588,35 @@ async def generate_ad_video(
 
             overlay = PILImage.new("RGBA", (W, H), (0, 0, 0, 120))
             composited = PILImage.alpha_composite(img.convert("RGBA"), overlay)
-            
+
             # Draw typography
             draw_ad_text(composited, texts["title"], texts["sub"], brand_name, primary_rgb)
-            
+
             # Draw Brand Logo overlay on the top right
             if logo_overlay:
                 logo_w, logo_h = logo_overlay.size
                 composited.paste(logo_overlay, (W - logo_w - 40, 40), logo_overlay)
 
+            # Save composited frame as local PNG (for preview thumbnails in frontend)
+            frame_local_path = UPLOADS_DIR / f"vid_frame_{campaign_id}_s{i+1}.png"
+            try:
+                composited.convert("RGB").save(frame_local_path, "PNG")
+                local_frame_urls.append(public_asset_url(f"/uploads/vid_frame_{campaign_id}_s{i+1}.png"))
+            except Exception as save_ex:
+                print(f"[DEBUG] Could not save frame PNG: {save_ex}")
+                local_frame_urls.append(furl)  # fallback to pollinations url
+
             # Generate smooth scale zoom-in Ken Burns sequence
             for frame_idx in range(total_frames):
                 factor = frame_idx / total_frames
-                # Slow smooth zoom from 100% to 108%
                 scale = 1.0 + 0.08 * factor
                 new_w, new_h = int(W * scale), int(H * scale)
-                
+
                 zoomed_img = composited.resize((new_w, new_h), PILImage.Resampling.LANCZOS)
                 crop_x = (new_w - W) // 2
                 crop_y = (new_h - H) // 2
                 cropped = zoomed_img.crop((crop_x, crop_y, crop_x + W, crop_y + H))
-                
+
                 img_array = np.array(cropped.convert("RGB"))
                 scene_frames.append(img_array)
 
@@ -2556,7 +2644,7 @@ async def generate_ad_video(
         "campaign_id": campaign_id,
         "video_url": video_url if video_generated else "",
         "video_generated": video_generated,
-        "frame_images": frame_urls,
+        "frame_images": local_frame_urls if video_generated and local_frame_urls else frame_urls,
         "duration_seconds": 9,
         "format": "MP4 1080x1080",
         "scenes": [

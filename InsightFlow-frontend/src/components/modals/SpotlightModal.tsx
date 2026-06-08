@@ -109,10 +109,9 @@ export const SpotlightModal = ({
         <Animated.View
           style={[
             styles.modalCard,
+            T.glassCard,
             T.shadowStrong,
             {
-              backgroundColor: T.surface,
-              borderColor: T.border,
               opacity: opacityAnim,
               transform: [{ scale: scaleAnim }],
             },
@@ -137,11 +136,10 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   modalCard: {
-    width: '100%',
+    alignSelf: 'stretch',
     maxHeight: '85%',
     borderRadius: 28,
     overflow: 'hidden',
-    borderWidth: 1,
   },
   scrollContent: {
     paddingHorizontal: 20,

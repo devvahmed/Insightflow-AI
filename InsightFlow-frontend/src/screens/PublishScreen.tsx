@@ -29,6 +29,7 @@ import { BrandAvatar } from '../components/BrandLogo';
 import { SpotlightModal } from '../components/modals/SpotlightModal';
 import { sendEmailCampaignApi, approveCampaign } from '../api/api';
 import * as DocumentPicker from 'expo-document-picker';
+import { resolveMediaUrl } from '../utils/mediaUrl';
 
 const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window');
 
@@ -334,10 +335,10 @@ export const PublishScreen = () => {
                           <Ionicons
                             name={p === 'instagram' ? 'logo-instagram' : p === 'tiktok' ? 'logo-tiktok' : 'logo-facebook'}
                             size={14}
-                            color={activePlatform === p ? '#fff' : T.textSecondary}
+                            color={activePlatform === p ? T.primaryText : T.textSecondary}
                             style={{ marginRight: 6 }}
                           />
-                          <Text style={[styles.segmentText, { color: activePlatform === p ? '#fff' : T.textSecondary }]}>
+                          <Text style={[styles.segmentText, { color: activePlatform === p ? T.primaryText : T.textSecondary }]}>
                             {p === 'instagram' ? 'Instagram' : p === 'tiktok' ? 'TikTok' : 'Facebook'}
                           </Text>
                         </View>
@@ -353,7 +354,7 @@ export const PublishScreen = () => {
                         style={[styles.langBtn, { borderColor: T.accent }, activeLang === l && { backgroundColor: T.accent }]}
                         onPress={() => setActiveLang(l)}
                       >
-                        <Text style={{ color: activeLang === l ? '#fff' : T.accent, fontSize: 12, fontWeight: '600' }}>
+                        <Text style={{ color: activeLang === l ? T.primaryText : T.accent, fontSize: 12, fontWeight: '600' }}>
                           {l === 'english' ? 'English' : 'Roman Urdu'}
                         </Text>
                       </TouchableOpacity>
@@ -373,7 +374,7 @@ export const PublishScreen = () => {
 
                     <Text style={[styles.copyLabel, { color: T.textSecondary }]}>Call To Action (CTA)</Text>
                     <View style={[styles.ctaBadge, { backgroundColor: T.accent }]}>
-                      <Text style={styles.ctaText}>
+                      <Text style={[styles.ctaText, { color: T.primaryText }]}>
                         {adCopy.copies?.[activePlatform]?.[activeLang]?.cta || 'Shop Now'}
                       </Text>
                     </View>
@@ -388,7 +389,7 @@ export const PublishScreen = () => {
           {activePreviewTab === 'image' && (
             <View style={styles.mediaContainer}>
               {imageUrl ? (
-                <Image source={{ uri: imageUrl }} style={styles.previewImage} resizeMode="cover" />
+                <Image source={{ uri: resolveMediaUrl(imageUrl) }} style={styles.previewImage} resizeMode="cover" />
               ) : (
                 <View style={[styles.mediaPlaceholder, { backgroundColor: T.btnSecondary }]}>
                   <Feather name="image" size={32} color={T.textMuted} />
@@ -403,7 +404,7 @@ export const PublishScreen = () => {
               {videoUrl ? (
                 <View style={styles.mediaContainer}>
                   {/* Ken burns scene preview mockup */}
-                  <Image source={{ uri: imageUrl || 'https://image.pollinations.ai/prompt/premium_branding_ken_burns_zoom_video' }} style={styles.previewImage} resizeMode="cover" />
+                  <Image source={{ uri: resolveMediaUrl(imageUrl) || 'https://image.pollinations.ai/prompt/premium_branding_ken_burns_zoom_video' }} style={styles.previewImage} resizeMode="cover" />
                   <View style={styles.playOverlay}>
                     <Ionicons name="play-circle" size={60} color="#fff" />
                     <Text style={styles.videoPlayLabel}>Ken Burns Animated MP4 Active</Text>
@@ -583,7 +584,7 @@ export const PublishScreen = () => {
                     onPress={triggerPublishSimulation}
                     disabled={activeCount === 0}
                   >
-                    <Text style={{ color: '#fff', fontWeight: '800' }}>Publish Now</Text>
+                    <Text style={{ color: T.primaryText, fontWeight: '800' }}>Publish Now</Text>
                   </TouchableOpacity>
                 </View>
               </View>
@@ -646,7 +647,7 @@ export const PublishScreen = () => {
               navigation.reset({ index: 0, routes: [{ name: 'Dashboard' }] });
             }}
           >
-            <Text style={styles.celebrateCloseText}>Back to Dashboard</Text>
+            <Text style={[styles.celebrateCloseText, { color: T.primaryText }]}>Back to Dashboard</Text>
           </TouchableOpacity>
         </View>
       </Modal>

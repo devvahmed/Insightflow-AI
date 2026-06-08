@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import { APP_DEFAULTS } from '../constants/mockData';
 import { resolveMediaUrl } from '../utils/mediaUrl';
+import { getApiBaseUrl } from '../config/backend';
 
 const DEFAULT_BRAND_COLOR = '#0A84FF';
 
@@ -150,7 +151,7 @@ export const useUserStore = create<UserState>((set, get) => ({
   })(),
 
   setAuth: (token, user) => {
-    const BASE = 'http://localhost:8000';
+    const BASE = getApiBaseUrl();
     
     // Fix logo_url — always make it a full URL
     let logoUrl = (user.logo_url || user.logo_path || '') as string;

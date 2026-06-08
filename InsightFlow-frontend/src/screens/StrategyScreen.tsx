@@ -15,6 +15,7 @@ import { useTheme } from '../theme/useTheme';
 import { SectionHeader } from '../components/ui/SectionHeader';
 import { Card } from '../components/ui/Card';
 import { Badge } from '../components/ui/Badge';
+import { PrimaryButton } from '../components/ui/PrimaryButton';
 import { BrandAvatar } from '../components/BrandLogo';
 
 export const StrategyScreen = () => {
@@ -115,26 +116,30 @@ export const StrategyScreen = () => {
 
         {/* ── 4. YOUR WINNING ANGLE ── */}
         <SectionHeader title="Your Winning Angle" subtitle="AI positioning synthesis" />
-        <Card style={[styles.angleCard, { backgroundColor: T.accent + '15', borderColor: T.accent + '40' }]}>
-          <View style={styles.cardHead}>
-            <Ionicons name="sparkles" size={20} color={T.accent} />
-            <Text style={[styles.angleTitle, { color: T.accent }]}>Unique Campaign Hook</Text>
+        <Card style={[styles.angleCard, T.glassCard, { borderColor: T.withAlpha(T.accent, 0.25), paddingVertical: 18, paddingHorizontal: 18 }]}>
+          <View style={{ flexDirection: 'row', alignItems: 'stretch' }}>
+            <View style={{ width: 4, backgroundColor: T.accent, borderRadius: 2, marginRight: 12 }} />
+            <View style={{ flex: 1 }}>
+              <View style={styles.cardHead}>
+                <Ionicons name="sparkles" size={18} color={T.accent} />
+                <Text style={[styles.angleTitle, { color: T.text, marginLeft: 6 }]}>Unique Campaign Hook</Text>
+              </View>
+              <Text style={[styles.angleBody, { color: T.textSecondary, marginTop: 4 }]}>
+                {winningAngle}
+              </Text>
+            </View>
           </View>
-          <Text style={[styles.angleBody, { color: T.text }]}>
-            {winningAngle}
-          </Text>
         </Card>
 
         {/* ── CTA BUTTON ── */}
-        <TouchableOpacity
-          style={[styles.adCreativeBtn, { backgroundColor: T.accent }]}
+        <PrimaryButton
+          label="🎨 Create Ad Creatives"
           onPress={() => navigation.navigate('CampaignReview', {
             campaign_id: strategy?.campaign_id || 'demo-campaign-id',
             campaign_name: campaignName,
           })}
-        >
-          <Text style={styles.adCreativeBtnText}>🎨 Create Ad Creatives</Text>
-        </TouchableOpacity>
+          style={{ marginTop: 10, marginBottom: 20 }}
+        />
       </ScrollView>
     </View>
   );
