@@ -1,6 +1,15 @@
 # Gitignore for InsightFlow AI (Root Scope)
 
+# =====================
+# SENSITIVE FILES - NEVER PUSH THESE
+# =====================
+**/.env
+**/serviceAccount.json
+InsightFlow-backend/users.json
+
+# =====================
 # Python caches & build artifacts
+# =====================
 **/__pycache__/
 **/*.py[cod]
 **/*$py.class
@@ -8,27 +17,28 @@
 venv/
 ENV/
 
-# Local sensitive configuration and credentials
-autocampaign-backend/.env
-autocampaign-backend/serviceAccount.json
-autocampaign-backend/users.json
-
+# =====================
 # Backend dynamic generated assets and logs
-autocampaign-backend/generated_images/
-autocampaign-backend/traces/
+# =====================
+InsightFlow-backend/generated_images/
+InsightFlow-backend/traces/
+InsightFlow-backend/uploads/*.mp4
+InsightFlow-backend/uploads/ad_image_*.png
+InsightFlow-backend/uploads/ad_thumb_*.png
+InsightFlow-backend/uploads/vid_frame_*.png
 
+# =====================
 # Frontend dependencies and bundler caches
+# =====================
 **/node_modules/
-autocampaign-frontend/.expo/
-autocampaign-frontend/dist/
-autocampaign-frontend/web-build/
-autocampaign-frontend/expo-env.d.ts
+InsightFlow-frontend/.expo/
+InsightFlow-frontend/dist/
+InsightFlow-frontend/web-build/
+InsightFlow-frontend/expo-env.d.ts
 
-# Misplaced compiler/lib shadows (managed by node_modules)
-autocampaign-frontend/bin/
-autocampaign-frontend/lib/
-
+# =====================
 # IDE settings and system files
+# =====================
 .idea/
 .vscode/
 *.suo
@@ -39,5 +49,5 @@ autocampaign-frontend/lib/
 .DS_Store
 Thumbs.db
 
-# Startup script (optional to keep untracked)
+# Startup script
 START_APP.bat

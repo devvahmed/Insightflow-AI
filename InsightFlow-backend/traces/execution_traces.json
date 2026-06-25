@@ -314,5 +314,15 @@
       "id": "a5729703-add7-4691-907e-95db85f8c60e",
       "message": "Email successfully sent via Resend API"
     }
+  },
+  {
+    "timestamp": "2026-06-25T19:28:38.496345+00:00",
+    "trace_type": "Resend Dispatch Trace",
+    "recipient_email": "ahmedshahidarain213@gmail.com",
+    "status_code": 200,
+    "response_payload": {
+      "id": "eb2454d6-2c99-4b36-b771-6890338bc347",
+      "message": "Email successfully sent via Resend API"
+    }
   }
 ]
