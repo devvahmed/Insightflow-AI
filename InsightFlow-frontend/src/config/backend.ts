@@ -12,7 +12,7 @@ export function getApiBaseUrl(): string {
   } catch (_) {}
 
   if (Platform.OS === 'android') {
-    return 'http://192.168.100.26:8000';
+    return 'https://insightflow-ai-57zv.onrender.com';
   }
 
   if (Platform.OS === 'ios') {
