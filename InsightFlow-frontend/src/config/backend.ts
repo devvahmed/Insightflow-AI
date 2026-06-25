@@ -12,7 +12,7 @@ export function getApiBaseUrl(): string {
   } catch (_) {}
 
   if (Platform.OS === 'android') {
-    return 'http://10.0.2.2:8000';
+    return 'http://192.168.100.26:8000';
   }
 
   if (Platform.OS === 'ios') {

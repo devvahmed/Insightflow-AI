@@ -31,7 +31,7 @@ extensions.configure(com.facebook.react.ReactSettingsExtension) { ex ->
 }
 expoAutolinking.useExpoModules()
 
-rootProject.name = 'AutoCampaignAI'
+rootProject.name = 'AutoCampaign AI'
 
 expoAutolinking.useExpoVersionCatalog()
 
