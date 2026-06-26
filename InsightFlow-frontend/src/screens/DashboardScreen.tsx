@@ -113,7 +113,7 @@ function MetricCard({ config, delay }: { config: MetricConfig; delay: number }) 
   }, [config.pulse]);
 
   return (
-    <TouchableOpacity activeOpacity={0.9} onPress={config.onPress}>
+    <TouchableOpacity activeOpacity={0.9} onPress={config.onPress} style={{ flex: 1 }}>
       <Animated.View
         style={[
           styles.metricCard,
@@ -614,9 +614,11 @@ const styles = StyleSheet.create({
     borderRadius: 16,
     borderWidth: 1,
     padding: 14,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
-  metricValue: { fontSize: 26, fontWeight: '800', marginTop: 10 },
-  metricLabel: { fontSize: 11, marginTop: 4 },
+  metricValue: { fontSize: 26, fontWeight: '800', marginTop: 10, textAlign: 'center' },
+  metricLabel: { fontSize: 11, marginTop: 4, textAlign: 'center' },
   pulseDot: {
     position: 'absolute',
     top: 10,

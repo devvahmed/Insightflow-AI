@@ -219,7 +219,7 @@ export const AssetsScreen = () => {
           <TouchableOpacity 
             style={[styles.videoPlaceholderCard, T.cardLg, T.shadow, { height: 260, justifyContent: 'center', alignItems: 'center', overflow: 'hidden' }]}
             activeOpacity={0.9}
-            onPress={() => Linking.openURL(video_url)}
+            onPress={() => Linking.openURL(resolveMediaUrl(video_url) || '')}
           >
             {isImageAvailable ? (
                <Image source={showLocalImage ? require('../../outfitters.png') : { uri: resolveMediaUrl(image_url) }} style={{ position: 'absolute', width: '100%', height: '100%', opacity: 0.7 }} resizeMode="cover" />

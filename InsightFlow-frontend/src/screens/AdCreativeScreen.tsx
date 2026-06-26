@@ -288,7 +288,7 @@ export default function AdCreativeScreen({ route, navigation }: any) {
 
             <TouchableOpacity
               style={[styles.downloadBtn, { backgroundColor: T.accent }]}
-              onPress={() => Linking.openURL(`${BASE_URL}${adVideo.video_url}`)}
+              onPress={() => Linking.openURL(resolveMediaUrl(adVideo.video_url) || '')}
             >
               <Text style={[styles.downloadBtnText, { color: T.primaryText }]}>⬇️ Download MP4</Text>
             </TouchableOpacity>
