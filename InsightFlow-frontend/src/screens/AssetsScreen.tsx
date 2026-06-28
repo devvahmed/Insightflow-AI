@@ -10,6 +10,7 @@ import { useTheme } from '../theme/useTheme';
 import { useUserStore } from '../store/userStore';
 import { approveCampaign, approveCampaignMultipart } from '../api/api';
 import * as DocumentPicker from 'expo-document-picker';
+import { resolveMediaUrl } from '../utils/mediaUrl';
 
 export const AssetsScreen = () => {
   const navigation = useNavigation<any>();
